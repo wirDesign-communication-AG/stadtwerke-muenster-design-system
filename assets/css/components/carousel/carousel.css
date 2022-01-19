@@ -1,0 +1,352 @@
+/* ===================================================
+CAROUSEL IMPORTS
+=================================================== */
+/* ===================================================
+COMPONENT BASICS
+=================================================== */
+/* ===================================================
+REM-CALC
+=================================================== */
+/* ===================================================
+COLOR DEFINITIONS
+=================================================== */
+/* ===================================================
+FONT SETTINGS
+=================================================== */
+/* define font cuts: sans-serif */
+/* define font cuts: sans-serif */
+/* ===================================================
+BASIC SETTINGS
+=================================================== */
+/* ===================================================
+TYPE SETTINGS
+=================================================== */
+/* ===================================================
+LINK SETTINGS
+=================================================== */
+/* ===================================================
+CTA SETTINGS
+=================================================== */
+/* ------------------------------------------------- */
+/* ------------------------------------------------- */
+/* ------------------------------------------------- */
+/* ------------------------------------------------- */
+/* ===================================================
+BACKGROUND
+=================================================== */
+/* ===================================================
+COLOR SETTINGS
+=================================================== */
+/* ================================================ */
+/* ================================================ */
+/* ================================================ */
+/* ================================================ */
+/* ================================================ */
+/* ================================================ */
+/* ================================================ */
+/* ================================================ */
+/* ================================================ */
+/* ================================================ */
+/* ================================================ */
+/* ================================================ */
+/* ================================================ */
+/* ================================================ */
+/* ===================================================
+COMPONENT ACCORDION
+=================================================== */
+/* ===================================================
+COMPONENT BURGER
+=================================================== */
+/* ===================================================
+COMPONENT HEADER
+=================================================== */
+/* ===================================================
+COMPONENT NAV
+=================================================== */
+/* ===================================================
+COMPONENT COPY
+=================================================== */
+/* ===================================================
+COMPONENT UPLOAD
+=================================================== */
+/* ===================================================
+COMPONENT MESSAGE
+=================================================== */
+/* ===================================================
+COMPONENT HERO
+=================================================== */
+/* ===================================================
+COMPONENT QUOTE
+=================================================== */
+/* ================================================ */
+/* ===================================================
+BREAKPOINTS
+=================================================== */
+/* ================================================ */
+/* ===================================================
+SPACING
+=================================================== */
+/* ================================================ */
+/* ================================================ */
+/* ================================================ */
+/* ================================================ */
+/* ================================================ */
+/* ================================================ */
+/* ================================================ */
+/* ================================================ */
+/* ===================================================
+LINKS
+=================================================== */
+/* ================================================ */
+/* ===================================================
+TYPOGRAPHY SIZE
+=================================================== */
+/* ================================================ */
+/* ================================================ */
+/* ===================================================
+CAROUSEL COMPONENT
+=================================================== */
+/* ---------------------------------------------------
+Global Variables
+--------------------------------------------------- */
+/* ---------------------------------------------------
+Global Styles
+--------------------------------------------------- */
+.c-carousel {
+  position: relative;
+  width: 100%;
+  box-sizing: border-box; }
+  .c-carousel * {
+    box-sizing: inherit; }
+
+.c-carousel__track {
+  overflow: hidden; }
+  .c-carousel__track + .c-carousel__arrows {
+    height: 3rem; }
+    @media only screen and (min-width: 768px) {
+      .c-carousel__track + .c-carousel__arrows {
+        height: 4rem; } }
+
+.c-carousel__slides {
+  position: relative;
+  width: 100%;
+  list-style: none;
+  backface-visibility: hidden;
+  transform-style: preserve-3d;
+  touch-action: pan-Y;
+  overflow: hidden;
+  padding: 0;
+  white-space: nowrap;
+  display: flex;
+  flex-wrap: nowrap;
+  will-change: transform; }
+
+.c-carousel__slides--dragging {
+  user-select: none; }
+
+.c-carousel__slide {
+  width: 100%;
+  height: 100%;
+  flex-shrink: 0;
+  white-space: normal;
+  user-select: none;
+  -webkit-touch-callout: none;
+  -webkit-tap-highlight-color: transparent; }
+  .c-carousel__slide a {
+    user-select: none;
+    -webkit-user-drag: none; }
+
+.c-carousel__arrows {
+  -webkit-touch-callout: none;
+  user-select: none; }
+
+.c-carousel--rtl {
+  direction: rtl; }
+
+.c-carousel__arrow {
+  position: absolute;
+  display: block;
+  bottom: 0;
+  z-index: 2;
+  padding: 0;
+  background-color: transparent;
+  color: #121212;
+  border: 0;
+  border-radius: 0;
+  font-size: 2rem;
+  opacity: 1;
+  cursor: pointer;
+  transition: opacity 150ms ease, border 300ms ease-in-out;
+  line-height: 1; }
+  @media only screen and (min-width: 768px) {
+    .c-carousel__arrow {
+      font-size: 2.625rem; } }
+  .c-carousel__arrow:focus {
+    outline: none; }
+  .c-carousel__arrow:hover {
+    border-color: white; }
+
+.c-carousel__arrow--left {
+  left: 0;
+  transform: translate(0); }
+
+.c-carousel__arrow--right {
+  right: 0;
+  transform: translate(0); }
+
+.c-carousel__arrow--disabled {
+  opacity: 0.33; }
+
+.c-carousel__bullets {
+  position: relative;
+  z-index: 2;
+  margin-left: 50%;
+  display: -ms-inline-flexbox;
+  transform: translateX(-50%) translateY(0rem);
+  -webkit-touch-callout: none;
+  user-select: none;
+  display: inline-flex;
+  height: 3rem;
+  padding-top: .5rem;
+  align-items: center; }
+  @media only screen and (min-width: 768px) {
+    .c-carousel__bullets {
+      height: 4rem; } }
+
+.c-carousel__bullet {
+  background-color: #E1E1E1;
+  width: 12px;
+  height: 12px;
+  padding: 0;
+  border-radius: 50%;
+  border: 2px solid #E1E1E1;
+  transition: all 200ms ease-in-out;
+  cursor: pointer;
+  line-height: 0;
+  margin: 0 4px; }
+  @media only screen and (min-width: 768px) {
+    .c-carousel__bullet {
+      width: 16px;
+      height: 16px;
+      margin: 0 8px; } }
+  .c-carousel__bullet:focus {
+    outline: none; }
+  .c-carousel__bullet:hover {
+    border: 2px solid #00693C;
+    background-color: #00693C; }
+
+.c-carousel__bullet--active {
+  border: 2px solid #00693C;
+  background-color: #00693C; }
+
+.c-carousel--swipeable {
+  cursor: grab; }
+
+.c-carousel--dragging {
+  cursor: grabbing; }
+
+.c-carousel__bullets + .c-carousel__text,
+.c-carousel__arrows + .c-carousel__text {
+  bottom: 3.5rem; }
+
+.c-carousel__text {
+  position: absolute;
+  bottom: 1.5rem;
+  left: 1.5rem;
+  pointer-events: none; }
+
+/* ---------------------------------------------------
+Context: control elements inside slider modifier
+--------------------------------------------------- */
+.c-carousel--control-inside {
+  margin-bottom: 0; }
+  .c-carousel--control-inside .c-carousel__track + .c-carousel__arrows {
+    height: auto; }
+  .c-carousel--control-inside .c-carousel__arrow--left {
+    left: 1rem;
+    bottom: 50%;
+    transform: translate(0, 50%); }
+  .c-carousel--control-inside .c-carousel__arrow--right {
+    right: 1rem;
+    bottom: 50%;
+    transform: translate(0, 50%); }
+  .c-carousel--control-inside .c-carousel__bullets {
+    position: absolute;
+    bottom: 0;
+    transform: translateX(-50%); }
+
+/* ---------------------------------------------------
+Context: arrows centers
+--------------------------------------------------- */
+.c-carousel--center-arrows .c-carousel__track + .c-carousel__arrows {
+  height: auto; }
+
+.c-carousel--center-arrows .c-carousel__arrow--left {
+  bottom: 50%;
+  transform: translate(-100%, 50%);
+  left: -1rem; }
+
+.c-carousel--center-arrows .c-carousel__arrow--right {
+  bottom: 50%;
+  transform: translate(100%, 50%);
+  right: -1rem; }
+
+/* ---------------------------------------------------
+Context: hide arrows on mobile
+--------------------------------------------------- */
+@media only screen and (max-width: 767.98px) {
+  .c-carousel--mobile-hide-arrows .c-carousel__arrows {
+    display: none; } }
+
+/* ---------------------------------------------------
+Context: overlay text top
+--------------------------------------------------- */
+.c-carousel--text-top .c-carousel__text {
+  top: 1.5rem;
+  bottom: inherit; }
+
+/* ---------------------------------------------------
+Context: overlay text right
+--------------------------------------------------- */
+.c-carousel--text-right .c-carousel__text {
+  left: inherit;
+  right: 1.5rem; }
+
+/* ---------------------------------------------------
+Context: overlay text vertical center
+--------------------------------------------------- */
+.c-carousel--text-vertical-center .c-carousel__text {
+  bottom: 50%;
+  transform: translateY(50%); }
+
+/* ---------------------------------------------------
+Context: overlay text horizontal center
+--------------------------------------------------- */
+.c-carousel--text-horizontal-center .c-carousel__text {
+  left: 50%;
+  transform: translateX(-50%); }
+
+.c-carousel--text-horizontal-center.c-carousel--text-vertical-center .c-carousel__text {
+  transform: translate(-50%, 50%); }
+
+/* ---------------------------------------------------
+Context: color schemes
+--------------------------------------------------- */
+.cs-light.c-carousel .c-carousel__arrow,
+.cs-light .c-carousel .c-carousel__arrow {
+  background-color: #fff;
+  color: #00B4F0; }
+
+.cs-light.c-carousel .c-carousel__bullet,
+.cs-light .c-carousel .c-carousel__bullet {
+  background-color: rgba(255, 255, 255, 0.5);
+  border: 2px solid transparent; }
+  .cs-light.c-carousel .c-carousel__bullet:hover,
+  .cs-light .c-carousel .c-carousel__bullet:hover {
+    border: 2px solid #fff;
+    background-color: #fff; }
+
+.cs-light.c-carousel .c-carousel__bullet--active,
+.cs-light .c-carousel .c-carousel__bullet--active {
+  border: 2px solid #fff;
+  background-color: #fff; }

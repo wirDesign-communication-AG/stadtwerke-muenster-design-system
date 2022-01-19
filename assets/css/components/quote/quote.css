@@ -1,0 +1,287 @@
+/* ===================================================
+CAROUSEL IMPORTS
+=================================================== */
+/* ===================================================
+COMPONENT BASICS
+=================================================== */
+/* ===================================================
+REM-CALC
+=================================================== */
+/* ===================================================
+COLOR DEFINITIONS
+=================================================== */
+/* ===================================================
+FONT SETTINGS
+=================================================== */
+/* define font cuts: sans-serif */
+/* define font cuts: sans-serif */
+/* ===================================================
+BASIC SETTINGS
+=================================================== */
+/* ===================================================
+TYPE SETTINGS
+=================================================== */
+/* ===================================================
+LINK SETTINGS
+=================================================== */
+/* ===================================================
+CTA SETTINGS
+=================================================== */
+/* ------------------------------------------------- */
+/* ------------------------------------------------- */
+/* ------------------------------------------------- */
+/* ------------------------------------------------- */
+/* ===================================================
+BACKGROUND
+=================================================== */
+/* ===================================================
+COLOR SETTINGS
+=================================================== */
+/* ================================================ */
+/* ================================================ */
+/* ================================================ */
+/* ================================================ */
+/* ================================================ */
+/* ================================================ */
+/* ================================================ */
+/* ================================================ */
+/* ================================================ */
+/* ================================================ */
+/* ================================================ */
+/* ================================================ */
+/* ================================================ */
+/* ================================================ */
+/* ===================================================
+COMPONENT ACCORDION
+=================================================== */
+/* ===================================================
+COMPONENT BURGER
+=================================================== */
+/* ===================================================
+COMPONENT HEADER
+=================================================== */
+/* ===================================================
+COMPONENT NAV
+=================================================== */
+/* ===================================================
+COMPONENT COPY
+=================================================== */
+/* ===================================================
+COMPONENT UPLOAD
+=================================================== */
+/* ===================================================
+COMPONENT MESSAGE
+=================================================== */
+/* ===================================================
+COMPONENT HERO
+=================================================== */
+/* ===================================================
+COMPONENT QUOTE
+=================================================== */
+/* ================================================ */
+/* ===================================================
+BREAKPOINTS
+=================================================== */
+/* ================================================ */
+/* ===================================================
+SPACING
+=================================================== */
+/* ================================================ */
+/* ================================================ */
+/* ================================================ */
+/* ================================================ */
+/* ================================================ */
+/* ================================================ */
+/* ================================================ */
+/* ================================================ */
+/* ===================================================
+LINKS
+=================================================== */
+/* ================================================ */
+/* ===================================================
+TYPOGRAPHY SIZE
+=================================================== */
+/* ================================================ */
+/* ================================================ */
+/* ===================================================
+QUOTE COMPONENT
+=================================================== */
+/* ===================================================
+GRID
+=================================================== */
+/* ================================================ */
+/* ---------------------------------------------------
+Global Styles
+--------------------------------------------------- */
+.c-quote {
+  position: relative; }
+
+.c-quote__avatar-wrapper {
+  max-width: 170px;
+  margin-bottom: 20px; }
+  @media only screen and (min-width: 768px) {
+    .c-quote__avatar-wrapper {
+      margin-bottom: 40px; } }
+
+.c-quote__image img {
+  border-radius: 50%;
+  width: 100%;
+  height: auto; }
+
+.c-quote__content {
+  display: block;
+  margin-bottom: 0; }
+  .c-quote__content p {
+    color: #121212;
+    font-family: "Roboto", Arial, sans-serif;
+    font-weight: 300;
+    hyphens: none;
+    margin-bottom: 0.5rem;
+    font-size: 1.5rem;
+    line-height: 1.5; }
+    .c-quote__content p:last-child {
+      margin-bottom: 0; }
+    @media only screen and (min-width: 480px) {
+      .c-quote__content p {
+        font-size: 1.75rem; } }
+    @media only screen and (min-width: 576px) {
+      .c-quote__content p {
+        font-size: 2rem; } }
+    @media only screen and (min-width: 768px) {
+      .c-quote__content p {
+        font-size: 2.375rem; } }
+    @media only screen and (min-width: 1200px) {
+      .c-quote__content p {
+        font-size: 2.5rem; } }
+  .c-quote__content + .c-quote__author {
+    margin-top: 1rem; }
+    @media only screen and (min-width: 768px) {
+      .c-quote__content + .c-quote__author {
+        margin-top: 2rem; } }
+
+.c-quote__author p {
+  color: #121212;
+  font-family: "Roboto", Arial, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  margin-top: 0.5rem;
+  margin-bottom: 0;
+  font-size: 1.25rem;
+  line-height: 1.2; }
+  @media only screen and (min-width: 480px) {
+    .c-quote__author p {
+      font-size: 1.375rem; } }
+  @media only screen and (min-width: 576px) {
+    .c-quote__author p {
+      font-size: 1.5rem;
+      line-height: 1.3; } }
+
+/* ---------------------------------------------------
+Context: smaller
+--------------------------------------------------- */
+.c-quote--smaller .c-quote__content p {
+  font-size: 1.25rem;
+  line-height: 1.3; }
+  @media only screen and (min-width: 480px) {
+    .c-quote--smaller .c-quote__content p {
+      font-size: 1.375rem; } }
+  @media only screen and (min-width: 576px) {
+    .c-quote--smaller .c-quote__content p {
+      font-size: 1.5625rem;
+      line-height: 1.4; } }
+  @media only screen and (min-width: 768px) {
+    .c-quote--smaller .c-quote__content p {
+      font-size: 2rem; } }
+
+.c-quote--smaller .c-quote__image img {
+  max-width: 150px; }
+
+/* ---------------------------------------------------
+Context: center
+--------------------------------------------------- */
+.c-quote--center {
+  text-align: center; }
+  .c-quote--center .c-quote__avatar-wrapper {
+    margin: 0 auto 20px; }
+    @media only screen and (min-width: 768px) {
+      .c-quote--center .c-quote__avatar-wrapper {
+        margin: 0 auto 40px; } }
+
+/* ---------------------------------------------------
+Context: two column
+--------------------------------------------------- */
+.c-quote--two-column {
+  display: flex;
+  flex-wrap: wrap; }
+  @media only screen and (min-width: 0) {
+    .c-quote--two-column {
+      margin-right: -8px;
+      margin-left: -8px; } }
+  @media only screen and (min-width: 768px) {
+    .c-quote--two-column {
+      margin-right: -12px;
+      margin-left: -12px; } }
+  @media only screen and (min-width: 1200px) {
+    .c-quote--two-column {
+      margin-right: -16px;
+      margin-left: -16px; } }
+  .c-quote--two-column .c-quote__content-wrapper {
+    flex: 0 0 100%;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    order: 1; }
+    @media only screen and (min-width: 0) {
+      .c-quote--two-column .c-quote__content-wrapper {
+        padding-right: 8px;
+        padding-left: 8px; } }
+    @media only screen and (min-width: 768px) {
+      .c-quote--two-column .c-quote__content-wrapper {
+        padding-right: 12px;
+        padding-left: 12px; } }
+    @media only screen and (min-width: 1200px) {
+      .c-quote--two-column .c-quote__content-wrapper {
+        padding-right: 16px;
+        padding-left: 16px; } }
+    @media only screen and (min-width: 768px) {
+      .c-quote--two-column .c-quote__content-wrapper {
+        flex: 0 0 50%;
+        max-width: 50%;
+        order: 0; } }
+  .c-quote--two-column .c-quote__avatar-wrapper {
+    flex: 0 0 100%;
+    max-width: 100%;
+    order: 0;
+    margin-bottom: 1rem; }
+    @media only screen and (min-width: 0) {
+      .c-quote--two-column .c-quote__avatar-wrapper {
+        padding-right: 8px;
+        padding-left: 8px; } }
+    @media only screen and (min-width: 768px) {
+      .c-quote--two-column .c-quote__avatar-wrapper {
+        padding-right: 12px;
+        padding-left: 12px; } }
+    @media only screen and (min-width: 1200px) {
+      .c-quote--two-column .c-quote__avatar-wrapper {
+        padding-right: 16px;
+        padding-left: 16px; } }
+    @media only screen and (min-width: 768px) {
+      .c-quote--two-column .c-quote__avatar-wrapper {
+        flex: 0 0 50%;
+        max-width: 50%;
+        order: 1;
+        margin-bottom: 0; } }
+  .c-quote--two-column .c-quote__image img {
+    border-radius: 0;
+    max-width: 100%; }
+
+/* ---------------------------------------------------
+Context: color schemes
+--------------------------------------------------- */
+.cs-light .c-quote__content p {
+  color: #fff; }
+
+.cs-light .c-quote__author p {
+  color: #fff; }

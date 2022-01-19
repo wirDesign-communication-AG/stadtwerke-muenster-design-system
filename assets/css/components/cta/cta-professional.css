@@ -1,0 +1,297 @@
+/* ===================================================
+CAROUSEL IMPORTS
+=================================================== */
+/* ===================================================
+COMPONENT BASICS
+=================================================== */
+/* ===================================================
+REM-CALC
+=================================================== */
+/* ===================================================
+COLOR DEFINITIONS
+=================================================== */
+/* ===================================================
+FONT SETTINGS
+=================================================== */
+/* define font cuts: sans-serif */
+/* define font cuts: sans-serif */
+/* ===================================================
+BASIC SETTINGS
+=================================================== */
+/* ===================================================
+TYPE SETTINGS
+=================================================== */
+/* ===================================================
+LINK SETTINGS
+=================================================== */
+/* ===================================================
+CTA SETTINGS
+=================================================== */
+/* ------------------------------------------------- */
+/* ------------------------------------------------- */
+/* ------------------------------------------------- */
+/* ------------------------------------------------- */
+/* ===================================================
+BACKGROUND
+=================================================== */
+/* ===================================================
+COLOR SETTINGS
+=================================================== */
+/* ================================================ */
+/* ================================================ */
+/* ================================================ */
+/* ================================================ */
+/* ================================================ */
+/* ================================================ */
+/* ================================================ */
+/* ================================================ */
+/* ================================================ */
+/* ================================================ */
+/* ================================================ */
+/* ================================================ */
+/* ================================================ */
+/* ================================================ */
+/* ===================================================
+COMPONENT ACCORDION
+=================================================== */
+/* ===================================================
+COMPONENT BURGER
+=================================================== */
+/* ===================================================
+COMPONENT HEADER
+=================================================== */
+/* ===================================================
+COMPONENT NAV
+=================================================== */
+/* ===================================================
+COMPONENT COPY
+=================================================== */
+/* ===================================================
+COMPONENT UPLOAD
+=================================================== */
+/* ===================================================
+COMPONENT MESSAGE
+=================================================== */
+/* ===================================================
+COMPONENT HERO
+=================================================== */
+/* ===================================================
+COMPONENT QUOTE
+=================================================== */
+/* ================================================ */
+/* ===================================================
+BREAKPOINTS
+=================================================== */
+/* ================================================ */
+/* ===================================================
+SPACING
+=================================================== */
+/* ================================================ */
+/* ================================================ */
+/* ================================================ */
+/* ================================================ */
+/* ================================================ */
+/* ================================================ */
+/* ================================================ */
+/* ================================================ */
+/* ===================================================
+LINKS
+=================================================== */
+/* ================================================ */
+/* ===================================================
+TYPOGRAPHY SIZE
+=================================================== */
+/* ================================================ */
+/* ================================================ */
+/* ===================================================
+CTA COMPONENT
+=================================================== */
+/* ------------------------------------------------- */
+/* ---------------------------------------------------
+Global Styles
+--------------------------------------------------- */
+.c-cta {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  padding: 16px 32px;
+  border: 0;
+  border-radius: 66px;
+  transition: all 0.4s ease 0s;
+  text-shadow: none;
+  text-align: center;
+  overflow: hidden;
+  background-color: #00B4F0;
+  transform: translateZ(0);
+  font-size: 1rem;
+  line-height: 1;
+  color: #121212;
+  text-decoration: none;
+  font-weight: 600; }
+  .c-cta:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 0 30px 30px 0;
+    background-color: #00A6DD;
+    transition-duration: 0.3s;
+    transform: translateX(-102%) translateZ(0);
+    transition-timing-function: ease-out; }
+  .c-cta:hover {
+    color: #121212; }
+  .c-cta:focus {
+    color: #121212; }
+  .c-cta:focus {
+    outline: 0; }
+    .c-cta:focus:after {
+      background-color: #0098CB; }
+  .c-cta:focus, .c-cta:hover {
+    box-shadow: none; }
+    .c-cta:focus:before, .c-cta:hover:before {
+      transform: translateX(0); }
+  .c-cta:disabled, .c-cta[disabled] {
+    background: #dde3e8 !important;
+    border-color: #dde3e8 !important;
+    color: #121212 !important;
+    cursor: default !important;
+    box-shadow: none; }
+    .c-cta:disabled:before, .c-cta[disabled]:before {
+      content: none; }
+    .c-cta:disabled:hover, .c-cta[disabled]:hover {
+      background: #dde3e8 !important;
+      border-color: #dde3e8 !important;
+      color: #121212 !important;
+      cursor: default !important; }
+
+.c-cta__text {
+  display: inline; }
+
+.c-cta__text-mobile {
+  display: none; }
+
+@media only screen and (max-width: 575.98px) {
+  .c-cta__text-mobile {
+    display: inline; }
+    .c-cta__text-mobile + .c-cta__text {
+      display: none; } }
+
+/* ---------------------------------------------------
+Context: primary
+--------------------------------------------------- */
+.c-cta--primary {
+  color: #121212;
+  text-decoration: none;
+  font-weight: 600; }
+  .c-cta--primary:hover {
+    color: #121212; }
+  .c-cta--primary:focus {
+    color: #121212; }
+
+/* ---------------------------------------------------
+Context: secondary
+--------------------------------------------------- */
+.c-cta--secondary {
+  color: #121212;
+  text-decoration: none;
+  font-weight: 600;
+  background-color: transparent;
+  box-shadow: 0 0 3px 1px rgba(18, 18, 18, 0.25); }
+  .c-cta--secondary:hover {
+    color: #fff; }
+  .c-cta--secondary:focus {
+    color: #fff; }
+  .c-cta--secondary:before {
+    background-color: #003245; }
+  .c-cta--secondary:focus:after {
+    background-color: #004862; }
+
+/* ---------------------------------------------------
+Context: hero
+--------------------------------------------------- */
+.c-cta--hero {
+  color: #121212;
+  text-decoration: none;
+  font-weight: 600; }
+  .c-cta--hero:hover {
+    color: #121212; }
+  .c-cta--hero:focus {
+    color: #121212; }
+
+/* ---------------------------------------------------
+Context: hero
+--------------------------------------------------- */
+.c-cta--link {
+  display: inline-flex;
+  align-items: center;
+  border: 0;
+  border-radius: 0;
+  background: none;
+  padding: 0;
+  text-decoration: none;
+  font-weight: 400; }
+  .c-cta--link:hover .ic {
+    margin-left: 12px; }
+  .c-cta--link:before {
+    content: none; }
+  .c-cta--link .ic {
+    font-size: 1.5rem;
+    margin-left: 3px;
+    transition: all .2s linear; }
+
+/* ---------------------------------------------------
+Context: color schemes
+--------------------------------------------------- */
+.cs-light .c-cta, .cs-light.c-cta {
+  color: #121212;
+  background-color: #00B4F0;
+  border-color: #00B4F0; }
+  .cs-light .c-cta:hover, .cs-light.c-cta:hover {
+    color: #121212; }
+  .cs-light .c-cta:focus, .cs-light.c-cta:focus {
+    color: #121212; }
+  .cs-light .c-cta:hover, .cs-light.c-cta:hover {
+    background-color: #00A6DD; }
+  .cs-light .c-cta:focus, .cs-light.c-cta:focus {
+    background-color: #0098CB; }
+  .cs-light .c-cta:hover, .cs-light.c-cta:hover {
+    border-color: #00A6DD; }
+  .cs-light .c-cta:focus, .cs-light.c-cta:focus {
+    border-color: #0098CB; }
+
+.cs-light .c-cta--primary, .cs-light.c-cta--primary {
+  color: #121212;
+  background-color: #00B4F0;
+  border-color: #00B4F0; }
+  .cs-light .c-cta--primary:hover, .cs-light.c-cta--primary:hover {
+    color: #121212; }
+  .cs-light .c-cta--primary:focus, .cs-light.c-cta--primary:focus {
+    color: #121212; }
+  .cs-light .c-cta--primary:hover, .cs-light.c-cta--primary:hover {
+    background-color: #00A6DD; }
+  .cs-light .c-cta--primary:focus, .cs-light.c-cta--primary:focus {
+    background-color: #0098CB; }
+  .cs-light .c-cta--primary:hover, .cs-light.c-cta--primary:hover {
+    border-color: #00A6DD; }
+  .cs-light .c-cta--primary:focus, .cs-light.c-cta--primary:focus {
+    border-color: #0098CB; }
+
+.cs-light .c-cta--secondary, .cs-light.c-cta--secondary {
+  color: #121212;
+  background-color: transparent;
+  border-color: transparent; }
+  .cs-light .c-cta--secondary:hover, .cs-light.c-cta--secondary:hover {
+    color: #fff; }
+  .cs-light .c-cta--secondary:focus, .cs-light.c-cta--secondary:focus {
+    color: #fff; }
+  .cs-light .c-cta--secondary:hover, .cs-light.c-cta--secondary:hover {
+    background-color: #003245; }
+  .cs-light .c-cta--secondary:focus, .cs-light.c-cta--secondary:focus {
+    background-color: #004862; }
+  .cs-light .c-cta--secondary:hover, .cs-light.c-cta--secondary:hover {
+    border-color: #003245; }
+  .cs-light .c-cta--secondary:focus, .cs-light.c-cta--secondary:focus {
+    border-color: #004862; }

@@ -1,0 +1,262 @@
+/* ===================================================
+CAROUSEL IMPORTS
+=================================================== */
+/* ===================================================
+COMPONENT BASICS
+=================================================== */
+/* ===================================================
+REM-CALC
+=================================================== */
+/* ===================================================
+COLOR DEFINITIONS
+=================================================== */
+/* ===================================================
+FONT SETTINGS
+=================================================== */
+/* define font cuts: sans-serif */
+/* define font cuts: sans-serif */
+/* ===================================================
+BASIC SETTINGS
+=================================================== */
+/* ===================================================
+TYPE SETTINGS
+=================================================== */
+/* ===================================================
+LINK SETTINGS
+=================================================== */
+/* ===================================================
+CTA SETTINGS
+=================================================== */
+/* ------------------------------------------------- */
+/* ------------------------------------------------- */
+/* ------------------------------------------------- */
+/* ------------------------------------------------- */
+/* ===================================================
+BACKGROUND
+=================================================== */
+/* ===================================================
+COLOR SETTINGS
+=================================================== */
+/* ================================================ */
+/* ================================================ */
+/* ================================================ */
+/* ================================================ */
+/* ================================================ */
+/* ================================================ */
+/* ================================================ */
+/* ================================================ */
+/* ================================================ */
+/* ================================================ */
+/* ================================================ */
+/* ================================================ */
+/* ================================================ */
+/* ================================================ */
+/* ===================================================
+COMPONENT ACCORDION
+=================================================== */
+/* ===================================================
+COMPONENT BURGER
+=================================================== */
+/* ===================================================
+COMPONENT HEADER
+=================================================== */
+/* ===================================================
+COMPONENT NAV
+=================================================== */
+/* ===================================================
+COMPONENT COPY
+=================================================== */
+/* ===================================================
+COMPONENT UPLOAD
+=================================================== */
+/* ===================================================
+COMPONENT MESSAGE
+=================================================== */
+/* ===================================================
+COMPONENT HERO
+=================================================== */
+/* ===================================================
+COMPONENT QUOTE
+=================================================== */
+/* ================================================ */
+/* ===================================================
+BREAKPOINTS
+=================================================== */
+/* ================================================ */
+/* ===================================================
+SPACING
+=================================================== */
+/* ================================================ */
+/* ================================================ */
+/* ================================================ */
+/* ================================================ */
+/* ================================================ */
+/* ================================================ */
+/* ================================================ */
+/* ================================================ */
+/* ===================================================
+LINKS
+=================================================== */
+/* ================================================ */
+/* ===================================================
+TYPOGRAPHY SIZE
+=================================================== */
+/* ================================================ */
+/* ================================================ */
+/* ===================================================
+CHECKBOX COMPONENT
+=================================================== */
+/* ---------------------------------------------------
+Global Styles
+--------------------------------------------------- */
+.c-checkbox {
+  display: inline-block;
+  position: relative;
+  width: 24px;
+  height: 24px;
+  z-index: 1; }
+
+.c-checkbox__native {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  opacity: 0;
+  cursor: pointer;
+  z-index: 4; }
+  .c-checkbox__native:checked + .c-checkbox__background {
+    background: #00693C; }
+    .c-checkbox__native:checked + .c-checkbox__background::before {
+      position: absolute;
+      display: block;
+      left: 4px;
+      top: 4px;
+      width: 7px;
+      height: 12px;
+      border-width: 0 2px 2px 0;
+      content: url("data:image/svg+xml; utf8, <svg width='14' height='12' viewBox='0 0 14 12' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M0.75 6.603L4.211 10.506L12.864 0.75' stroke='%23fff' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/></svg> ");
+      z-index: 3; }
+
+.c-checkbox__background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  box-sizing: border-box;
+  width: 24px;
+  height: 24px;
+  border: 1px solid #00693C;
+  border-radius: 1px;
+  content: "";
+  z-index: 2; }
+
+.c-checkbox__wrapper {
+  display: flex;
+  align-items: center;
+  margin-bottom: .5rem; }
+  .c-checkbox__wrapper.is-inline {
+    display: inline-flex;
+    margin: 0 .5rem .5rem 0; }
+
+/* ---------------------------------------------------
+Context:Type Radio
+--------------------------------------------------- */
+.c-checkbox--radio .c-checkbox__native:checked + .c-checkbox__background {
+  background: #fff; }
+  .c-checkbox--radio .c-checkbox__native:checked + .c-checkbox__background::before {
+    top: 4px;
+    left: 4px;
+    width: 14px;
+    height: 14px;
+    border: 0;
+    background: #00693C;
+    border-radius: 50%;
+    content: ""; }
+
+.c-checkbox--radio .c-checkbox__background {
+  border-radius: 50%; }
+
+/* ---------------------------------------------------
+Context: Toggle Slider
+--------------------------------------------------- */
+.c-checkbox--toggle-slider {
+  display: inline-block;
+  height: 32px;
+  position: relative;
+  width: 72px;
+  cursor: pointer; }
+  .c-checkbox--toggle-slider input {
+    width: 100%;
+    height: 100%; }
+  .c-checkbox--toggle-slider .c-checkbox__background {
+    background-color: #ccc;
+    bottom: 0;
+    width: auto;
+    height: auto;
+    border: 1px solid #121212;
+    cursor: pointer;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transition: .4s;
+    border-radius: 34px; }
+  .c-checkbox--toggle-slider .c-checkbox__background:before {
+    position: absolute;
+    z-index: 3;
+    content: '';
+    border: 0;
+    background-color: #121212;
+    bottom: 3px;
+    left: 3px;
+    top: 3px;
+    transition: .4s;
+    border-radius: 50%;
+    height: 24px;
+    width: 24px; }
+  .c-checkbox--toggle-slider input:checked + .c-checkbox__background {
+    background-color: #00693C;
+    border: 1px solid #00693C; }
+  .c-checkbox--toggle-slider input:checked + .c-checkbox__background:before {
+    transform: translateX(40px);
+    bottom: 3px;
+    left: 3px;
+    top: 3px;
+    background-color: #fff;
+    transition: .4s;
+    border-radius: 50%;
+    height: 24px;
+    width: 24px;
+    content: ""; }
+
+/* ---------------------------------------------------
+Context: color schemes
+--------------------------------------------------- */
+.cs-light .c-checkbox .c-checkbox__background, .cs-light.c-checkbox .c-checkbox__background {
+  border: 2px solid rgba(255, 255, 255, 0.5); }
+
+.cs-light .c-checkbox .c-checkbox__native:checked + .c-checkbox__background, .cs-light.c-checkbox .c-checkbox__native:checked + .c-checkbox__background {
+  border: 2px solid rgba(255, 1, 255, 0.01);
+  background-color: rgba(255, 255, 255, 0.5); }
+  .cs-light .c-checkbox .c-checkbox__native:checked + .c-checkbox__background:before, .cs-light.c-checkbox .c-checkbox__native:checked + .c-checkbox__background:before {
+    border: solid #fff;
+    border-width: 0 3px 3px 0;
+    content: ""; }
+
+.cs-light .c-checkbox.c-checkbox--radio .c-checkbox__native:checked + .c-checkbox__background::before, .cs-light.c-checkbox.c-checkbox--radio .c-checkbox__native:checked + .c-checkbox__background::before {
+  border: 4px solid #fff;
+  content: ""; }
+
+.cs-light .c-checkbox.c-checkbox--radio .c-checkbox__background, .cs-light.c-checkbox.c-checkbox--radio .c-checkbox__background {
+  border-radius: 50%; }
+
+.cs-light .c-checkbox.c-checkbox--toggle-slider .c-checkbox__background, .cs-light.c-checkbox.c-checkbox--toggle-slider .c-checkbox__background {
+  border: 0; }
+
+.cs-light .c-checkbox.c-checkbox--toggle-slider .c-checkbox__native:checked + .c-checkbox__background, .cs-light.c-checkbox.c-checkbox--toggle-slider .c-checkbox__native:checked + .c-checkbox__background {
+  background-color: #66bb6a; }
+
+.cs-light .c-checkbox.c-checkbox--toggle-slider .c-checkbox__native:checked + .c-checkbox__background, .cs-light.c-checkbox.c-checkbox--toggle-slider .c-checkbox__native:checked + .c-checkbox__background {
+  border: 0; }

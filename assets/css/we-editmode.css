@@ -1,0 +1,315 @@
+/* ===================================================
+WE-EDITMODE IMPORTS
+=================================================== */
+/* ===================================================
+REM-CALC
+=================================================== */
+/* ===================================================
+COLOR DEFINITIONS
+=================================================== */
+/* ===================================================
+FONT SETTINGS
+=================================================== */
+/* define font cuts: sans-serif */
+/* define font cuts: sans-serif */
+/* ===================================================
+BASIC SETTINGS
+=================================================== */
+/* ===================================================
+TYPE SETTINGS
+=================================================== */
+/* ===================================================
+LINK SETTINGS
+=================================================== */
+/* ===================================================
+CTA SETTINGS
+=================================================== */
+/* ------------------------------------------------- */
+/* ------------------------------------------------- */
+/* ------------------------------------------------- */
+/* ------------------------------------------------- */
+/* ===================================================
+BACKGROUND
+=================================================== */
+/* ===================================================
+COLOR SETTINGS
+=================================================== */
+/* ================================================ */
+/* ================================================ */
+/* ================================================ */
+/* ================================================ */
+/* ================================================ */
+/* ================================================ */
+/* ================================================ */
+/* ================================================ */
+/* ================================================ */
+/* ================================================ */
+/* ================================================ */
+/* ================================================ */
+/* ================================================ */
+/* ================================================ */
+/* ===================================================
+COMPONENT ACCORDION
+=================================================== */
+/* ===================================================
+COMPONENT BURGER
+=================================================== */
+/* ===================================================
+COMPONENT HEADER
+=================================================== */
+/* ===================================================
+COMPONENT NAV
+=================================================== */
+/* ===================================================
+COMPONENT COPY
+=================================================== */
+/* ===================================================
+COMPONENT UPLOAD
+=================================================== */
+/* ===================================================
+COMPONENT MESSAGE
+=================================================== */
+/* ===================================================
+COMPONENT HERO
+=================================================== */
+/* ===================================================
+COMPONENT QUOTE
+=================================================== */
+/* ================================================ */
+/* ===================================================
+BREAKPOINTS
+=================================================== */
+/* ================================================ */
+/* ===================================================
+WE-EDITMODE IMPORT
+=================================================== */
+/* ===================================================
+WEBEDITION BASIC SETTINGS
+=================================================== */
+/* ===================================================
+WEBEDITION ICONFONT SETTINGS
+=================================================== */
+/* ================================================ */
+@font-face {
+  font-family: "we-icons";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/we-icons.woff2") format("woff2"), url("../fonts/we-icons.woff") format("woff"); }
+
+/* ===================================================
+WEBEDITION COLOR SETTINGS
+=================================================== */
+/* ===================================================
+WEBEDITION PANEL SETTINGS
+=================================================== */
+/* ---------------------------------------------------
+Overwriting webEdition Styles
+--------------------------------------------------- */
+.we.we_select select {
+  padding-top: 3px;
+  padding-bottom: 3px; }
+
+input[type="text"].wetextinput {
+  padding-top: 3px;
+  padding-bottom: 3px;
+  line-height: 16px; }
+
+.we-fluid-image {
+  max-width: 100%;
+  height: auto; }
+
+.we-fullwidth .wetextinput {
+  width: 100%; }
+
+.we_img.weEditTable {
+  margin-bottom: 5px; }
+
+.we_input input[type="checkbox"],
+.we_input input[type="radio"] {
+  vertical-align: middle; }
+
+.we-button-prime .weBtn.weIconButton {
+  background-color: #bcdff1; }
+  .we-button-prime .weBtn.weIconButton:hover {
+    background-color: #4675b1; }
+
+.we-button-group .weBtn.weIconButton {
+  background-color: #ebecff; }
+  .we-button-group .weBtn.weIconButton:hover {
+    background-color: #4675b1; }
+
+.we-block-controls > .we_blockControls {
+  margin-left: 20px; }
+
+/* ===================================================
+PANEL WE-COMPONENT
+=================================================== */
+/* ---------------------------------------------------
+Global Styles
+--------------------------------------------------- */
+.we-backend {
+  padding: 10px; }
+
+.we-panel-section {
+  color: #3f4d5a;
+  background-color: #a6b0bb;
+  border: 1px solid #a6b0bb;
+  border-radius: 0;
+  padding: 5px 10px;
+  margin: 0 0 30px 0;
+  text-transform: none; }
+
+.we-panel-section__area {
+  background-color: #e3e9ed;
+  border: 0 none;
+  border-radius: 0;
+  padding: 5px 10px;
+  margin: -5px -10px 15px -10px;
+  text-transform: none; }
+
+.we-panel-head {
+  color: #fff;
+  text-transform: uppercase; }
+
+.we-panel-insert {
+  color: #3f4d5a;
+  background-color: #f8fcff;
+  border: 1px solid #a6b0bb;
+  border-radius: 0;
+  padding: 5px 15px;
+  margin: 0 0 30px 0;
+  text-transform: uppercase; }
+
+.we-panel-module {
+  color: #1b6083;
+  background-color: #e1f1f9;
+  border: 1px solid #bcdff1;
+  border-radius: 5px;
+  padding: 5px 10px 10px 10px;
+  margin: 10px 0 10px 0;
+  text-transform: none; }
+  .we-panel-module hr {
+    border: 0 none;
+    border-bottom: 1px solid #1b6083; }
+
+.we-panel-module__area {
+  background-color: #bcdff1;
+  border: 0 none;
+  border-radius: 0;
+  padding: 5px 10px 10px 10px;
+  margin: -5px -10px 10px -10px;
+  text-transform: none; }
+
+.we-panel-component {
+  color: #1b6083;
+  background-color: #bcdff1;
+  border: 1px solid #bcdff1;
+  border-radius: 5px;
+  padding: 5px;
+  margin: 10px 0 10px 0;
+  text-transform: none; }
+  .we-panel-component hr {
+    border: 0 none;
+    border-bottom: 1px solid #1b6083; }
+
+.we-panel-group {
+  color: #3f4d5a;
+  background-color: #f8fcff;
+  border: 1px solid #a6b0bb;
+  border-radius: 5px;
+  padding: 5px 10px;
+  margin: 0 0 15px 0;
+  text-transform: none; }
+
+.we-panel-insert,
+.we-panel-section,
+.we-panel-section__area,
+.we-panel-module,
+.we-panel-module__area,
+.we-panel-component,
+.we-panel-group {
+  font-size: 0.875rem;
+  line-height: 1.75;
+  font-weight: 500; }
+  .we-panel-insert p,
+  .we-panel-section p,
+  .we-panel-section__area p,
+  .we-panel-module p,
+  .we-panel-module__area p,
+  .we-panel-component p,
+  .we-panel-group p {
+    font-size: 0.875rem;
+    line-height: 1.75;
+    font-weight: 500; }
+  .we-panel-insert .small,
+  .we-panel-insert small,
+  .we-panel-section .small,
+  .we-panel-section small,
+  .we-panel-section__area .small,
+  .we-panel-section__area small,
+  .we-panel-module .small,
+  .we-panel-module small,
+  .we-panel-module__area .small,
+  .we-panel-module__area small,
+  .we-panel-component .small,
+  .we-panel-component small,
+  .we-panel-group .small,
+  .we-panel-group small {
+    font-size: 0.8125rem;
+    line-height: 1.25;
+    font-weight: 400; }
+  .we-panel-insert p,
+  .we-panel-section p,
+  .we-panel-section__area p,
+  .we-panel-module p,
+  .we-panel-module__area p,
+  .we-panel-component p,
+  .we-panel-group p {
+    margin-bottom: 0; }
+
+.we-list {
+  margin: 0;
+  padding-left: 0;
+  list-style: none; }
+  .we-list li {
+    margin-right: 10px;
+    margin-top: 1px;
+    margin-bottom: 2px;
+    display: inline-block; }
+    .we-list li:last-child {
+      margin-right: 0; }
+    .we-list li.we-item--flex {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center; }
+      .we-list li.we-item--flex .we_select {
+        margin-left: 3px; }
+
+.we-list--flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+
+.we-list--topspace {
+  margin-top: 15px !important; }
+
+.we-list--section-hr {
+  margin-top: 10px !important;
+  padding-top: 5px !important;
+  border-top: 1px solid #3f4d5a; }
+
+.we-space {
+  margin-bottom: 15px; }
+
+.we-select-icons {
+  font-family: "we-icons";
+  font-size: 70px;
+  line-height: 1;
+  margin-left: 15px; }
