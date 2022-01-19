@@ -1,3 +1,5 @@
+![Intro Banner](assets/picts/stage-DDS.png)
+
 # Das Design System der Stadtwerke Münster
 
 In diesem Repo sind alle Frontend- und Interface-Komponenten dokumentiert und abgebildet, die benötigt werden um
