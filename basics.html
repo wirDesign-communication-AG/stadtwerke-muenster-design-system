@@ -30,7 +30,6 @@
     <meta name="theme-color" content="#ffffff">
 
     <link rel="stylesheet" href="assets/css/app.bundle.css">
-    <link rel="stylesheet" href="assets/css/we-editmode.css">
     <script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="a2857e8c-8bbc-45fa-baf6-0d0986cb44f6" type="text/javascript" async></script>
     <script>
     let bots = new RegExp('/bot|slurp|crawler|spider|crawling/i');
@@ -1112,19 +1111,8 @@
       </div>
     </footer>
     <script src="assets/js/app.js"></script>
+    <script src="assets/js/side-nav.js"></script>
 
-    <script>
-    let sidebar = document.querySelector(".sidebar");
-    let sidebarTop = sessionStorage.getItem("sidebar-scroll");
-    if (sidebarTop !== null)
-    {
-      sidebar.scrollTop = parseInt(sidebarTop, 10);
-    }
-    window.addEventListener("beforeunload", () =>
-    {
-      sessionStorage.setItem("sidebar-scroll", sidebar.scrollTop);
-    });
-    </script>
   </body>
 
 </html>
