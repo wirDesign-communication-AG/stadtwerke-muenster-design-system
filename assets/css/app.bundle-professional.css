@@ -8393,17 +8393,17 @@ Global Styles
     .c-cta:focus:before, .c-cta:hover:before {
       transform: translateX(0); }
   .c-cta:disabled, .c-cta[disabled] {
-    background: #dde3e8 !important;
-    border-color: #dde3e8 !important;
-    color: #121212 !important;
+    background: #fff !important;
+    border-color: rgba(18, 18, 18, 0.25) !important;
+    color: rgba(18, 18, 18, 0.25) !important;
     cursor: default !important;
-    box-shadow: none; }
+    box-shadow: 0 0 3px 1px rgba(18, 18, 18, 0.25); }
     .c-cta:disabled:before, .c-cta[disabled]:before {
       content: none; }
     .c-cta:disabled:hover, .c-cta[disabled]:hover {
-      background: #dde3e8 !important;
-      border-color: #dde3e8 !important;
-      color: #121212 !important;
+      background: #fff !important;
+      border-color: rgba(18, 18, 18, 0.25) !important;
+      color: rgba(18, 18, 18, 0.25) !important;
       cursor: default !important; }
 
 .c-cta__text {
@@ -9843,195 +9843,5 @@ Context: YouTube
 /* ===================================================
 COMPONENTS MODULES
 =================================================== */
-/* ===================================================
-Footer COMPONENT
-=================================================== */
-/* ---------------------------------------------------
-Global Styles
---------------------------------------------------- */
-.c-footer {
-  position: relative; }
-
-.c-footer__headline * {
-  color: #fff; }
-
-.c-footer__main {
-  background: #121212; }
-
-.c-footer__bottom {
-  padding: 1rem 0; }
-
-.c-footer__logo-wrapper {
-  max-width: 240px; }
-
-.c-footer__meta-nav-wrapper {
-  margin-top: .5rem; }
-  @media only screen and (min-width: 768px) {
-    .c-footer__meta-nav-wrapper {
-      margin-top: 0; } }
-
-.c-footer__copyright-wrapper * {
-  margin-bottom: 0; }
-
-/* ===================================================
-HEADER-BAR COMPONENT
-=================================================== */
-@keyframes fade {
-  0% {
-    opacity: 0; }
-  100% {
-    opacity: 1; } }
-
-/* ---------------------------------------------------
-Global Styles
---------------------------------------------------- */
-.c-header {
-  position: relative;
-  width: 100%;
-  min-height: 80px;
-  background-color: #121212;
-  transition: all .2s ease-in-out;
-  z-index: 99; }
-  .c-header.is-sticky.is-active {
-    position: fixed;
-    top: 0;
-    z-index: 99;
-    opacity: 1;
-    min-height: 80px;
-    animation: fade .2s; }
-    .c-header.is-sticky.is-active + .c-header__sticky-spacing {
-      padding-top: 80px; }
-
-.c-header__wrapper {
-  display: flex;
-  align-items: center;
-  width: 100%;
-  min-height: 80px;
-  padding: 1rem 0; }
-
-.c-header__logo-wrapper {
-  width: 200px;
-  z-index: 10; }
-
-.c-header__button-wrapper {
-  margin-left: auto;
-  z-index: 10; }
-  @media only screen and (min-width: 992px) {
-    .c-header__button-wrapper {
-      display: none; } }
-
-@media only screen and (min-width: 992px) {
-  .c-header__nav-wrapper {
-    margin-left: auto; } }
-
-/* ===================================================
-NAV COMPONENT
-=================================================== */
-/* ---------------------------------------------------
-Global Styles
---------------------------------------------------- */
-.c-nav {
-  position: relative; }
-
-.c-nav__list {
-  padding: 0;
-  width: 100%; }
-
-@media only screen and (min-width: 992px) {
-  .c-nav__list-item {
-    display: inline-block; } }
-
-.c-nav__list-item a {
-  color: #00B4F0;
-  text-decoration: none;
-  font-weight: 400;
-  display: block; }
-  .c-nav__list-item a:hover {
-    color: #007ba4; }
-  .c-nav__list-item a:focus {
-    color: #00B4F0; }
-  .c-nav__list-item a i {
-    pointer-events: none; }
-
-/* ---------------------------------------------------
-Context: main
---------------------------------------------------- */
-.c-nav--main {
-  width: 100%; }
-  @media only screen and (max-width: 991.98px) {
-    .c-nav--main {
-      position: fixed;
-      height: 100vh;
-      top: 0;
-      left: 100%;
-      background: #121212;
-      padding-top: 80px;
-      overflow: hidden;
-      transform: translateZ(0);
-      transition: transform 0.6s cubic-bezier(0, 0.46, 0.32, 0.97); }
-      .c-nav--main.is-open {
-        transform: translate3d(-100%, 0, 0);
-        overflow-y: scroll; } }
-  .c-nav--main .c-nav__list {
-    padding: 0 1rem; }
-    @media only screen and (min-width: 992px) {
-      .c-nav--main .c-nav__list {
-        padding: 0; } }
-  .c-nav--main .c-nav__list-item {
-    list-style: none; }
-    @media only screen and (min-width: 992px) {
-      .c-nav--main .c-nav__list-item {
-        border-bottom: 0; } }
-    .c-nav--main .c-nav__list-item a {
-      font-size: 1rem;
-      line-height: 1;
-      padding: 0;
-      margin: 1.5rem 1rem; }
-      @media only screen and (min-width: 992px) {
-        .c-nav--main .c-nav__list-item a {
-          margin: 0 0 0 1.5rem; } }
-
-/* ---------------------------------------------------
-Context: meta
---------------------------------------------------- */
-.c-nav--meta .c-nav__list-item {
-  display: inline-block;
-  list-style: none;
-  margin-left: 1rem; }
-  .c-nav--meta .c-nav__list-item:first-child {
-    margin-left: 0; }
-  .c-nav--meta .c-nav__list-item a {
-    font-size: 1rem;
-    line-height: 1;
-    padding: 0; }
-
-/* ---------------------------------------------------
-Context: list
---------------------------------------------------- */
-.c-nav--list .c-nav__list-item {
-  display: block;
-  padding: 5px 0;
-  margin-bottom: .5rem; }
-  .c-nav--list .c-nav__list-item a {
-    font-size: 1rem;
-    line-height: 1;
-    padding: 0;
-    width: auto;
-    display: inline-block; }
-
-/* ---------------------------------------------------
-Context: color schemes
---------------------------------------------------- */
-.cs-light.c-nav a,
-.cs-light .c-nav a {
-  color: #fff;
-  text-decoration: none;
-  font-weight: 400; }
-  .cs-light.c-nav a:hover,
-  .cs-light .c-nav a:hover {
-    color: #d9d9d9; }
-  .cs-light.c-nav a:focus,
-  .cs-light .c-nav a:focus {
-    color: #fff; }
 
 /*# sourceMappingURL=app.bundle-professional.css.map */

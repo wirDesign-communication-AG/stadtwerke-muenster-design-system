@@ -154,17 +154,17 @@ Global Styles
     .c-cta:focus:before, .c-cta:hover:before {
       transform: translateX(0); }
   .c-cta:disabled, .c-cta[disabled] {
-    background: #dde3e8 !important;
-    border-color: #dde3e8 !important;
-    color: #121212 !important;
+    background: #fff !important;
+    border-color: rgba(18, 18, 18, 0.25) !important;
+    color: rgba(18, 18, 18, 0.25) !important;
     cursor: default !important;
-    box-shadow: none; }
+    box-shadow: 0 0 3px 1px rgba(18, 18, 18, 0.25); }
     .c-cta:disabled:before, .c-cta[disabled]:before {
       content: none; }
     .c-cta:disabled:hover, .c-cta[disabled]:hover {
-      background: #dde3e8 !important;
-      border-color: #dde3e8 !important;
-      color: #121212 !important;
+      background: #fff !important;
+      border-color: rgba(18, 18, 18, 0.25) !important;
+      color: rgba(18, 18, 18, 0.25) !important;
       cursor: default !important; }
 
 .c-cta__text {
