@@ -112,7 +112,12 @@ Global Styles
 .c-card {
   position: relative;
   width: 100%;
-  border: 1px solid #E0E0E0; }
+  display: block;
+  text-decoration: none;
+  box-shadow: 0 0 12px 1px rgba(18, 18, 18, 0.25);
+  transition: all .2s ease-in-out; }
+  .c-card:hover {
+    box-shadow: 0 0 16px 1px rgba(18, 18, 18, 0.35); }
 
 .c-card__picture-wrapper + .c-card__text-wrapper {
   padding-top: 2.5rem; }
@@ -145,23 +150,12 @@ Global Styles
   height: 100%; }
 
 /* ---------------------------------------------------
-Context: hover modifier
+Context: green
 --------------------------------------------------- */
-.c-card--hover {
-  transition: all 0.2s linear; }
-  .c-card--hover:hover {
-    cursor: pointer;
-    transform: translateY(-4px);
-    box-shadow: 0 4px 25px 0 rgba(18, 18, 18, 0.25), 0 0 1px 0 rgba(18, 18, 18, 0.25); }
-
-/* ---------------------------------------------------
-Context: absolute position modifier
---------------------------------------------------- */
-.c-card--absolute .c-card__cta-wrapper {
-  position: absolute;
-  bottom: 2rem;
-  right: 2rem;
-  padding: 0; }
+.c-card--green {
+  background: #00693C; }
+  .c-card--green * {
+    color: #fff; }
 
 /* ---------------------------------------------------
 Context: icon as SVG

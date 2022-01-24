@@ -144,15 +144,15 @@ Global Styles
     .c-text p:last-child,
     .c-text ul:last-child {
       margin-bottom: 0; }
-  .c-text a {
+  .c-text a:not(.c-cta) {
     color: #006A3A;
     border-bottom: 1px solid #006A3A;
     text-decoration: none;
     font-weight: 400; }
-    .c-text a:hover {
+    .c-text a:not(.c-cta):hover {
       color: #00b764;
       border-bottom: 1px solid #00b764; }
-    .c-text a:focus {
+    .c-text a:not(.c-cta):focus {
       color: #006A3A;
       border-bottom: 1px solid #006A3A; }
   .c-text code {

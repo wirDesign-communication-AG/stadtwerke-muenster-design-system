@@ -8477,7 +8477,7 @@ Context: hero
   background: none;
   padding: 0;
   text-decoration: none;
-  font-weight: 400; }
+  font-weight: 900; }
   .c-cta--link:hover .ic {
     margin-left: 12px; }
   .c-cta--link:before {
@@ -8485,7 +8485,8 @@ Context: hero
   .c-cta--link .ic {
     font-size: 1.5rem;
     margin-left: 3px;
-    transition: all .2s linear; }
+    transition: all .2s linear;
+    font-weight: 900; }
 
 /* ---------------------------------------------------
 Context: color schemes
@@ -9603,15 +9604,15 @@ Global Styles
     .c-text p:last-child,
     .c-text ul:last-child {
       margin-bottom: 0; }
-  .c-text a {
+  .c-text a:not(.c-cta) {
     color: #006A3A;
     border-bottom: 1px solid #006A3A;
     text-decoration: none;
     font-weight: 400; }
-    .c-text a:hover {
+    .c-text a:not(.c-cta):hover {
       color: #00b764;
       border-bottom: 1px solid #00b764; }
-    .c-text a:focus {
+    .c-text a:not(.c-cta):focus {
       color: #006A3A;
       border-bottom: 1px solid #006A3A; }
   .c-text code {
@@ -9849,3 +9850,75 @@ Context: YouTube
 /* ===================================================
 COMPONENTS MODULES
 =================================================== */
+/* ===================================================
+CARD COMPONENT
+=================================================== */
+/* ---------------------------------------------------
+Global Styles
+--------------------------------------------------- */
+.c-card {
+  position: relative;
+  width: 100%;
+  display: block;
+  text-decoration: none;
+  box-shadow: 0 0 12px 1px rgba(18, 18, 18, 0.25);
+  transition: all .2s ease-in-out; }
+  .c-card:hover {
+    box-shadow: 0 0 16px 1px rgba(18, 18, 18, 0.35); }
+
+.c-card__picture-wrapper + .c-card__text-wrapper {
+  padding-top: 2.5rem; }
+
+.c-card__icon-wrapper {
+  padding: 2rem 2rem;
+  font-size: 5rem; }
+  .c-card__icon-wrapper + .c-card__text-wrapper {
+    padding-top: 0; }
+  .c-card__icon-wrapper + .c-card__cta-wrapper {
+    padding: 0 2rem 2rem; }
+
+.c-card__text-wrapper {
+  padding: 2rem 2rem; }
+  .c-card__text-wrapper + .c-card__cta-wrapper {
+    padding: 0 2rem 2rem; }
+
+.c-card__cta-wrapper {
+  padding: 1rem 2rem 1rem; }
+  .c-card__cta-wrapper .c-cta {
+    z-index: 99; }
+
+.c-card__link {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%; }
+
+/* ---------------------------------------------------
+Context: green
+--------------------------------------------------- */
+.c-card--green {
+  background: #00693C; }
+  .c-card--green * {
+    color: #fff; }
+
+/* ---------------------------------------------------
+Context: icon as SVG
+--------------------------------------------------- */
+.c-card--svg-icon .c-card__picture-wrapper {
+  padding: 2rem 2rem; }
+  .c-card--svg-icon .c-card__picture-wrapper + .c-card__text-wrapper {
+    padding-top: 0; }
+  .c-card--svg-icon .c-card__picture-wrapper + .c-card__cta-wrapper {
+    padding: 0 2rem 2rem; }
+  .c-card--svg-icon .c-card__picture-wrapper img {
+    width: 5rem; }
+
+/* ---------------------------------------------------
+Context: color schemes
+--------------------------------------------------- */
+.cs-light-wrapper .c-card--hover:hover, .cs-light-wrapper.c-card--hover:hover {
+  cursor: pointer;
+  box-shadow: 0 4px 25px 0 rgba(255, 255, 255, 0.35), 0 0 1px 0 rgba(255, 255, 255, 0.35); }

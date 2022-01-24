@@ -232,7 +232,7 @@ Context: hero
   background: none;
   padding: 0;
   text-decoration: none;
-  font-weight: 400; }
+  font-weight: 900; }
   .c-cta--link:hover .ic {
     margin-left: 12px; }
   .c-cta--link:before {
@@ -240,7 +240,8 @@ Context: hero
   .c-cta--link .ic {
     font-size: 1.5rem;
     margin-left: 3px;
-    transition: all .2s linear; }
+    transition: all .2s linear;
+    font-weight: 900; }
 
 /* ---------------------------------------------------
 Context: color schemes

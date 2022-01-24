@@ -125,7 +125,7 @@ Global Styles
   transform: translateZ(0);
   font-size: 1rem;
   line-height: 1;
-  color: #121212;
+  color: #fff;
   text-decoration: none;
   font-weight: 600; }
   .c-cta:before {
@@ -142,9 +142,9 @@ Global Styles
     transform: translateX(-102%) translateZ(0);
     transition-timing-function: ease-out; }
   .c-cta:hover {
-    color: #121212; }
+    color: #fff; }
   .c-cta:focus {
-    color: #121212; }
+    color: #fff; }
   .c-cta:focus {
     outline: 0; }
     .c-cta:focus:after {
@@ -183,13 +183,13 @@ Global Styles
 Context: primary
 --------------------------------------------------- */
 .c-cta--primary {
-  color: #121212;
+  color: #fff;
   text-decoration: none;
   font-weight: 600; }
   .c-cta--primary:hover {
-    color: #121212; }
+    color: #fff; }
   .c-cta--primary:focus {
-    color: #121212; }
+    color: #fff; }
 
 /* ---------------------------------------------------
 Context: secondary
@@ -232,7 +232,7 @@ Context: hero
   background: none;
   padding: 0;
   text-decoration: none;
-  font-weight: 400; }
+  font-weight: 900; }
   .c-cta--link:hover .ic {
     margin-left: 12px; }
   .c-cta--link:before {
@@ -240,7 +240,8 @@ Context: hero
   .c-cta--link .ic {
     font-size: 1.5rem;
     margin-left: 3px;
-    transition: all .2s linear; }
+    transition: all .2s linear;
+    font-weight: 900; }
 
 /* ---------------------------------------------------
 Context: color schemes
