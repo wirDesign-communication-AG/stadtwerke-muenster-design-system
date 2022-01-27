@@ -145,44 +145,44 @@
     </code></pre>
             </div>
           </div>
+        </div>
+      </div>
+
+      <div class="c-section p-2">
+
+        <div class="g-container">
           <div class="g-row">
-            <div class="g-col-12 g-col-tp-6 mt-1">
+            <div class="g-col-12 g-col-tp-6">
               <div class="c-text">
-                <h2>Video with custom Play-Button</h2>
+                <h2>YouTube</h2>
               </div>
 
-              <div class="c-video" id="example-custom" data-json="{&quot;PLAY&quot;:&quot;play-circle&quot;,&quot;BREAK&quot;:&quot;pause-circle&quot;}">
-                <video class="c-video__native" tabindex="0" poster="assets/picts/video-poster.jpg">
-
-                  <source src="assets/media/video.mp4" type="video/mp4">
-
-                </video>
-                <button class="c-video__btn-play" data-toggle="video" data-target="#example-custom">
-                  <i class="ic ic__play-circle"></i>
-                </button>
+              <div class="c-video c-video--iframe">
+                <iframe class="c-video__iframe-native" data-cookieconsent="marketing" data-src="https://www.youtube-nocookie.com/embed/CJ7unroA4PQ" src="https://www.youtube-nocookie.com/embed/CJ7unroA4PQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                </iframe>
+                <div class="cookieconsent-optout-marketing">
+                  <div class="c-message is-info">
+                    <div class="c-text">
+                      Bitte
+                      <a href="javascript: Cookiebot.renew()">akzeptieren</a> Sie die Marketing-Cookies, um diesen Inhalt anzuzeigen.
+                    </div>
+                  </div>
+                </div>
               </div>
-
-              <p class="headline-lined">Source</p>
-              <pre><code class="hljs html">
-    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-video&quot;</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;example-custom&quot;</span> <span class="hljs-attr">data-json</span>=<span class="hljs-string">&quot;{<span class="hljs-symbol">&amp;quot;</span>PLAY<span class="hljs-symbol">&amp;quot;</span>:<span class="hljs-symbol">&amp;quot;</span>play-circle<span class="hljs-symbol">&amp;quot;</span>,<span class="hljs-symbol">&amp;quot;</span>BREAK<span class="hljs-symbol">&amp;quot;</span>:<span class="hljs-symbol">&amp;quot;</span>pause-circle<span class="hljs-symbol">&amp;quot;</span>}&quot;</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">video</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-video__native&quot;</span> <span class="hljs-attr">tabindex</span>=<span class="hljs-string">&quot;0&quot;</span> <span class="hljs-attr">poster</span>=<span class="hljs-string">&quot;assets/picts/video-poster.jpg&quot;</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-name">source</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;assets/media/video.mp4&quot;</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;video/mp4&quot;</span>&gt;</span>
-        <span class="hljs-tag">&lt;/<span class="hljs-name">video</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-video__btn-play&quot;</span> <span class="hljs-attr">data-toggle</span>=<span class="hljs-string">&quot;video&quot;</span> <span class="hljs-attr">data-target</span>=<span class="hljs-string">&quot;#example-custom&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;ic ic__play-circle&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
-    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-    </code></pre>
             </div>
-            <div class="g-col-12 g-col-tp-6 mt-1">
-              <div class="c-text">
-                <h2>Video Responsive</h2>
-              </div>
-
-              <div class="c-video">
-              </div>
-
+            <div class="g-col-12 mt-1">
               <p class="headline-lined">Source</p>
               <pre><code class="hljs html">
-    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-video&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-video c-video--iframe&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">iframe</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-video__iframe-native&quot;</span> <span class="hljs-attr">data-cookieconsent</span>=<span class="hljs-string">&quot;marketing&quot;</span> <span class="hljs-attr">data-src</span>=<span class="hljs-string">&quot;https://www.youtube-nocookie.com/embed/CJ7unroA4PQ&quot;</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;https://www.youtube-nocookie.com/embed/CJ7unroA4PQ&quot;</span> <span class="hljs-attr">title</span>=<span class="hljs-string">&quot;YouTube video player&quot;</span> <span class="hljs-attr">frameborder</span>=<span class="hljs-string">&quot;0&quot;</span> <span class="hljs-attr">allow</span>=<span class="hljs-string">&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&quot;</span> <span class="hljs-attr">allowfullscreen</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">iframe</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;cookieconsent-optout-marketing&quot;</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-message is-info&quot;</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-text&quot;</span>&gt;</span>
+                    Bitte <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;javascript: Cookiebot.renew()&quot;</span>&gt;</span>akzeptieren<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span> Sie die Marketing-Cookies, um diesen Inhalt anzuzeigen.
+                <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
     <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
     </code></pre>
             </div>
@@ -196,14 +196,14 @@
           <div class="g-row">
             <div class="g-col-12 g-col-tp-6">
               <div class="c-text">
-                <h2>YouTube</h2>
+                <h2>Vimeo</h2>
               </div>
 
-              <div class="c-video c-video--youtube">
-                <iframe class="c-video__youtube-native" data-cookieconsent="marketing" data-src="https://www.youtube-nocookie.com/embed/CJ7unroA4PQ" src="https://www.youtube-nocookie.com/embed/CJ7unroA4PQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+              <div class="c-video c-video--iframe">
+                <iframe class="c-video__iframe-native" data-cookieconsent="marketing" data-src="https://player.vimeo.com/video/115485135" src="https://player.vimeo.com/video/115485135?h=d4bd788fbb&title=0&byline=0&portrait=0&dnt=1" title="Vimeo video player" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen>
                 </iframe>
                 <div class="cookieconsent-optout-marketing">
-                  <div class="c-message">
+                  <div class="c-message is-info">
                     <div class="c-text">
                       Bitte
                       <a href="javascript: Cookiebot.renew()">akzeptieren</a> Sie die Marketing-Cookies, um diesen Inhalt anzuzeigen.
@@ -215,11 +215,11 @@
             <div class="g-col-12 mt-1">
               <p class="headline-lined">Source</p>
               <pre><code class="hljs html">
-    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-video c-video--youtube&quot;</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">iframe</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-video__youtube-native&quot;</span> <span class="hljs-attr">data-cookieconsent</span>=<span class="hljs-string">&quot;marketing&quot;</span> <span class="hljs-attr">data-src</span>=<span class="hljs-string">&quot;https://www.youtube-nocookie.com/embed/CJ7unroA4PQ&quot;</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;https://www.youtube-nocookie.com/embed/CJ7unroA4PQ&quot;</span> <span class="hljs-attr">title</span>=<span class="hljs-string">&quot;YouTube video player&quot;</span> <span class="hljs-attr">frameborder</span>=<span class="hljs-string">&quot;0&quot;</span> <span class="hljs-attr">allow</span>=<span class="hljs-string">&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&quot;</span> <span class="hljs-attr">allowfullscreen</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-video c-video--iframe&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">iframe</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-video__iframe-native&quot;</span> <span class="hljs-attr">data-cookieconsent</span>=<span class="hljs-string">&quot;marketing&quot;</span> <span class="hljs-attr">data-src</span>=<span class="hljs-string">&quot;https://player.vimeo.com/video/115485135&quot;</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;https://player.vimeo.com/video/115485135?h=d4bd788fbb&amp;title=0&amp;byline=0&amp;portrait=0&amp;dnt=1&quot;</span> <span class="hljs-attr">title</span>=<span class="hljs-string">&quot;Vimeo video player&quot;</span> <span class="hljs-attr">frameborder</span>=<span class="hljs-string">&quot;0&quot;</span> <span class="hljs-attr">allow</span>=<span class="hljs-string">&quot;autoplay; fullscreen; picture-in-picture&quot;</span> <span class="hljs-attr">allowfullscreen</span>&gt;</span>
         <span class="hljs-tag">&lt;/<span class="hljs-name">iframe</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;cookieconsent-optout-marketing&quot;</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-message&quot;</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-message is-info&quot;</span>&gt;</span>
                 <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-text&quot;</span>&gt;</span>
                     Bitte <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;javascript: Cookiebot.renew()&quot;</span>&gt;</span>akzeptieren<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span> Sie die Marketing-Cookies, um diesen Inhalt anzuzeigen.
                 <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
@@ -263,6 +263,12 @@
                   <li>
                     <a class="" href="index.html" title="Overview">
                       Overview
+                    </a>
+
+                  </li>
+                  <li>
+                    <a class="" href="getting-started.html" title="Getting Started">
+                      Getting Started
                     </a>
 
                   </li>

@@ -81,7 +81,25 @@
             <div class="g-col-12 g-col-tp-8">
               <div class="c-text c-markdown">
                 <h1>Checkbox</h1>
-                <p>Eine Checkbox ist ein ankreuzbares Kontrollfeld. Der Benutzer kann es auswählen oder die Auswahl entfernen.</p>
+                <h2>Hinweise</h2>
+                <h3>Allgemein</h3>
+                <p>Eine Checkbox (Kontrollkästchen) ist eine Komponente, mit der Nutzer:innen den Wert auswählen können, der in dem entsprechenden Label (Textbeschriftung) steht. Eine Checkbox kann einzeln, z.B. um AGBs zu akzeptieren, und in einer Gruppe verwendet werden. Dann können Nutzer:innen mehrere Kontrollkästchen aus einer Gruppe gleichzeitig auswählen.</p>
+                <h3>Verwendung</h3>
+                <p>Diese Komponente sollte nur dann verwendet werden, wenn es eine kleine bis mittlere Anzahl von Optionen gibt und Nutzer:innen eine oder mehrere Optionen auswählen sollen. Wenn sehr viele Optionen möglich sind, empfiehlt es sich die
+                  <a href="dropdown.html" title="Dropdown Komponente">Dropdown Komponente</a> anzuwenden. Gibt es bei mehreren Optionen nur eine Auswahlmöglichkeit bieten sich folgende Komponenten als Alternative an</p>
+                <ul>
+                  <li>
+                    <a href="radio-button.html" title="Radio Button Komponente">Radio Button</a>
+                  </li>
+                  <li>
+                    <a href="toggle-button.html" title="Toggle Button Komponente">Toggle Button</a>
+                  </li>
+                  <li>
+                    <a href="switch.html" title="Switch Komponente">Switch</a>
+                  </li>
+                </ul>
+                <h2>Entwicklung</h2>
+                <p>Default werden die Checkboxen untereinander platziert. Über die Klasse <code>is-inline</code>, können sie aber auch nebeneinander platziert werden.</p>
 
               </div>
             </div>
@@ -125,7 +143,7 @@
                   <input class="c-checkbox__native" id="checkbox2" name="checkbox2" type="checkbox" value="checkbox">
                   <div class="c-checkbox__background"></div>
                 </div>
-                <label class="c-label c-label--checkbox" for="checkbox2">Label text</label>
+                <label class="c-label c-label--checkbox" for="checkbox2">Option 2</label>
               </div>
 
               <div class="c-checkbox__wrapper">
@@ -133,7 +151,7 @@
                   <input class="c-checkbox__native" id="checkbox3" name="checkbox3" type="checkbox" value="checkbox">
                   <div class="c-checkbox__background"></div>
                 </div>
-                <label class="c-label c-label--checkbox" for="checkbox3">Label text</label>
+                <label class="c-label c-label--checkbox" for="checkbox3">Option 3</label>
               </div>
 
               <p class="headline-lined">Source</p>
@@ -150,14 +168,14 @@
             <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-checkbox__native&quot;</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;checkbox2&quot;</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;checkbox2&quot;</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;checkbox&quot;</span> <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;checkbox&quot;</span>&gt;</span>
             <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-checkbox__background&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
         <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-label c-label--checkbox&quot;</span> <span class="hljs-attr">for</span>=<span class="hljs-string">&quot;checkbox2&quot;</span>&gt;</span>Label text<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-label c-label--checkbox&quot;</span> <span class="hljs-attr">for</span>=<span class="hljs-string">&quot;checkbox2&quot;</span>&gt;</span>Option 2<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
     <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-checkbox__wrapper&quot;</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-checkbox&quot;</span>&gt;</span>
             <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-checkbox__native&quot;</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;checkbox3&quot;</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;checkbox3&quot;</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;checkbox&quot;</span> <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;checkbox&quot;</span>&gt;</span>
             <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-checkbox__background&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
         <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-label c-label--checkbox&quot;</span> <span class="hljs-attr">for</span>=<span class="hljs-string">&quot;checkbox3&quot;</span>&gt;</span>Label text<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-label c-label--checkbox&quot;</span> <span class="hljs-attr">for</span>=<span class="hljs-string">&quot;checkbox3&quot;</span>&gt;</span>Option 3<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
     <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
     </code></pre>
             </div>
@@ -183,7 +201,7 @@
                   <input class="c-checkbox__native" id="checkbox2" name="checkbox2" type="checkbox" value="checkbox">
                   <div class="c-checkbox__background"></div>
                 </div>
-                <label class="c-label c-label--checkbox" for="checkbox2">Label text</label>
+                <label class="c-label c-label--checkbox" for="checkbox2">Option 2</label>
               </div>
 
               <div class="c-checkbox__wrapper is-inline">
@@ -191,7 +209,7 @@
                   <input class="c-checkbox__native" id="checkbox3" name="checkbox3" type="checkbox" value="checkbox">
                   <div class="c-checkbox__background"></div>
                 </div>
-                <label class="c-label c-label--checkbox" for="checkbox3">Label text</label>
+                <label class="c-label c-label--checkbox" for="checkbox3">Option 3</label>
               </div>
 
               <p class="headline-lined">Source</p>
@@ -208,14 +226,14 @@
             <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-checkbox__native&quot;</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;checkbox2&quot;</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;checkbox2&quot;</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;checkbox&quot;</span> <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;checkbox&quot;</span>&gt;</span>
             <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-checkbox__background&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
         <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-label c-label--checkbox&quot;</span> <span class="hljs-attr">for</span>=<span class="hljs-string">&quot;checkbox2&quot;</span>&gt;</span>Label text<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-label c-label--checkbox&quot;</span> <span class="hljs-attr">for</span>=<span class="hljs-string">&quot;checkbox2&quot;</span>&gt;</span>Option 2<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
     <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-checkbox__wrapper is-inline&quot;</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-checkbox&quot;</span>&gt;</span>
             <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-checkbox__native&quot;</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;checkbox3&quot;</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;checkbox3&quot;</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;checkbox&quot;</span> <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;checkbox&quot;</span>&gt;</span>
             <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-checkbox__background&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
         <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-label c-label--checkbox&quot;</span> <span class="hljs-attr">for</span>=<span class="hljs-string">&quot;checkbox3&quot;</span>&gt;</span>Label text<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-label c-label--checkbox&quot;</span> <span class="hljs-attr">for</span>=<span class="hljs-string">&quot;checkbox3&quot;</span>&gt;</span>Option 3<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
     <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
     </code></pre>
             </div>
@@ -254,6 +272,12 @@
                   <li>
                     <a class="" href="index.html" title="Overview">
                       Overview
+                    </a>
+
+                  </li>
+                  <li>
+                    <a class="" href="getting-started.html" title="Getting Started">
+                      Getting Started
                     </a>
 
                   </li>

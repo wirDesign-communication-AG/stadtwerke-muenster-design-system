@@ -136,6 +136,18 @@ Global Styles
   @media only screen and (min-width: 1440px) {
     .c-hero__content-container {
       max-width: 1440px; } }
+  @media only screen and (min-width: 0) {
+    .c-hero__content-container {
+      padding-left: 24px;
+      padding-right: 24px; } }
+  @media only screen and (min-width: 768px) {
+    .c-hero__content-container {
+      padding-left: 48px;
+      padding-right: 48px; } }
+  @media only screen and (min-width: 1200px) {
+    .c-hero__content-container {
+      padding-left: 160px;
+      padding-right: 160px; } }
 
 .c-hero__content {
   display: flex;
@@ -239,3 +251,9 @@ Context: smaller stage
 --------------------------------------------------- */
 .c-hero--text-picture {
   align-items: center; }
+
+/* ---------------------------------------------------
+Context: carousel
+--------------------------------------------------- */
+.c-hero--carousel {
+  padding-bottom: 8rem; }

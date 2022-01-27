@@ -292,6 +292,56 @@ Context: arrows centers
   right: -1rem; }
 
 /* ---------------------------------------------------
+Context: hero
+--------------------------------------------------- */
+.c-carousel--hero {
+  margin-bottom: 0; }
+  .c-carousel--hero .c-carousel__track + .c-carousel__arrows {
+    height: auto; }
+  .c-carousel--hero .c-carousel__bullets {
+    position: absolute;
+    bottom: 0;
+    transform: translateX(-50%);
+    height: 3.5rem;
+    align-items: flex-start; }
+  .c-carousel--hero .c-carousel__arrows {
+    display: none; }
+    @media only screen and (min-width: 992px) {
+      .c-carousel--hero .c-carousel__arrows {
+        display: block; } }
+  .c-carousel--hero .c-carousel__arrow--left {
+    bottom: 50%;
+    transform: translate(0, 50%);
+    left: 1rem;
+    color: #fff; }
+    @media only screen and (min-width: 768px) {
+      .c-carousel--hero .c-carousel__arrow--left {
+        left: 1rem; } }
+    @media only screen and (min-width: 1440px) {
+      .c-carousel--hero .c-carousel__arrow--left {
+        left: 3rem; } }
+  .c-carousel--hero .c-carousel__arrow--right {
+    bottom: 50%;
+    transform: translate(0, 50%);
+    right: 1rem;
+    color: #fff; }
+    @media only screen and (min-width: 768px) {
+      .c-carousel--hero .c-carousel__arrow--right {
+        right: 1rem; } }
+    @media only screen and (min-width: 1440px) {
+      .c-carousel--hero .c-carousel__arrow--right {
+        right: 3rem; } }
+  .c-carousel--hero .c-carousel__bullet {
+    background-color: rgba(255, 255, 255, 0.5);
+    border: 2px solid transparent; }
+    .c-carousel--hero .c-carousel__bullet:hover {
+      border: 2px solid #fff;
+      background-color: #fff; }
+  .c-carousel--hero .c-carousel__bullet--active {
+    border: 2px solid #fff;
+    background-color: #fff; }
+
+/* ---------------------------------------------------
 Context: hide arrows on mobile
 --------------------------------------------------- */
 @media only screen and (max-width: 767.98px) {
