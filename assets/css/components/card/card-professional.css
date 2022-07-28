@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* ===================================================
 CAROUSEL IMPORTS
 =================================================== */
@@ -7,6 +8,11 @@ COMPONENT BASICS
 /* ===================================================
 REM-CALC
 =================================================== */
+/******************************************************
+
+    PROFESSIONAL THEME
+
+******************************************************/
 /* ===================================================
 COLOR DEFINITIONS
 =================================================== */
@@ -64,19 +70,16 @@ COMPONENT HEADER
 COMPONENT NAV
 =================================================== */
 /* ===================================================
-COMPONENT COPY
-=================================================== */
-/* ===================================================
-COMPONENT UPLOAD
-=================================================== */
-/* ===================================================
-COMPONENT MESSAGE
-=================================================== */
-/* ===================================================
 COMPONENT HERO
 =================================================== */
 /* ===================================================
 COMPONENT QUOTE
+=================================================== */
+/* ===================================================
+COMPONENT CARD
+=================================================== */
+/* ===================================================
+COMPONENT CHIPS
 =================================================== */
 /* ================================================ */
 /* ===================================================
@@ -112,31 +115,60 @@ Global Styles
 .c-card {
   position: relative;
   width: 100%;
-  display: block;
+  display: flex;
+  flex-direction: column;
   text-decoration: none;
+  border-radius: 8px;
+  overflow: hidden;
   box-shadow: 0 0 12px 1px rgba(18, 18, 18, 0.25);
-  transition: all .2s ease-in-out; }
+  transition: box-shadow .2s ease-in-out;
+  cursor: pointer; }
   .c-card:hover {
     box-shadow: 0 0 16px 1px rgba(18, 18, 18, 0.35); }
+    .c-card:hover .c-cta--link .ic {
+      margin-left: 6px; }
 
-.c-card__picture-wrapper + .c-card__text-wrapper {
-  padding-top: 2.5rem; }
+.c-card__content-container {
+  display: flex;
+  flex-direction: column;
+  padding: 24px; }
 
-.c-card__icon-wrapper {
-  padding: 2rem 2rem;
-  font-size: 5rem; }
-  .c-card__icon-wrapper + .c-card__text-wrapper {
-    padding-top: 0; }
-  .c-card__icon-wrapper + .c-card__cta-wrapper {
-    padding: 0 2rem 2rem; }
+.c-card__picture {
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  min-height: 286px; }
+  @media only screen and (min-width: 576px) {
+    .c-card__picture {
+      min-height: 320px; } }
+  @media only screen and (min-width: 657px) {
+    .c-card__picture {
+      min-height: 360px; } }
+  @media only screen and (min-width: 768px) {
+    .c-card__picture {
+      min-height: 400px; } }
+  @media only screen and (min-width: 992px) {
+    .c-card__picture {
+      min-height: 488px; } }
 
-.c-card__text-wrapper {
-  padding: 2rem 2rem; }
-  .c-card__text-wrapper + .c-card__cta-wrapper {
-    padding: 0 2rem 2rem; }
+.c-card__picture-wrapper {
+  width: 100%;
+  max-width: 700px; }
+  @media only screen and (min-width: 1200px) {
+    .c-card__picture-wrapper {
+      max-width: 560px; } }
+  .c-card__picture-wrapper + .c-card__text-wrapper {
+    padding-top: 2.5rem; }
+
+.c-card__badge-wrapper {
+  margin-bottom: 24px; }
+
+.c-card__text-wrapper + .c-card__cta-wrapper {
+  padding: 24px 0 0; }
 
 .c-card__cta-wrapper {
-  padding: 1rem 2rem 1rem; }
+  margin-top: auto; }
   .c-card__cta-wrapper .c-cta {
     z-index: 99; }
 
@@ -149,13 +181,122 @@ Global Styles
   width: 100%;
   height: 100%; }
 
+.c-card__price-wrapper {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  margin-top: 24px; }
+  .c-card__price-wrapper + .c-card__cta-wrapper {
+    padding: 24px 0 0; }
+
+.c-card__price {
+  font-size: 1.5rem;
+  line-height: 1.3;
+  margin-left: 4px;
+  font-weight: 900; }
+  @media only screen and (min-width: 480px) {
+    .c-card__price {
+      font-size: 1.5rem; } }
+  @media only screen and (min-width: 576px) {
+    .c-card__price {
+      font-size: 1.625rem;
+      line-height: 1.4; } }
+  @media only screen and (min-width: 768px) {
+    .c-card__price {
+      font-size: 1.75rem; } }
+  @media only screen and (min-width: 1200px) {
+    .c-card__price {
+      font-size: 2rem; } }
+
+.c-card__price-hint {
+  font-size: 1.125rem;
+  line-height: 1.3; }
+  @media only screen and (min-width: 576px) {
+    .c-card__price-hint {
+      font-size: 1.25rem;
+      line-height: 1.4; } }
+
+.c-card__action-wrapper {
+  position: absolute;
+  top: 24px;
+  right: 24px; }
+
+.c-card__action {
+  font-size: 1.75rem;
+  color: #121212;
+  text-decoration: none;
+  z-index: 1; }
+
+.c-card__pictogram-wrapper {
+  width: 75%; }
+
 /* ---------------------------------------------------
-Context: green
+Context: teaser-l
 --------------------------------------------------- */
-.c-card--green {
-  background: #00693C; }
-  .c-card--green * {
+@media only screen and (min-width: 657px) {
+  .c-card--teaser-l {
+    flex-direction: row; } }
+
+@media only screen and (min-width: 657px) {
+  .c-card--teaser-l .c-card__content-container {
+    padding: 32px 32px 32px 48px;
+    max-width: 50%; } }
+
+@media only screen and (min-width: 992px) {
+  .c-card--teaser-l .c-card__content-container {
+    max-width: 50%; } }
+
+@media only screen and (min-width: 1440px) {
+  .c-card--teaser-l .c-card__content-container {
+    max-width: 560px; } }
+
+@media only screen and (min-width: 1200px) {
+  .c-card--teaser-l .c-card__content-container {
+    padding: 50px 80px 64px 96px; } }
+
+/* ---------------------------------------------------
+Context: product-m
+--------------------------------------------------- */
+.c-card--product-m .c-card__badge-wrapper {
+  position: absolute;
+  top: 24px;
+  left: 16px; }
+
+/* ---------------------------------------------------
+Context: highlight
+--------------------------------------------------- */
+.c-card--highlight {
+  background: #003245; }
+  .c-card--highlight .c-text {
     color: #fff; }
+    .c-card--highlight .c-text h1, .c-card--highlight .c-text .h1 {
+      color: #fff; }
+    .c-card--highlight .c-text h2, .c-card--highlight .c-text .h2 {
+      color: #fff; }
+    .c-card--highlight .c-text h3, .c-card--highlight .c-text .h3 {
+      color: #fff; }
+    .c-card--highlight .c-text h4, .c-card--highlight .c-text .h4 {
+      color: #fff; }
+    .c-card--highlight .c-text h5, .c-card--highlight .c-text .h5 {
+      color: #fff; }
+    .c-card--highlight .c-text .hero {
+      color: #fff; }
+    .c-card--highlight .c-text .intro {
+      color: #fff; }
+    .c-card--highlight .c-text ul li::before {
+      color: #fff; }
+    .c-card--highlight .c-text a {
+      color: #fff; }
+      .c-card--highlight .c-text a:hover {
+        color: #fff; }
+      .c-card--highlight .c-text a:focus {
+        color: #fff; }
+  .c-card--highlight .c-cta--link {
+    color: #fff; }
+    .c-card--highlight .c-cta--link:hover {
+      color: #fff; }
+    .c-card--highlight .c-cta--link:focus {
+      color: #fff; }
 
 /* ---------------------------------------------------
 Context: icon as SVG
@@ -170,8 +311,56 @@ Context: icon as SVG
     width: 5rem; }
 
 /* ---------------------------------------------------
+Context: pictogram
+--------------------------------------------------- */
+.c-card--pictogram:after {
+  font-family: "iconfont";
+  display: inline-block;
+  line-height: 1;
+  font-weight: normal;
+  font-style: normal;
+  speak: never;
+  text-decoration: inherit;
+  text-transform: none;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 2.375rem;
+  content: "";
+  position: absolute;
+  bottom: 24px;
+  right: 10%;
+  color: #00693C; }
+
+@media only screen and (min-width: 768px) {
+  .c-card--pictogram .c-card__content-container {
+    padding: 48px; } }
+
+/* ---------------------------------------------------
+Context: animate text on hover
+--------------------------------------------------- */
+.c-card--animate-text {
+  height: 100%; }
+  .c-card--animate-text .c-card__text-wrapper + .c-card__cta-wrapper {
+    padding: 0; }
+  .c-card--animate-text .c-card__content-container {
+    position: absolute;
+    bottom: 0;
+    background: #fff;
+    transition: height .2s ease-in-out;
+    width: 100%; }
+    .c-card--animate-text .c-card__content-container p {
+      transition: height 0.6s ease-in-out, opacity 0.4s cubic-bezier(0, 0.96, 0.48, 1.19) 0.2s;
+      overflow: hidden;
+      height: 0;
+      opacity: 0;
+      margin-bottom: 24px; }
+      .c-card--animate-text .c-card__content-container p.is-calculating {
+        position: absolute !important;
+        visibility: hidden !important;
+        display: block !important;
+        height: auto !important; }
+
+/* ---------------------------------------------------
 Context: color schemes
 --------------------------------------------------- */
-.cs-light-wrapper .c-card--hover:hover, .cs-light-wrapper.c-card--hover:hover {
-  cursor: pointer;
-  box-shadow: 0 4px 25px 0 rgba(255, 255, 255, 0.35), 0 0 1px 0 rgba(255, 255, 255, 0.35); }

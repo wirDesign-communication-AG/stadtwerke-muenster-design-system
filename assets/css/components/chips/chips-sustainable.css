@@ -7,6 +7,11 @@ COMPONENT BASICS
 /* ===================================================
 REM-CALC
 =================================================== */
+/******************************************************
+
+    SUSTAINABLE THEME
+
+******************************************************/
 /* ===================================================
 COLOR DEFINITIONS
 =================================================== */
@@ -64,19 +69,16 @@ COMPONENT HEADER
 COMPONENT NAV
 =================================================== */
 /* ===================================================
-COMPONENT COPY
-=================================================== */
-/* ===================================================
-COMPONENT UPLOAD
-=================================================== */
-/* ===================================================
-COMPONENT MESSAGE
-=================================================== */
-/* ===================================================
 COMPONENT HERO
 =================================================== */
 /* ===================================================
 COMPONENT QUOTE
+=================================================== */
+/* ===================================================
+COMPONENT CARD
+=================================================== */
+/* ===================================================
+COMPONENT CHIPS
 =================================================== */
 /* ================================================ */
 /* ===================================================
@@ -131,7 +133,7 @@ Global Styles
   line-height: 1;
   color: #121212;
   text-decoration: none;
-  font-weight: 400;
+  font-weight: 700;
   background-color: #F2F2F2;
   border-color: #F2F2F2;
   margin-right: 4px;
@@ -174,6 +176,10 @@ Global Styles
       margin-bottom: 16px; } }
   .c-chips__item:focus {
     outline: 0; }
+  .c-chips__item.is-active {
+    background-color: #00411E;
+    color: #fff;
+    border-color: #00411E; }
 
 .c-chips__text {
   padding: 10px 0; }
@@ -191,6 +197,42 @@ Global Styles
 .c-chips__icon-right {
   margin-left: 6px;
   font-size: 24px; }
+
+/* ---------------------------------------------------
+Context: filter
+--------------------------------------------------- */
+.c-chips--filter .c-chips__icon-right,
+.c-chips--filter .c-chips__icon-left {
+  display: none; }
+
+.c-chips--filter .c-chips__item.is-active .c-chips__icon-left {
+  display: block; }
+
+/* ---------------------------------------------------
+Context: tags
+--------------------------------------------------- */
+.c-chips--tags .c-chips__text {
+  padding: 8px 0; }
+
+.c-chips--tags .c-chips__item {
+  border-width: 1px;
+  color: #121212;
+  text-decoration: none;
+  font-weight: 700;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-color: #121212; }
+  .c-chips--tags .c-chips__item:hover {
+    color: #121212; }
+  .c-chips--tags .c-chips__item:focus {
+    color: #121212; }
+  .c-chips--tags .c-chips__item:hover {
+    background-color: white; }
+  .c-chips--tags .c-chips__item:focus {
+    background-color: white; }
+  .c-chips--tags .c-chips__item:hover {
+    border-color: #121212; }
+  .c-chips--tags .c-chips__item:focus {
+    border-color: #121212; }
 
 /* ---------------------------------------------------
 Context: color schemes

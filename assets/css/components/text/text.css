@@ -7,6 +7,11 @@ COMPONENT BASICS
 /* ===================================================
 REM-CALC
 =================================================== */
+/******************************************************
+
+    MAIN THEME
+
+******************************************************/
 /* ===================================================
 COLOR DEFINITIONS
 =================================================== */
@@ -64,19 +69,16 @@ COMPONENT HEADER
 COMPONENT NAV
 =================================================== */
 /* ===================================================
-COMPONENT COPY
-=================================================== */
-/* ===================================================
-COMPONENT UPLOAD
-=================================================== */
-/* ===================================================
-COMPONENT MESSAGE
-=================================================== */
-/* ===================================================
 COMPONENT HERO
 =================================================== */
 /* ===================================================
 COMPONENT QUOTE
+=================================================== */
+/* ===================================================
+COMPONENT CARD
+=================================================== */
+/* ===================================================
+COMPONENT CHIPS
 =================================================== */
 /* ================================================ */
 /* ===================================================
@@ -120,11 +122,11 @@ Global Styles
     .c-text ul li {
       position: relative;
       font-size: 1rem;
-      line-height: 1.5; }
+      line-height: 1.3; }
       @media only screen and (min-width: 576px) {
         .c-text ol li,
         .c-text ul li {
-          line-height: 1.666; } }
+          line-height: 1.4; } }
     .c-text ol.check-style,
     .c-text ul.check-style {
       padding-left: 25px; }
@@ -146,19 +148,20 @@ Global Styles
       margin-bottom: 0; }
   .c-text a:not(.c-cta) {
     color: #006A3A;
-    border-bottom: 1px solid #006A3A;
     text-decoration: none;
     font-weight: 400; }
     .c-text a:not(.c-cta):hover {
-      color: #00b764;
-      border-bottom: 1px solid #00b764; }
+      color: #005C34; }
     .c-text a:not(.c-cta):focus {
-      color: #006A3A;
-      border-bottom: 1px solid #006A3A; }
+      color: #005C34; }
   .c-text code {
     color: #00B4F0;
     background-color: #f1f1f1;
     padding: 2px; }
+
+small {
+  font-size: 0.875rem;
+  line-height: 1.25rem; }
 
 /* ---------------------------------------------------
 Context: center
@@ -173,6 +176,62 @@ Context: right
   text-align: right; }
 
 /* ---------------------------------------------------
+Context: card
+--------------------------------------------------- */
+.c-text--card p {
+  font-size: 1.125rem;
+  line-height: 1.3; }
+  @media only screen and (min-width: 576px) {
+    .c-text--card p {
+      font-size: 1.25rem;
+      line-height: 1.4; } }
+
+/* ---------------------------------------------------
+Context: box
+--------------------------------------------------- */
+.c-text--box {
+  background: #F7F6F4;
+  padding: 40px; }
+  .c-text--box p {
+    font-size: 1.125rem;
+    line-height: 1.3; }
+    @media only screen and (min-width: 576px) {
+      .c-text--box p {
+        font-size: 1.25rem;
+        line-height: 1.4; } }
+  @media only screen and (min-width: 992px) {
+    .c-text--box {
+      padding: 44px 96px; } }
+
+/* ---------------------------------------------------
+Context: box-alert
+--------------------------------------------------- */
+.c-text--box-alert {
+  background: #F7F6F4;
+  border: 1px solid #F07855;
+  padding: 44px 35px;
+  display: flex; }
+  .c-text--box-alert p {
+    font-size: 1.125rem;
+    line-height: 1.3; }
+    @media only screen and (min-width: 576px) {
+      .c-text--box-alert p {
+        font-size: 1.25rem;
+        line-height: 1.4; } }
+  .c-text--box-alert .c-text__icon-wrapper {
+    margin-right: 28px; }
+    .c-text--box-alert .c-text__icon-wrapper .ic {
+      font-size: 1.75rem;
+      color: #F07855; }
+  .c-text--box-alert .c-text__close-wrapper {
+    position: absolute;
+    top: 16px;
+    right: 16px; }
+    .c-text--box-alert .c-text__close-wrapper .ic {
+      font-size: 1.75rem;
+      color: #F07855; }
+
+/* ---------------------------------------------------
 Context: color schemes
 --------------------------------------------------- */
 .cs-light .c-text, .cs-light.c-text {
@@ -180,14 +239,11 @@ Context: color schemes
   .cs-light .c-text ul li::before, .cs-light.c-text ul li::before {
     color: #fff; }
   .cs-light .c-text a, .cs-light.c-text a {
-    color: #006A3A;
-    border-bottom-color: #006A3A; }
+    color: #fff; }
     .cs-light .c-text a:hover, .cs-light.c-text a:hover {
-      color: #001e10;
-      border-bottom-color: #001e10; }
+      color: #fff; }
     .cs-light .c-text a:focus, .cs-light.c-text a:focus {
-      color: #006A3A;
-      border-bottom-color: #006A3A; }
+      color: #fff; }
   .cs-light .c-text code, .cs-light.c-text code {
     color: #5285ca;
     background-color: #0d131e; }

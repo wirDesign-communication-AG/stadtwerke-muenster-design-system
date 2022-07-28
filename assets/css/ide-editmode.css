@@ -4,6 +4,11 @@ IDE-EDITMODE IMPORTS
 /* ===================================================
 REM-CALC
 =================================================== */
+/******************************************************
+
+    MAIN THEME
+
+******************************************************/
 /* ===================================================
 COLOR DEFINITIONS
 =================================================== */
@@ -61,19 +66,16 @@ COMPONENT HEADER
 COMPONENT NAV
 =================================================== */
 /* ===================================================
-COMPONENT COPY
-=================================================== */
-/* ===================================================
-COMPONENT UPLOAD
-=================================================== */
-/* ===================================================
-COMPONENT MESSAGE
-=================================================== */
-/* ===================================================
 COMPONENT HERO
 =================================================== */
 /* ===================================================
 COMPONENT QUOTE
+=================================================== */
+/* ===================================================
+COMPONENT CARD
+=================================================== */
+/* ===================================================
+COMPONENT CHIPS
 =================================================== */
 /* ================================================ */
 /* ===================================================
@@ -131,21 +133,19 @@ Global Styles
     color: #121212; }
     .c-side-nav__nav-wrapper a.is-active {
       font-weight: 900;
-      color: #006A3A;
-      border-bottom-color: #006A3A; }
+      color: #006A3A; }
       .c-side-nav__nav-wrapper a.is-active:hover {
-        color: #00b764;
-        border-bottom-color: #00b764; }
+        color: #005C34; }
       .c-side-nav__nav-wrapper a.is-active:focus {
-        color: #006A3A;
-        border-bottom-color: #006A3A; }
+        color: #005C34; }
       .c-side-nav__nav-wrapper a.is-active + .c-side-nav__sub-sidebar {
         display: block; }
 
 .c-side-nav__nav-toggle {
   position: absolute;
-  top: -50px;
-  right: 10px;
+  height: 34px;
+  top: -2rem;
+  right: -81px;
   display: inline-block;
   text-shadow: none;
   text-align: center;
@@ -157,10 +157,35 @@ Global Styles
   color: #3f3d56;
   font-size: 0.875rem;
   background-color: #fff; }
+  @media only screen and (min-width: 768px) {
+    .c-side-nav__nav-toggle {
+      right: -105px; } }
+  @media only screen and (min-width: 1200px) {
+    .c-side-nav__nav-toggle {
+      right: 10px; } }
   .c-side-nav__nav-toggle .ic {
     transition: transform 400ms ease-out; }
   .c-side-nav__nav-toggle:focus {
     outline: 0; }
+
+.c-side-nav__toggle-icon {
+  position: relative;
+  display: block;
+  pointer-events: none;
+  width: 20px;
+  height: 2px;
+  background: #3f3d56; }
+  .c-side-nav__toggle-icon:after, .c-side-nav__toggle-icon:before {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 2px;
+    left: 0;
+    background: #3f3d56; }
+  .c-side-nav__toggle-icon:before {
+    bottom: 6px; }
+  .c-side-nav__toggle-icon:after {
+    top: 6px; }
 
 .c-side-nav__picture-wrapper {
   padding: 0 1.5rem;
@@ -184,6 +209,136 @@ Global Styles
 .c-side-nav__picture-link {
   display: block;
   margin-bottom: 1.5rem; }
+
+/* ===================================================
+SIDE NAV COMPONENT
+=================================================== */
+/* ---------------------------------------------------
+Global Styles
+--------------------------------------------------- */
+.c-code-block {
+  position: relative;
+  background-color: #fff;
+  margin-bottom: 1.5rem;
+  border: 1px solid #e4e4e7; }
+  @media only screen and (min-width: 768px) {
+    .c-code-block {
+      margin-bottom: 0; } }
+
+.c-code-block__intro .c-text p:last-child {
+  margin-bottom: 1rem; }
+
+.c-code-block__preview {
+  padding: 1rem; }
+  .c-code-block__preview ~ .c-code-block__buttons {
+    border-top: solid 1px #e4e4e7; }
+
+.c-code-block__source {
+  background-color: #f9f9f9; }
+
+.c-code-block__source-wrapper {
+  position: relative;
+  display: none; }
+  .c-code-block__source-wrapper.is-active {
+    display: block; }
+    .c-code-block__source-wrapper.is-active + .c-code-block__buttons .c-code-block__toggle svg {
+      transform: rotate(180deg); }
+  .c-code-block__source-wrapper:hover .c-code-block__copy-code-button {
+    opacity: 1; }
+
+.c-code-block__buttons {
+  position: relative;
+  display: flex; }
+
+.c-code-block__button {
+  flex: 0 0 auto;
+  height: 2.5rem;
+  min-width: 2.5rem;
+  border: none;
+  border-radius: 0;
+  background: #fff;
+  font: inherit;
+  font-size: 0.7rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #545e67;
+  padding: 0 1rem;
+  cursor: pointer;
+  transition: all .3s ease-in-out; }
+  .c-code-block__button:hover {
+    box-shadow: 0 0 0 1px #00B4F0;
+    border-right-color: transparent;
+    background-color: #f0fbff;
+    color: #00B4F0;
+    z-index: 1; }
+
+.c-code-block--expanded .c-code-block__source {
+  display: block; }
+
+.c-code-block__toggle {
+  position: relative;
+  display: flex;
+  flex: 1 1 auto;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  color: #545e67;
+  cursor: pointer;
+  -webkit-appearance: none; }
+  .c-code-block__toggle:focus {
+    outline: none; }
+
+.c-code-block__toggle svg {
+  width: 1em;
+  height: 1em;
+  margin-left: 0.25rem; }
+
+.c-code-block--expanded .c-code-block__toggle svg {
+  transform: rotate(180deg); }
+
+.c-code-block__copy-code-button {
+  position: absolute;
+  top: 6px;
+  right: 6px;
+  background-color: #fff;
+  border-radius: 6px;
+  border: 0;
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  padding: 8px;
+  user-select: none;
+  transition: 0.1s all;
+  cursor: pointer;
+  opacity: 0; }
+
+.c-code-block__copy-code-button.copied {
+  animation: pulse 0.75s;
+  --pulse-color: $color-darkgray; }
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 #545e67; }
+  70% {
+    box-shadow: 0 0 0 0.5rem transparent; }
+  100% {
+    box-shadow: 0 0 0 0 transparent; } }
+
+.c-code-block__copy-code-button .label {
+  transition: none; }
+
+.c-code-block__copy-code-button .success,
+.c-code-block__copy-code-button .error {
+  display: none; }
+
+.c-code-block__copy-code-button:focus-visible {
+  outline: var(--sl-focus-ring);
+  outline-offset: var(--sl-focus-ring-offset); }
+
+.c-code-block__copy-code-button:active {
+  background-color: #fff;
+  transform: scale(0.92); }
 
 /* ===================================================
 IDE-EDITMODE IMPORT
@@ -411,8 +566,13 @@ BASICS
 body > header,
 body > main,
 body > footer {
-  padding-left: 300px;
+  background: #fafafa;
   transition: padding-left 400ms ease-out; }
+  @media only screen and (min-width: 1200px) {
+    body > header,
+    body > main,
+    body > footer {
+      padding-left: 300px; } }
 
 header .c-header.is-active {
   width: calc(100% - 300px); }
@@ -420,27 +580,43 @@ header .c-header.is-active {
 aside {
   position: fixed;
   border-right: 1px solid rgba(0, 0, 0, 0.07);
-  overflow-y: scroll;
   padding: 40px 0 0;
   top: 0;
   bottom: 0;
-  left: 0;
+  left: -300px;
   transition: left 400ms ease-out;
   background-color: #fff;
   width: 300px;
-  z-index: 100; }
+  z-index: 100;
+  overflow-y: visible; }
+  @media only screen and (min-width: 1200px) {
+    aside {
+      left: 0;
+      overflow-y: scroll; } }
 
 body.is-nav-close header,
 body.is-nav-close main,
 body.is-nav-close footer {
-  padding-left: 0; }
+  padding-left: 300px; }
+  @media only screen and (min-width: 1200px) {
+    body.is-nav-close header,
+    body.is-nav-close main,
+    body.is-nav-close footer {
+      padding-left: 0; } }
 
 body.is-nav-close aside {
-  left: -300px;
-  overflow-y: visible; }
+  left: 0;
+  overflow-y: scroll; }
+  @media only screen and (min-width: 1200px) {
+    body.is-nav-close aside {
+      left: -300px;
+      overflow-y: visible; } }
 
 body.is-nav-close .c-side-nav__nav-toggle {
-  right: -67px; }
+  right: 10px; }
+  @media only screen and (min-width: 1200px) {
+    body.is-nav-close .c-side-nav__nav-toggle {
+      right: -70px; } }
   body.is-nav-close .c-side-nav__nav-toggle .ic {
     transform: rotate(180deg); }
 
@@ -567,8 +743,11 @@ Global Styles
 .c-component-header {
   position: relative;
   padding-bottom: 1rem;
-  margin-top: 2rem;
+  margin-top: 6rem;
   min-height: 50px; }
+  @media only screen and (min-width: 1200px) {
+    .c-component-header {
+      margin-top: 2rem; } }
   .c-component-header .c-cta {
     padding: .5rem 1rem;
     border: 2px solid #efefef;
@@ -589,7 +768,7 @@ Global Styles
   align-items: center;
   min-height: 34px;
   position: fixed;
-  z-index: 999; }
+  z-index: 99; }
 
 .c-component-header__fixed {
   position: fixed;
@@ -762,3 +941,53 @@ Global Styles
     height: 100%;
     padding: 1rem;
     background: repeating-linear-gradient(45deg, #F7F6F4, #F7F6F4 10px, #ffffff 10px, #ffffff 20px); }
+
+/* ===================================================
+Footer COMPONENT
+=================================================== */
+/* ---------------------------------------------------
+Global Styles
+--------------------------------------------------- */
+.c-footer {
+  position: relative;
+  background: #121212; }
+
+.c-footer__logo-wrapper {
+  max-width: 30px; }
+  @media only screen and (min-width: 768px) {
+    .c-footer__logo-wrapper {
+      max-width: 120px; } }
+
+.c-footer__back-to-top-wrapper {
+  margin-top: 3rem; }
+  @media only screen and (min-width: 657px) {
+    .c-footer__back-to-top-wrapper {
+      margin-top: auto; } }
+
+.c-footer__address-wrapper,
+.c-footer__social-list-wrapper {
+  margin-bottom: 3rem; }
+
+.c-footer__brand-wrapper {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  padding-bottom: 3rem; }
+  @media only screen and (min-width: 657px) {
+    .c-footer__brand-wrapper {
+      padding-bottom: 0; } }
+
+.c-footer__nav-list {
+  padding-left: 0; }
+
+.c-footer__nav-list-item {
+  display: inline-block;
+  margin-right: 2rem; }
+  .c-footer__nav-list-item a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 400; }
+    .c-footer__nav-list-item a:hover {
+      color: #d9d9d9; }
+    .c-footer__nav-list-item a:focus {
+      color: #fff; }

@@ -107,7 +107,7 @@
         </div>
       </div>
 
-      <div id="input" class="c-section p-1">
+      <div id="input" class="c-section pt-2 pb-1">
 
         <div class="g-container">
           <div class="g-row">
@@ -122,40 +122,175 @@
               </div>
             </div>
             <div class="g-col-12 g-col-tp-6">
-              <div class="c-form__input-wrapper" data-action="wrapper">
-                <label class="c-label" for="input">Text Input:</label>
+              <div class="c-code-block__intro">
+                <div class="c-text">
+                  <h3>Default</h3>
 
-                <input class="c-form__input" type="text" name="input" id="input" aria-label="Bitte Text eintragen" placeholder="Field name">
-
-                <div class="c-message">Error message</div>
+                </div>
               </div>
+              <div class="c-code-block">
+                <div class="c-code-block__preview">
+                  <div class="c-input-wrapper" data-action="wrapper">
+                    <div class="c-input__label">
+                      <label class="c-label" for="input">Text Input:</label>
 
-              <p class="headline-lined">Source</p>
-              <pre><code class="hljs html">
-    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-form__input-wrapper&quot;</span> <span class="hljs-attr">data-action</span>=<span class="hljs-string">&quot;wrapper&quot;</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-label&quot;</span> <span class="hljs-attr">for</span>=<span class="hljs-string">&quot;input&quot;</span>&gt;</span>Text Input:<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-form__input&quot;</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;text&quot;</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;input&quot;</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;input&quot;</span> <span class="hljs-attr">aria-label</span>=<span class="hljs-string">&quot;Bitte Text eintragen&quot;</span> <span class="hljs-attr">placeholder</span>=<span class="hljs-string">&quot;Field name&quot;</span>&gt;</span>
+                      <div class="c-input__tooltip-wrapper">
+
+                      </div>
+                    </div>
+                    <div class="c-input__container">
+                      <input class="c-input" type="text" name="input" id="input" aria-label="Bitte Text eintragen" placeholder="Field name">
+                    </div>
+
+                    <div class="c-message">Error message</div>
+                  </div>
+                </div>
+
+                <div class="c-code-block__source-wrapper">
+                  <div class="c-code-block__source">
+                    <pre><code class="hljs html">
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-input-wrapper&quot;</span> <span class="hljs-attr">data-action</span>=<span class="hljs-string">&quot;wrapper&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-input__label&quot;</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-label&quot;</span> <span class="hljs-attr">for</span>=<span class="hljs-string">&quot;input&quot;</span>&gt;</span>Text Input:<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-input__tooltip-wrapper&quot;</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-input__container&quot;</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-input&quot;</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;text&quot;</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;input&quot;</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;input&quot;</span> <span class="hljs-attr">aria-label</span>=<span class="hljs-string">&quot;Bitte Text eintragen&quot;</span> <span class="hljs-attr">placeholder</span>=<span class="hljs-string">&quot;Field name&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-message&quot;</span>&gt;</span>Error message<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
     <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
     </code></pre>
+                  </div>
+                  <button class="c-code-block__copy-code-button">
+                    <span class="label">Copy</span>
+                    <span class="error">Failed to copy</span>
+                    <span class="success">Copied</span>
+                  </button>
+                </div>
+
+                <div class="c-code-block__buttons">
+                  <button type="button" class="c-code-block__button c-code-block__toggle">Source
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <polyline points="6 9 12 15 18 9"></polyline>
+                    </svg>
+                  </button>
+                </div>
+              </div>
             </div>
             <div class="g-col-12 g-col-tp-6">
-              <div class="c-form__input-wrapper" data-action="wrapper">
-                <label class="c-label" for="input2">Text Input mit Fehlermeldung:</label>
+              <div class="c-code-block__intro">
+                <div class="c-text">
+                  <h3>Default with Error</h3>
 
-                <input class="c-form__input is-error" type="text" name="input2" id="input2" aria-label="Bitte Text eintragen" placeholder="Field name" value="Lorem Ipsum">
-
-                <div class="c-message is-error">Error message</div>
+                </div>
               </div>
+              <div class="c-code-block">
+                <div class="c-code-block__preview">
+                  <div class="c-input-wrapper" data-action="wrapper">
+                    <div class="c-input__label">
+                      <label class="c-label" for="input2">Text Input mit Fehlermeldung:</label>
 
-              <p class="headline-lined">Source</p>
-              <pre><code class="hljs html">
-    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-form__input-wrapper&quot;</span> <span class="hljs-attr">data-action</span>=<span class="hljs-string">&quot;wrapper&quot;</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-label&quot;</span> <span class="hljs-attr">for</span>=<span class="hljs-string">&quot;input2&quot;</span>&gt;</span>Text Input mit Fehlermeldung:<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-form__input is-error&quot;</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;text&quot;</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;input2&quot;</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;input2&quot;</span> <span class="hljs-attr">aria-label</span>=<span class="hljs-string">&quot;Bitte Text eintragen&quot;</span> <span class="hljs-attr">placeholder</span>=<span class="hljs-string">&quot;Field name&quot;</span> <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;Lorem Ipsum&quot;</span>&gt;</span>
+                      <div class="c-input__tooltip-wrapper">
+
+                      </div>
+                    </div>
+                    <div class="c-input__container">
+                      <input class="c-input is-error" type="text" name="input2" id="input2" aria-label="Bitte Text eintragen" placeholder="Field name" value="Lorem Ipsum">
+                    </div>
+
+                    <div class="c-message is-error">Error message</div>
+                  </div>
+                </div>
+
+                <div class="c-code-block__source-wrapper">
+                  <div class="c-code-block__source">
+                    <pre><code class="hljs html">
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-input-wrapper&quot;</span> <span class="hljs-attr">data-action</span>=<span class="hljs-string">&quot;wrapper&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-input__label&quot;</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-label&quot;</span> <span class="hljs-attr">for</span>=<span class="hljs-string">&quot;input2&quot;</span>&gt;</span>Text Input mit Fehlermeldung:<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-input__tooltip-wrapper&quot;</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-input__container&quot;</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-input is-error&quot;</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;text&quot;</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;input2&quot;</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;input2&quot;</span> <span class="hljs-attr">aria-label</span>=<span class="hljs-string">&quot;Bitte Text eintragen&quot;</span> <span class="hljs-attr">placeholder</span>=<span class="hljs-string">&quot;Field name&quot;</span> <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;Lorem Ipsum&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-message is-error&quot;</span>&gt;</span>Error message<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
     <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
     </code></pre>
+                  </div>
+                  <button class="c-code-block__copy-code-button">
+                    <span class="label">Copy</span>
+                    <span class="error">Failed to copy</span>
+                    <span class="success">Copied</span>
+                  </button>
+                </div>
+
+                <div class="c-code-block__buttons">
+                  <button type="button" class="c-code-block__button c-code-block__toggle">Source
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <polyline points="6 9 12 15 18 9"></polyline>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="g-col-12 g-col-tp-6">
+              <div class="c-code-block__intro">
+                <div class="c-text">
+                  <h3>Disabled</h3>
+
+                </div>
+              </div>
+              <div class="c-code-block">
+                <div class="c-code-block__preview">
+                  <div class="c-input-wrapper" data-action="wrapper">
+                    <div class="c-input__label">
+                      <label class="c-label" for="input">Text Input Disabled:</label>
+
+                      <div class="c-input__tooltip-wrapper">
+
+                      </div>
+                    </div>
+                    <div class="c-input__container">
+                      <input class="c-input" type="text" name="input" id="input" aria-label="Bitte Text eintragen" placeholder="Field name" disabled>
+                    </div>
+
+                    <div class="c-message">Error message</div>
+                  </div>
+                </div>
+
+                <div class="c-code-block__source-wrapper">
+                  <div class="c-code-block__source">
+                    <pre><code class="hljs html">
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-input-wrapper&quot;</span> <span class="hljs-attr">data-action</span>=<span class="hljs-string">&quot;wrapper&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-input__label&quot;</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-label&quot;</span> <span class="hljs-attr">for</span>=<span class="hljs-string">&quot;input&quot;</span>&gt;</span>Text Input Disabled:<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-input__tooltip-wrapper&quot;</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-input__container&quot;</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-input&quot;</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;text&quot;</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;input&quot;</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;input&quot;</span> <span class="hljs-attr">aria-label</span>=<span class="hljs-string">&quot;Bitte Text eintragen&quot;</span> <span class="hljs-attr">placeholder</span>=<span class="hljs-string">&quot;Field name&quot;</span> <span class="hljs-attr">disabled</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-message&quot;</span>&gt;</span>Error message<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    </code></pre>
+                  </div>
+                  <button class="c-code-block__copy-code-button">
+                    <span class="label">Copy</span>
+                    <span class="error">Failed to copy</span>
+                    <span class="success">Copied</span>
+                  </button>
+                </div>
+
+                <div class="c-code-block__buttons">
+                  <button type="button" class="c-code-block__button c-code-block__toggle">Source
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <polyline points="6 9 12 15 18 9"></polyline>
+                    </svg>
+                  </button>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -165,51 +300,119 @@
 
         <div class="g-container">
           <div class="g-row">
-            <div class="g-col-12 g-col-tp-8 mb-1">
-              <div class="c-text">
-                <h2>
-                  <strong>E-Mail</strong>
-                </h2>
-                <p>
-                  Lorem Ipsum.
-                </p>
-              </div>
-            </div>
             <div class="g-col-12 g-col-tp-6">
-              <div class="c-form__input-wrapper" data-action="wrapper">
-                <label class="c-label" for="email">E-Mail Input:</label>
+              <div class="c-code-block__intro">
+                <div class="c-text">
+                  <h3>E-Mail</h3>
 
-                <input class="c-form__input" type="email" name="email" id="email" aria-label="Bitte Ihre Email eintragen" placeholder="E-Mail">
-
-                <div class="c-message">Error message</div>
+                </div>
               </div>
+              <div class="c-code-block">
+                <div class="c-code-block__preview">
+                  <div class="c-input-wrapper" data-action="wrapper">
+                    <div class="c-input__label">
+                      <label class="c-label" for="email">E-Mail Input:</label>
 
-              <p class="headline-lined">Source</p>
-              <pre><code class="hljs html">
-    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-form__input-wrapper&quot;</span> <span class="hljs-attr">data-action</span>=<span class="hljs-string">&quot;wrapper&quot;</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-label&quot;</span> <span class="hljs-attr">for</span>=<span class="hljs-string">&quot;email&quot;</span>&gt;</span>E-Mail Input:<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-form__input&quot;</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;email&quot;</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;email&quot;</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;email&quot;</span> <span class="hljs-attr">aria-label</span>=<span class="hljs-string">&quot;Bitte Ihre Email eintragen&quot;</span> <span class="hljs-attr">placeholder</span>=<span class="hljs-string">&quot;E-Mail&quot;</span>&gt;</span>
+                      <div class="c-input__tooltip-wrapper">
+
+                      </div>
+                    </div>
+                    <div class="c-input__container">
+                      <input class="c-input" type="email" name="email" id="email" aria-label="Bitte Ihre Email eintragen" placeholder="E-Mail">
+                    </div>
+
+                    <div class="c-message">Error message</div>
+                  </div>
+                </div>
+
+                <div class="c-code-block__source-wrapper">
+                  <div class="c-code-block__source">
+                    <pre><code class="hljs html">
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-input-wrapper&quot;</span> <span class="hljs-attr">data-action</span>=<span class="hljs-string">&quot;wrapper&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-input__label&quot;</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-label&quot;</span> <span class="hljs-attr">for</span>=<span class="hljs-string">&quot;email&quot;</span>&gt;</span>E-Mail Input:<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-input__tooltip-wrapper&quot;</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-input__container&quot;</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-input&quot;</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;email&quot;</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;email&quot;</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;email&quot;</span> <span class="hljs-attr">aria-label</span>=<span class="hljs-string">&quot;Bitte Ihre Email eintragen&quot;</span> <span class="hljs-attr">placeholder</span>=<span class="hljs-string">&quot;E-Mail&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-message&quot;</span>&gt;</span>Error message<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
     <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
     </code></pre>
+                  </div>
+                  <button class="c-code-block__copy-code-button">
+                    <span class="label">Copy</span>
+                    <span class="error">Failed to copy</span>
+                    <span class="success">Copied</span>
+                  </button>
+                </div>
+
+                <div class="c-code-block__buttons">
+                  <button type="button" class="c-code-block__button c-code-block__toggle">Source
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <polyline points="6 9 12 15 18 9"></polyline>
+                    </svg>
+                  </button>
+                </div>
+              </div>
             </div>
             <div class="g-col-12 g-col-tp-6">
-              <div class="c-form__input-wrapper" data-action="wrapper">
-                <label class="c-label" for="email">E-Mail Input mit Fehlermeldung:</label>
+              <div class="c-code-block__intro">
+                <div class="c-text">
+                  <h3>E-Mail with Error</h3>
 
-                <input class="c-form__input is-error" type="email" name="email" id="email" aria-label="Bitte Ihre Email eintragen" placeholder="E-Mail" value="example@example.com">
-
-                <div class="c-message is-error">Error message</div>
+                </div>
               </div>
+              <div class="c-code-block">
+                <div class="c-code-block__preview">
+                  <div class="c-input-wrapper" data-action="wrapper">
+                    <div class="c-input__label">
+                      <label class="c-label" for="email">E-Mail Input mit Fehlermeldung:</label>
 
-              <p class="headline-lined">Source</p>
-              <pre><code class="hljs html">
-    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-form__input-wrapper&quot;</span> <span class="hljs-attr">data-action</span>=<span class="hljs-string">&quot;wrapper&quot;</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-label&quot;</span> <span class="hljs-attr">for</span>=<span class="hljs-string">&quot;email&quot;</span>&gt;</span>E-Mail Input mit Fehlermeldung:<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-form__input is-error&quot;</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;email&quot;</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;email&quot;</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;email&quot;</span> <span class="hljs-attr">aria-label</span>=<span class="hljs-string">&quot;Bitte Ihre Email eintragen&quot;</span> <span class="hljs-attr">placeholder</span>=<span class="hljs-string">&quot;E-Mail&quot;</span> <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;example@example.com&quot;</span>&gt;</span>
+                      <div class="c-input__tooltip-wrapper">
+
+                      </div>
+                    </div>
+                    <div class="c-input__container">
+                      <input class="c-input is-error" type="email" name="email" id="email" aria-label="Bitte Ihre Email eintragen" placeholder="E-Mail" value="example@example.com">
+                    </div>
+
+                    <div class="c-message is-error">Error message</div>
+                  </div>
+                </div>
+
+                <div class="c-code-block__source-wrapper">
+                  <div class="c-code-block__source">
+                    <pre><code class="hljs html">
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-input-wrapper&quot;</span> <span class="hljs-attr">data-action</span>=<span class="hljs-string">&quot;wrapper&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-input__label&quot;</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-label&quot;</span> <span class="hljs-attr">for</span>=<span class="hljs-string">&quot;email&quot;</span>&gt;</span>E-Mail Input mit Fehlermeldung:<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-input__tooltip-wrapper&quot;</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-input__container&quot;</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-input is-error&quot;</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;email&quot;</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;email&quot;</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;email&quot;</span> <span class="hljs-attr">aria-label</span>=<span class="hljs-string">&quot;Bitte Ihre Email eintragen&quot;</span> <span class="hljs-attr">placeholder</span>=<span class="hljs-string">&quot;E-Mail&quot;</span> <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;example@example.com&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-message is-error&quot;</span>&gt;</span>Error message<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
     <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
     </code></pre>
+                  </div>
+                  <button class="c-code-block__copy-code-button">
+                    <span class="label">Copy</span>
+                    <span class="error">Failed to copy</span>
+                    <span class="success">Copied</span>
+                  </button>
+                </div>
+
+                <div class="c-code-block__buttons">
+                  <button type="button" class="c-code-block__button c-code-block__toggle">Source
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <polyline points="6 9 12 15 18 9"></polyline>
+                    </svg>
+                  </button>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -219,159 +422,119 @@
 
         <div class="g-container">
           <div class="g-row">
-            <div class="g-col-12 g-col-tp-8 mb-1">
-              <div class="c-text">
-                <h2>
-                  <strong>Password</strong>
-                </h2>
-                <p>
-                  Lorem Ipsum.
-                </p>
-              </div>
-            </div>
             <div class="g-col-12 g-col-tp-6">
-              <div class="c-form__input-wrapper" data-action="wrapper">
-                <label class="c-label" for="password">Password Input:</label>
+              <div class="c-code-block__intro">
+                <div class="c-text">
+                  <h3>Password</h3>
 
-                <input class="c-form__input" type="password" name="password" id="password" aria-label="Bitte Ihr Passwort eintragen" placeholder="Password">
-
-                <div class="c-message">Error message</div>
+                </div>
               </div>
+              <div class="c-code-block">
+                <div class="c-code-block__preview">
+                  <div class="c-input-wrapper" data-action="wrapper">
+                    <div class="c-input__label">
+                      <label class="c-label" for="password">Password Input:</label>
 
-              <p class="headline-lined">Source</p>
-              <pre><code class="hljs html">
-    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-form__input-wrapper&quot;</span> <span class="hljs-attr">data-action</span>=<span class="hljs-string">&quot;wrapper&quot;</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-label&quot;</span> <span class="hljs-attr">for</span>=<span class="hljs-string">&quot;password&quot;</span>&gt;</span>Password Input:<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-form__input&quot;</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;password&quot;</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;password&quot;</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;password&quot;</span> <span class="hljs-attr">aria-label</span>=<span class="hljs-string">&quot;Bitte Ihr Passwort eintragen&quot;</span> <span class="hljs-attr">placeholder</span>=<span class="hljs-string">&quot;Password&quot;</span>&gt;</span>
+                      <div class="c-input__tooltip-wrapper">
+
+                      </div>
+                    </div>
+                    <div class="c-input__container">
+                      <input class="c-input" type="password" name="password" id="password" aria-label="Bitte Ihr Passwort eintragen" placeholder="Password">
+                    </div>
+
+                    <div class="c-message">Error message</div>
+                  </div>
+                </div>
+
+                <div class="c-code-block__source-wrapper">
+                  <div class="c-code-block__source">
+                    <pre><code class="hljs html">
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-input-wrapper&quot;</span> <span class="hljs-attr">data-action</span>=<span class="hljs-string">&quot;wrapper&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-input__label&quot;</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-label&quot;</span> <span class="hljs-attr">for</span>=<span class="hljs-string">&quot;password&quot;</span>&gt;</span>Password Input:<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-input__tooltip-wrapper&quot;</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-input__container&quot;</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-input&quot;</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;password&quot;</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;password&quot;</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;password&quot;</span> <span class="hljs-attr">aria-label</span>=<span class="hljs-string">&quot;Bitte Ihr Passwort eintragen&quot;</span> <span class="hljs-attr">placeholder</span>=<span class="hljs-string">&quot;Password&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-message&quot;</span>&gt;</span>Error message<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
     <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
     </code></pre>
+                  </div>
+                  <button class="c-code-block__copy-code-button">
+                    <span class="label">Copy</span>
+                    <span class="error">Failed to copy</span>
+                    <span class="success">Copied</span>
+                  </button>
+                </div>
+
+                <div class="c-code-block__buttons">
+                  <button type="button" class="c-code-block__button c-code-block__toggle">Source
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <polyline points="6 9 12 15 18 9"></polyline>
+                    </svg>
+                  </button>
+                </div>
+              </div>
             </div>
             <div class="g-col-12 g-col-tp-6">
-              <div class="c-form__input-wrapper" data-action="wrapper">
-                <label class="c-label" for="password2">Password Input mit Fehlermeldung:</label>
+              <div class="c-code-block__intro">
+                <div class="c-text">
+                  <h3>Password with Error</h3>
 
-                <input class="c-form__input is-error" type="password" name="password2" id="password2" aria-label="Bitte Ihr Passwort eintragen" placeholder="Password" value="LoremIpsum">
-
-                <div class="c-message is-error">Error message</div>
+                </div>
               </div>
+              <div class="c-code-block">
+                <div class="c-code-block__preview">
+                  <div class="c-input-wrapper" data-action="wrapper">
+                    <div class="c-input__label">
+                      <label class="c-label" for="password2">Password Input mit Fehlermeldung:</label>
 
-              <p class="headline-lined">Source</p>
-              <pre><code class="hljs html">
-    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-form__input-wrapper&quot;</span> <span class="hljs-attr">data-action</span>=<span class="hljs-string">&quot;wrapper&quot;</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-label&quot;</span> <span class="hljs-attr">for</span>=<span class="hljs-string">&quot;password2&quot;</span>&gt;</span>Password Input mit Fehlermeldung:<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-form__input is-error&quot;</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;password&quot;</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;password2&quot;</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;password2&quot;</span> <span class="hljs-attr">aria-label</span>=<span class="hljs-string">&quot;Bitte Ihr Passwort eintragen&quot;</span> <span class="hljs-attr">placeholder</span>=<span class="hljs-string">&quot;Password&quot;</span> <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;LoremIpsum&quot;</span>&gt;</span>
+                      <div class="c-input__tooltip-wrapper">
+
+                      </div>
+                    </div>
+                    <div class="c-input__container">
+                      <input class="c-input is-error" type="password" name="password2" id="password2" aria-label="Bitte Ihr Passwort eintragen" placeholder="Password" value="LoremIpsum">
+                    </div>
+
+                    <div class="c-message is-error">Error message</div>
+                  </div>
+                </div>
+
+                <div class="c-code-block__source-wrapper">
+                  <div class="c-code-block__source">
+                    <pre><code class="hljs html">
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-input-wrapper&quot;</span> <span class="hljs-attr">data-action</span>=<span class="hljs-string">&quot;wrapper&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-input__label&quot;</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-label&quot;</span> <span class="hljs-attr">for</span>=<span class="hljs-string">&quot;password2&quot;</span>&gt;</span>Password Input mit Fehlermeldung:<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-input__tooltip-wrapper&quot;</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-input__container&quot;</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-input is-error&quot;</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;password&quot;</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;password2&quot;</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;password2&quot;</span> <span class="hljs-attr">aria-label</span>=<span class="hljs-string">&quot;Bitte Ihr Passwort eintragen&quot;</span> <span class="hljs-attr">placeholder</span>=<span class="hljs-string">&quot;Password&quot;</span> <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;LoremIpsum&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-message is-error&quot;</span>&gt;</span>Error message<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
     <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
     </code></pre>
-            </div>
-          </div>
-        </div>
-      </div>
+                  </div>
+                  <button class="c-code-block__copy-code-button">
+                    <span class="label">Copy</span>
+                    <span class="error">Failed to copy</span>
+                    <span class="success">Copied</span>
+                  </button>
+                </div>
 
-      <div id="iban" class="c-section p-1">
-
-        <div class="g-container">
-          <div class="g-row">
-            <div class="g-col-12 g-col-tp-8 mb-1">
-              <div class="c-text">
-                <h2>
-                  <strong>IBAN</strong>
-                </h2>
-                <p>
-                  Lorem Ipsum.
-                </p>
+                <div class="c-code-block__buttons">
+                  <button type="button" class="c-code-block__button c-code-block__toggle">Source
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <polyline points="6 9 12 15 18 9"></polyline>
+                    </svg>
+                  </button>
+                </div>
               </div>
-            </div>
-            <div class="g-col-12 g-col-tp-6">
-              <div class="c-form__input-wrapper" data-action="wrapper">
-                <label class="c-label" for="iban">IBAN Input:</label>
-
-                <input class="c-form__input" type="text" name="iban" data-type="iban" data-mask="iban" id="iban" aria-label="Bitte Ihre IBAN eintragen" placeholder="IBAN">
-
-                <div class="c-message">Error message</div>
-              </div>
-
-              <p class="headline-lined">Source</p>
-              <pre><code class="hljs html">
-    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-form__input-wrapper&quot;</span> <span class="hljs-attr">data-action</span>=<span class="hljs-string">&quot;wrapper&quot;</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-label&quot;</span> <span class="hljs-attr">for</span>=<span class="hljs-string">&quot;iban&quot;</span>&gt;</span>IBAN Input:<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-form__input&quot;</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;text&quot;</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;iban&quot;</span> <span class="hljs-attr">data-type</span>=<span class="hljs-string">&quot;iban&quot;</span> <span class="hljs-attr">data-mask</span>=<span class="hljs-string">&quot;iban&quot;</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;iban&quot;</span> <span class="hljs-attr">aria-label</span>=<span class="hljs-string">&quot;Bitte Ihre IBAN eintragen&quot;</span> <span class="hljs-attr">placeholder</span>=<span class="hljs-string">&quot;IBAN&quot;</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-message&quot;</span>&gt;</span>Error message<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-    </code></pre>
-            </div>
-            <div class="g-col-12 g-col-tp-6">
-              <div class="c-form__input-wrapper" data-action="wrapper">
-                <label class="c-label" for="iban2">IBAN Input mit Fehlermeldung:</label>
-
-                <input class="c-form__input is-error" type="text" name="iban2" data-type="iban" data-mask="iban" id="iban2" aria-label="Bitte Ihre IBAN eintragen" placeholder="Password" value="DE02100100100006820101">
-
-                <div class="c-message is-error">Error message</div>
-              </div>
-
-              <p class="headline-lined">Source</p>
-              <pre><code class="hljs html">
-    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-form__input-wrapper&quot;</span> <span class="hljs-attr">data-action</span>=<span class="hljs-string">&quot;wrapper&quot;</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-label&quot;</span> <span class="hljs-attr">for</span>=<span class="hljs-string">&quot;iban2&quot;</span>&gt;</span>IBAN Input mit Fehlermeldung:<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-form__input is-error&quot;</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;text&quot;</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;iban2&quot;</span> <span class="hljs-attr">data-type</span>=<span class="hljs-string">&quot;iban&quot;</span> <span class="hljs-attr">data-mask</span>=<span class="hljs-string">&quot;iban&quot;</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;iban2&quot;</span> <span class="hljs-attr">aria-label</span>=<span class="hljs-string">&quot;Bitte Ihre IBAN eintragen&quot;</span> <span class="hljs-attr">placeholder</span>=<span class="hljs-string">&quot;Password&quot;</span> <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;DE02100100100006820101&quot;</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-message is-error&quot;</span>&gt;</span>Error message<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-    </code></pre>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div id="customer-number" class="c-section p-1">
-
-        <div class="g-container">
-          <div class="g-row">
-            <div class="g-col-12 g-col-tp-8 mb-1">
-              <div class="c-text">
-                <h2>
-                  <strong>Kundennummer</strong>
-                </h2>
-                <p>
-                  Lorem Ipsum.
-                </p>
-              </div>
-            </div>
-            <div class="g-col-12 g-col-tp-6">
-              <div class="c-form__input-wrapper" data-action="wrapper">
-                <label class="c-label" for="customer-number">Kundennummer Input:</label>
-
-                <input class="c-form__input" type="text" name="customer-number" data-type="customer-number" id="customer-number" aria-label="Bitte Ihre Kundennummer eintragen" placeholder="Kundennummer">
-
-                <div class="c-message">Error message</div>
-              </div>
-
-              <p class="headline-lined">Source</p>
-              <pre><code class="hljs html">
-    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-form__input-wrapper&quot;</span> <span class="hljs-attr">data-action</span>=<span class="hljs-string">&quot;wrapper&quot;</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-label&quot;</span> <span class="hljs-attr">for</span>=<span class="hljs-string">&quot;customer-number&quot;</span>&gt;</span>Kundennummer Input:<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-form__input&quot;</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;text&quot;</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;customer-number&quot;</span> <span class="hljs-attr">data-type</span>=<span class="hljs-string">&quot;customer-number&quot;</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;customer-number&quot;</span> <span class="hljs-attr">aria-label</span>=<span class="hljs-string">&quot;Bitte Ihre Kundennummer eintragen&quot;</span> <span class="hljs-attr">placeholder</span>=<span class="hljs-string">&quot;Kundennummer&quot;</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-message&quot;</span>&gt;</span>Error message<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-    </code></pre>
-            </div>
-            <div class="g-col-12 g-col-tp-6">
-              <div class="c-form__input-wrapper" data-action="wrapper">
-                <label class="c-label" for="customer-number2">Kundennummer Input mit Fehlermeldung:</label>
-
-                <input class="c-form__input is-error" type="text" name="customer-number2" data-type="customer-number" id="customer-number2" aria-label="Bitte Ihre Kundennummer eintragen" placeholder="Kundennummer" value="123456789">
-
-                <div class="c-message is-error">Error message</div>
-              </div>
-
-              <p class="headline-lined">Source</p>
-              <pre><code class="hljs html">
-    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-form__input-wrapper&quot;</span> <span class="hljs-attr">data-action</span>=<span class="hljs-string">&quot;wrapper&quot;</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-label&quot;</span> <span class="hljs-attr">for</span>=<span class="hljs-string">&quot;customer-number2&quot;</span>&gt;</span>Kundennummer Input mit Fehlermeldung:<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-form__input is-error&quot;</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;text&quot;</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;customer-number2&quot;</span> <span class="hljs-attr">data-type</span>=<span class="hljs-string">&quot;customer-number&quot;</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;customer-number2&quot;</span> <span class="hljs-attr">aria-label</span>=<span class="hljs-string">&quot;Bitte Ihre Kundennummer eintragen&quot;</span> <span class="hljs-attr">placeholder</span>=<span class="hljs-string">&quot;Kundennummer&quot;</span> <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;123456789&quot;</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-message is-error&quot;</span>&gt;</span>Error message<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-    </code></pre>
             </div>
           </div>
         </div>
@@ -381,37 +544,38 @@
 
         <div class="g-container">
           <div class="g-row">
-            <div class="g-col-12 g-col-tp-8 mb-1">
-              <div class="c-text">
-                <h2>
-                  <strong>Personanzahl Slider</strong>
-                </h2>
-                <p>
-                  Personenanzahl
-                </p>
-              </div>
-            </div>
             <div class="g-col-12 g-col-tp-6">
-              <div class="c-range-slider__wrapper">
-                <div class="c-range-slider">
-                  <input class="c-range-slider__native" type="range" name="range" aria-label="Bitte Ihre Personenanzahl auswählen" min="1" max="10" value="1">
-                  <div class="c-range-slider__icons">
-                    <i class="c-range-slider__icon ic ic__user"></i>
-                    <i class="c-range-slider__icon ic ic__user"></i>
-                    <i class="c-range-slider__icon ic ic__user"></i>
-                    <i class="c-range-slider__icon ic ic__user"></i>
-                    <i class="c-range-slider__icon ic ic__user"></i>
-                    <i class="c-range-slider__icon ic ic__user"></i>
-                    <i class="c-range-slider__icon ic ic__user"></i>
-                    <i class="c-range-slider__icon ic ic__user"></i>
-                    <i class="c-range-slider__icon ic ic__user"></i>
-                    <i class="c-range-slider__icon ic ic__user"></i>
-                  </div>
+              <div class="c-code-block__intro">
+                <div class="c-text">
+                  <h3>People Slider</h3>
+
                 </div>
               </div>
+              <div class="c-code-block">
+                <div class="c-code-block__preview">
+                  <div class="c-range-slider__wrapper">
+                    <div class="c-range-slider">
+                      <input class="c-range-slider__native" type="range" name="range" aria-label="Bitte Ihre Personenanzahl auswählen" min="1" max="10" value="1">
+                      <div class="c-range-slider__icons">
+                        <i class="c-range-slider__icon ic ic__user"></i>
+                        <i class="c-range-slider__icon ic ic__user"></i>
+                        <i class="c-range-slider__icon ic ic__user"></i>
+                        <i class="c-range-slider__icon ic ic__user"></i>
+                        <i class="c-range-slider__icon ic ic__user"></i>
+                        <i class="c-range-slider__icon ic ic__user"></i>
+                        <i class="c-range-slider__icon ic ic__user"></i>
+                        <i class="c-range-slider__icon ic ic__user"></i>
+                        <i class="c-range-slider__icon ic ic__user"></i>
+                        <i class="c-range-slider__icon ic ic__user"></i>
+                      </div>
+                    </div>
+                  </div>
 
-              <p class="headline-lined">Source</p>
-              <pre><code class="hljs html">
+                </div>
+
+                <div class="c-code-block__source-wrapper">
+                  <div class="c-code-block__source">
+                    <pre><code class="hljs html">
     <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-range-slider__wrapper&quot;</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-range-slider&quot;</span>&gt;</span>
             <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-range-slider__native&quot;</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;range&quot;</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;range&quot;</span> <span class="hljs-attr">aria-label</span>=<span class="hljs-string">&quot;Bitte Ihre Personenanzahl auswählen&quot;</span> <span class="hljs-attr">min</span>=<span class="hljs-string">&quot;1&quot;</span> <span class="hljs-attr">max</span>=<span class="hljs-string">&quot;10&quot;</span> <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;1&quot;</span>&gt;</span>
@@ -430,6 +594,592 @@
         <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
     <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
     </code></pre>
+                  </div>
+                  <button class="c-code-block__copy-code-button">
+                    <span class="label">Copy</span>
+                    <span class="error">Failed to copy</span>
+                    <span class="success">Copied</span>
+                  </button>
+                </div>
+
+                <div class="c-code-block__buttons">
+                  <button type="button" class="c-code-block__button c-code-block__toggle">Source
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <polyline points="6 9 12 15 18 9"></polyline>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="c-section p-1">
+
+        <div class="g-container">
+          <div class="g-row">
+            <div class="g-col-12 g-col-tp-6">
+              <div class="c-code-block__intro">
+                <div class="c-text">
+                  <h3>Yearly consumption with unit</h3>
+
+                </div>
+              </div>
+              <div class="c-code-block">
+                <div class="c-code-block__preview">
+                  <div class="c-input-wrapper" data-action="wrapper">
+                    <div class="c-input__label">
+                      <label class="c-label" for="jahresverbrauch">Jahresverbrauch*</label>
+
+                      <div class="c-input__tooltip-wrapper">
+
+                      </div>
+                    </div>
+                    <div class="c-input__container is-kwh">
+                      <input class="c-input" type="text" name="jahresverbrauch" id="jahresverbrauch" aria-label="Bitte Ihren Jahresverbrauch eintragen" placeholder="Jahresverbrauch eingeben">
+                    </div>
+                    <span class="c-input__hint">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</span>
+
+                    <div class="c-message">Error message</div>
+                  </div>
+                </div>
+
+                <div class="c-code-block__source-wrapper">
+                  <div class="c-code-block__source">
+                    <pre><code class="hljs html">
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-input-wrapper&quot;</span> <span class="hljs-attr">data-action</span>=<span class="hljs-string">&quot;wrapper&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-input__label&quot;</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-label&quot;</span> <span class="hljs-attr">for</span>=<span class="hljs-string">&quot;jahresverbrauch&quot;</span>&gt;</span>Jahresverbrauch*<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-input__tooltip-wrapper&quot;</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-input__container is-kwh&quot;</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-input&quot;</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;text&quot;</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;jahresverbrauch&quot;</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;jahresverbrauch&quot;</span> <span class="hljs-attr">aria-label</span>=<span class="hljs-string">&quot;Bitte Ihren Jahresverbrauch eintragen&quot;</span> <span class="hljs-attr">placeholder</span>=<span class="hljs-string">&quot;Jahresverbrauch eingeben&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-input__hint&quot;</span>&gt;</span>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-message&quot;</span>&gt;</span>Error message<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    </code></pre>
+                  </div>
+                  <button class="c-code-block__copy-code-button">
+                    <span class="label">Copy</span>
+                    <span class="error">Failed to copy</span>
+                    <span class="success">Copied</span>
+                  </button>
+                </div>
+
+                <div class="c-code-block__buttons">
+                  <button type="button" class="c-code-block__button c-code-block__toggle">Source
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <polyline points="6 9 12 15 18 9"></polyline>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="g-col-12 g-col-tp-6">
+              <div class="c-code-block__intro">
+                <div class="c-text">
+                  <h3>Yearly consumption with Error</h3>
+
+                </div>
+              </div>
+              <div class="c-code-block">
+                <div class="c-code-block__preview">
+                  <div class="c-input-wrapper" data-action="wrapper">
+                    <div class="c-input__label">
+                      <label class="c-label" for="jahresverbrauch2">Jahresverbrauch mit Fehlermeldung*</label>
+
+                      <div class="c-input__tooltip-wrapper">
+
+                      </div>
+                    </div>
+                    <div class="c-input__container is-kwh">
+                      <input class="c-input is-error" type="text" name="jahresverbrauch2" id="jahresverbrauch2" aria-label="Bitte Ihren Jahresverbrauch eintragen" placeholder="Jahresverbrauch eingeben">
+                    </div>
+                    <span class="c-input__hint">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</span>
+
+                    <div class="c-message is-error">Error message</div>
+                  </div>
+                </div>
+
+                <div class="c-code-block__source-wrapper">
+                  <div class="c-code-block__source">
+                    <pre><code class="hljs html">
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-input-wrapper&quot;</span> <span class="hljs-attr">data-action</span>=<span class="hljs-string">&quot;wrapper&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-input__label&quot;</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-label&quot;</span> <span class="hljs-attr">for</span>=<span class="hljs-string">&quot;jahresverbrauch2&quot;</span>&gt;</span>Jahresverbrauch mit Fehlermeldung*<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-input__tooltip-wrapper&quot;</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-input__container is-kwh&quot;</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-input is-error&quot;</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;text&quot;</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;jahresverbrauch2&quot;</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;jahresverbrauch2&quot;</span> <span class="hljs-attr">aria-label</span>=<span class="hljs-string">&quot;Bitte Ihren Jahresverbrauch eintragen&quot;</span> <span class="hljs-attr">placeholder</span>=<span class="hljs-string">&quot;Jahresverbrauch eingeben&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-input__hint&quot;</span>&gt;</span>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-message is-error&quot;</span>&gt;</span>Error message<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    </code></pre>
+                  </div>
+                  <button class="c-code-block__copy-code-button">
+                    <span class="label">Copy</span>
+                    <span class="error">Failed to copy</span>
+                    <span class="success">Copied</span>
+                  </button>
+                </div>
+
+                <div class="c-code-block__buttons">
+                  <button type="button" class="c-code-block__button c-code-block__toggle">Source
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <polyline points="6 9 12 15 18 9"></polyline>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="iban" class="c-section p-1">
+
+        <div class="g-container">
+          <div class="g-row">
+            <div class="g-col-12 g-col-tp-6">
+              <div class="c-code-block__intro">
+                <div class="c-text">
+                  <h3>IBAN</h3>
+
+                </div>
+              </div>
+              <div class="c-code-block">
+                <div class="c-code-block__preview">
+                  <div class="c-input-wrapper" data-action="wrapper">
+                    <div class="c-input__label">
+                      <label class="c-label" for="iban">IBAN*</label>
+
+                      <div class="c-input__tooltip-wrapper">
+
+                      </div>
+                    </div>
+                    <div class="c-input__container">
+                      <input class="c-input" type="text" name="iban" data-type="iban" data-mask="iban" id="iban" aria-label="Bitte Ihre IBAN eintragen" placeholder="IBAN">
+                    </div>
+                    <span class="c-input__hint">Bsp. DE 12 5201 0519 0748 4198 90</span>
+
+                    <div class="c-message">Error message</div>
+                  </div>
+                </div>
+
+                <div class="c-code-block__source-wrapper">
+                  <div class="c-code-block__source">
+                    <pre><code class="hljs html">
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-input-wrapper&quot;</span> <span class="hljs-attr">data-action</span>=<span class="hljs-string">&quot;wrapper&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-input__label&quot;</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-label&quot;</span> <span class="hljs-attr">for</span>=<span class="hljs-string">&quot;iban&quot;</span>&gt;</span>IBAN*<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-input__tooltip-wrapper&quot;</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-input__container&quot;</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-input&quot;</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;text&quot;</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;iban&quot;</span> <span class="hljs-attr">data-type</span>=<span class="hljs-string">&quot;iban&quot;</span> <span class="hljs-attr">data-mask</span>=<span class="hljs-string">&quot;iban&quot;</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;iban&quot;</span> <span class="hljs-attr">aria-label</span>=<span class="hljs-string">&quot;Bitte Ihre IBAN eintragen&quot;</span> <span class="hljs-attr">placeholder</span>=<span class="hljs-string">&quot;IBAN&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-input__hint&quot;</span>&gt;</span>Bsp. DE 12 5201 0519 0748 4198 90<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-message&quot;</span>&gt;</span>Error message<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    </code></pre>
+                  </div>
+                  <button class="c-code-block__copy-code-button">
+                    <span class="label">Copy</span>
+                    <span class="error">Failed to copy</span>
+                    <span class="success">Copied</span>
+                  </button>
+                </div>
+
+                <div class="c-code-block__buttons">
+                  <button type="button" class="c-code-block__button c-code-block__toggle">Source
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <polyline points="6 9 12 15 18 9"></polyline>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="g-col-12 g-col-tp-6">
+              <div class="c-code-block__intro">
+                <div class="c-text">
+                  <h3>IBAN with Error</h3>
+
+                </div>
+              </div>
+              <div class="c-code-block">
+                <div class="c-code-block__preview">
+                  <div class="c-input-wrapper" data-action="wrapper">
+                    <div class="c-input__label">
+                      <label class="c-label" for="iban2">IBAN mit Fehlermeldung*</label>
+
+                      <div class="c-input__tooltip-wrapper">
+
+                      </div>
+                    </div>
+                    <div class="c-input__container">
+                      <input class="c-input is-error" type="text" name="iban2" data-type="iban" data-mask="iban" id="iban2" aria-label="Bitte Ihre IBAN eintragen" placeholder="Password" value="DE02100100100006820101">
+                    </div>
+                    <span class="c-input__hint">Bsp. DE 12 5201 0519 0748 4198 90</span>
+
+                    <div class="c-message is-error">Error message</div>
+                  </div>
+                </div>
+
+                <div class="c-code-block__source-wrapper">
+                  <div class="c-code-block__source">
+                    <pre><code class="hljs html">
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-input-wrapper&quot;</span> <span class="hljs-attr">data-action</span>=<span class="hljs-string">&quot;wrapper&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-input__label&quot;</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-label&quot;</span> <span class="hljs-attr">for</span>=<span class="hljs-string">&quot;iban2&quot;</span>&gt;</span>IBAN mit Fehlermeldung*<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-input__tooltip-wrapper&quot;</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-input__container&quot;</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-input is-error&quot;</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;text&quot;</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;iban2&quot;</span> <span class="hljs-attr">data-type</span>=<span class="hljs-string">&quot;iban&quot;</span> <span class="hljs-attr">data-mask</span>=<span class="hljs-string">&quot;iban&quot;</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;iban2&quot;</span> <span class="hljs-attr">aria-label</span>=<span class="hljs-string">&quot;Bitte Ihre IBAN eintragen&quot;</span> <span class="hljs-attr">placeholder</span>=<span class="hljs-string">&quot;Password&quot;</span> <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;DE02100100100006820101&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-input__hint&quot;</span>&gt;</span>Bsp. DE 12 5201 0519 0748 4198 90<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-message is-error&quot;</span>&gt;</span>Error message<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    </code></pre>
+                  </div>
+                  <button class="c-code-block__copy-code-button">
+                    <span class="label">Copy</span>
+                    <span class="error">Failed to copy</span>
+                    <span class="success">Copied</span>
+                  </button>
+                </div>
+
+                <div class="c-code-block__buttons">
+                  <button type="button" class="c-code-block__button c-code-block__toggle">Source
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <polyline points="6 9 12 15 18 9"></polyline>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="c-section pt-1 pb-3">
+
+        <div class="g-container">
+          <div class="g-row">
+            <div class="g-col-12 g-col-tp-6">
+              <div class="c-code-block__intro">
+                <div class="c-text">
+                  <h3>Meter readings</h3>
+
+                </div>
+              </div>
+              <div class="c-code-block">
+                <div class="c-code-block__preview">
+                  <div class="c-input-wrapper" data-action="wrapper">
+                    <div class="c-input__label">
+                      <label class="c-label" for="zaehlerstand">Zählerstand*</label>
+
+                      <div class="c-input__tooltip-wrapper">
+                        <div class="c-tooltip">
+                          <div class="c-tooltip__hint">
+                            <div class="c-tooltip__hint-text c-text">
+                              <p>
+                                <b>Lorem ipsum dolor sit amet</b>
+                              </p>
+                              <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. </p>
+                            </div>
+                          </div>
+
+                          <div class="c-tooltip__opener-wrapper">
+                            <i class="c-tooltip__opener-icon ic ic__info"></i>
+                          </div>
+                        </div>
+
+                      </div>
+                    </div>
+                    <div class="c-input__container is-counter">
+                      <input class="c-input" type="text" name="zaehlerstand" id="zaehlerstand" aria-label="Bitte Ihren Zählerstand eintragen" placeholder="Zählerstand eingeben">
+                    </div>
+                    <span class="c-input__hint">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</span>
+
+                    <div class="c-message">Error message</div>
+                  </div>
+                  <div class="c-checkbox__wrapper">
+                    <div class="c-checkbox">
+                      <input class="c-checkbox__native" id="checkbox" name="checkbox" checked type="checkbox" value="checkbox">
+                      <div class="c-checkbox__background"></div>
+                    </div>
+                    <label class="c-label c-label--checkbox" for="checkbox">Haben Sie eine Wärmepumpe oder eine Nachtspeicherheizung?</label>
+
+                  </div>
+
+                </div>
+
+                <div class="c-code-block__source-wrapper">
+                  <div class="c-code-block__source">
+                    <pre><code class="hljs html">
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-input-wrapper&quot;</span> <span class="hljs-attr">data-action</span>=<span class="hljs-string">&quot;wrapper&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-input__label&quot;</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-label&quot;</span> <span class="hljs-attr">for</span>=<span class="hljs-string">&quot;zaehlerstand&quot;</span>&gt;</span>Zählerstand*<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-input__tooltip-wrapper&quot;</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-tooltip&quot;</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-tooltip__hint&quot;</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-tooltip__hint-text c-text&quot;</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">b</span>&gt;</span>Lorem ipsum dolor sit amet<span class="hljs-tag">&lt;/<span class="hljs-name">b</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. <span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+                        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-tooltip__opener-wrapper&quot;</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-tooltip__opener-icon ic ic__info&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-input__container is-counter&quot;</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-input&quot;</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;text&quot;</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;zaehlerstand&quot;</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;zaehlerstand&quot;</span> <span class="hljs-attr">aria-label</span>=<span class="hljs-string">&quot;Bitte Ihren Zählerstand eintragen&quot;</span> <span class="hljs-attr">placeholder</span>=<span class="hljs-string">&quot;Zählerstand eingeben&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-input__hint&quot;</span>&gt;</span>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-message&quot;</span>&gt;</span>Error message<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-checkbox__wrapper&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-checkbox&quot;</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-checkbox__native&quot;</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;checkbox&quot;</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;checkbox&quot;</span> <span class="hljs-attr">checked</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;checkbox&quot;</span> <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;checkbox&quot;</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-checkbox__background&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-label c-label--checkbox&quot;</span> <span class="hljs-attr">for</span>=<span class="hljs-string">&quot;checkbox&quot;</span>&gt;</span>Haben Sie eine Wärmepumpe oder eine Nachtspeicherheizung?<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    </code></pre>
+                  </div>
+                  <button class="c-code-block__copy-code-button">
+                    <span class="label">Copy</span>
+                    <span class="error">Failed to copy</span>
+                    <span class="success">Copied</span>
+                  </button>
+                </div>
+
+                <div class="c-code-block__buttons">
+                  <button type="button" class="c-code-block__button c-code-block__toggle">Source
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <polyline points="6 9 12 15 18 9"></polyline>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="g-col-12 g-col-tp-6">
+              <div class="c-code-block__intro">
+                <div class="c-text">
+                  <h3>Meter readings with Error</h3>
+
+                </div>
+              </div>
+              <div class="c-code-block">
+                <div class="c-code-block__preview">
+                  <div class="c-input-wrapper" data-action="wrapper">
+                    <div class="c-input__label">
+                      <label class="c-label" for="zaehlerstand">Zählerstand*</label>
+
+                      <div class="c-input__tooltip-wrapper">
+                        <div class="c-tooltip">
+                          <div class="c-tooltip__hint">
+                            <div class="c-tooltip__hint-text c-text">
+                              <p>
+                                <b>Lorem ipsum dolor sit amet</b>
+                              </p>
+                              <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. </p>
+                            </div>
+                          </div>
+
+                          <div class="c-tooltip__opener-wrapper">
+                            <i class="c-tooltip__opener-icon ic ic__info"></i>
+                          </div>
+                        </div>
+
+                      </div>
+                    </div>
+                    <div class="c-input__container is-counter">
+                      <input class="c-input  is-error" type="text" name="zaehlerstand" id="zaehlerstand" aria-label="Bitte Ihren Zählerstand eintragen" placeholder="Zählerstand eingeben">
+                    </div>
+                    <span class="c-input__hint">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</span>
+
+                    <div class="c-message is-error">Error message</div>
+                  </div>
+                </div>
+
+                <div class="c-code-block__source-wrapper">
+                  <div class="c-code-block__source">
+                    <pre><code class="hljs html">
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-input-wrapper&quot;</span> <span class="hljs-attr">data-action</span>=<span class="hljs-string">&quot;wrapper&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-input__label&quot;</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-label&quot;</span> <span class="hljs-attr">for</span>=<span class="hljs-string">&quot;zaehlerstand&quot;</span>&gt;</span>Zählerstand*<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-input__tooltip-wrapper&quot;</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-tooltip&quot;</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-tooltip__hint&quot;</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-tooltip__hint-text c-text&quot;</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">b</span>&gt;</span>Lorem ipsum dolor sit amet<span class="hljs-tag">&lt;/<span class="hljs-name">b</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. <span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+                        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-tooltip__opener-wrapper&quot;</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-tooltip__opener-icon ic ic__info&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-input__container is-counter&quot;</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-input  is-error&quot;</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;text&quot;</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;zaehlerstand&quot;</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;zaehlerstand&quot;</span> <span class="hljs-attr">aria-label</span>=<span class="hljs-string">&quot;Bitte Ihren Zählerstand eintragen&quot;</span> <span class="hljs-attr">placeholder</span>=<span class="hljs-string">&quot;Zählerstand eingeben&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-input__hint&quot;</span>&gt;</span>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-message is-error&quot;</span>&gt;</span>Error message<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    </code></pre>
+                  </div>
+                  <button class="c-code-block__copy-code-button">
+                    <span class="label">Copy</span>
+                    <span class="error">Failed to copy</span>
+                    <span class="success">Copied</span>
+                  </button>
+                </div>
+
+                <div class="c-code-block__buttons">
+                  <button type="button" class="c-code-block__button c-code-block__toggle">Source
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <polyline points="6 9 12 15 18 9"></polyline>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="customer-number" class="c-section p-1">
+
+        <div class="g-container">
+          <div class="g-row">
+            <div class="g-col-12 g-col-tp-6">
+              <div class="c-code-block__intro">
+                <div class="c-text">
+                  <h3>Customer number</h3>
+
+                </div>
+              </div>
+              <div class="c-code-block">
+                <div class="c-code-block__preview">
+                  <div class="c-input-wrapper" data-action="wrapper">
+                    <div class="c-input__label">
+                      <label class="c-label" for="customer-number">Kundennummer Input:</label>
+
+                      <div class="c-input__tooltip-wrapper">
+
+                      </div>
+                    </div>
+                    <div class="c-input__container">
+                      <input class="c-input" type="text" name="customer-number" data-type="customer-number" id="customer-number" aria-label="Bitte Ihre Kundennummer eintragen" placeholder="Kundennummer">
+                    </div>
+                    <span class="c-input__hint">9XXXXXXXXX</span>
+
+                    <div class="c-message">Error message</div>
+                  </div>
+                </div>
+
+                <div class="c-code-block__source-wrapper">
+                  <div class="c-code-block__source">
+                    <pre><code class="hljs html">
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-input-wrapper&quot;</span> <span class="hljs-attr">data-action</span>=<span class="hljs-string">&quot;wrapper&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-input__label&quot;</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-label&quot;</span> <span class="hljs-attr">for</span>=<span class="hljs-string">&quot;customer-number&quot;</span>&gt;</span>Kundennummer Input:<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-input__tooltip-wrapper&quot;</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-input__container&quot;</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-input&quot;</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;text&quot;</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;customer-number&quot;</span> <span class="hljs-attr">data-type</span>=<span class="hljs-string">&quot;customer-number&quot;</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;customer-number&quot;</span> <span class="hljs-attr">aria-label</span>=<span class="hljs-string">&quot;Bitte Ihre Kundennummer eintragen&quot;</span> <span class="hljs-attr">placeholder</span>=<span class="hljs-string">&quot;Kundennummer&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-input__hint&quot;</span>&gt;</span>9XXXXXXXXX<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-message&quot;</span>&gt;</span>Error message<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    </code></pre>
+                  </div>
+                  <button class="c-code-block__copy-code-button">
+                    <span class="label">Copy</span>
+                    <span class="error">Failed to copy</span>
+                    <span class="success">Copied</span>
+                  </button>
+                </div>
+
+                <div class="c-code-block__buttons">
+                  <button type="button" class="c-code-block__button c-code-block__toggle">Source
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <polyline points="6 9 12 15 18 9"></polyline>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="g-col-12 g-col-tp-6">
+              <div class="c-code-block__intro">
+                <div class="c-text">
+                  <h3>Customer number with Error</h3>
+
+                </div>
+              </div>
+              <div class="c-code-block">
+                <div class="c-code-block__preview">
+                  <div class="c-input-wrapper" data-action="wrapper">
+                    <div class="c-input__label">
+                      <label class="c-label" for="customer-number2">Kundennummer Input mit Fehlermeldung:</label>
+
+                      <div class="c-input__tooltip-wrapper">
+
+                      </div>
+                    </div>
+                    <div class="c-input__container">
+                      <input class="c-input is-error" type="text" name="customer-number2" data-type="customer-number" id="customer-number2" aria-label="Bitte Ihre Kundennummer eintragen" placeholder="Kundennummer" value="123456789">
+                    </div>
+                    <span class="c-input__hint">9XXXXXXXXX</span>
+
+                    <div class="c-message is-error">Error message</div>
+                  </div>
+                </div>
+
+                <div class="c-code-block__source-wrapper">
+                  <div class="c-code-block__source">
+                    <pre><code class="hljs html">
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-input-wrapper&quot;</span> <span class="hljs-attr">data-action</span>=<span class="hljs-string">&quot;wrapper&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-input__label&quot;</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-label&quot;</span> <span class="hljs-attr">for</span>=<span class="hljs-string">&quot;customer-number2&quot;</span>&gt;</span>Kundennummer Input mit Fehlermeldung:<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-input__tooltip-wrapper&quot;</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-input__container&quot;</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-input is-error&quot;</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;text&quot;</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;customer-number2&quot;</span> <span class="hljs-attr">data-type</span>=<span class="hljs-string">&quot;customer-number&quot;</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;customer-number2&quot;</span> <span class="hljs-attr">aria-label</span>=<span class="hljs-string">&quot;Bitte Ihre Kundennummer eintragen&quot;</span> <span class="hljs-attr">placeholder</span>=<span class="hljs-string">&quot;Kundennummer&quot;</span> <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;123456789&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-input__hint&quot;</span>&gt;</span>9XXXXXXXXX<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-message is-error&quot;</span>&gt;</span>Error message<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    </code></pre>
+                  </div>
+                  <button class="c-code-block__copy-code-button">
+                    <span class="label">Copy</span>
+                    <span class="error">Failed to copy</span>
+                    <span class="success">Copied</span>
+                  </button>
+                </div>
+
+                <div class="c-code-block__buttons">
+                  <button type="button" class="c-code-block__button c-code-block__toggle">Source
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <polyline points="6 9 12 15 18 9"></polyline>
+                    </svg>
+                  </button>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -439,45 +1189,87 @@
 
         <div class="g-container">
           <div class="g-row">
-            <div class="g-col-12 g-col-tp-8 mb-1">
-              <div class="c-text">
-                <h2>
-                  <strong>Textarea</strong>
-                </h2>
-                <p>
-                  Das textarea-Element repräsentiert ein mehrzeiliges Eingabeelement.
-                </p>
-              </div>
-            </div>
             <div class="g-col-12 g-col-tp-6">
-              <label class="c-label" for="textarea">Textarea:</label>
-
-              <textarea class="c-form__input" name="textarea" data-type="text" id="textarea" aria-label="Bitte Text eintragen" placeholder="Text Area"></textarea>
-              <div class="c-message">
-                <span>Error message</span>
+              <div class="c-code-block__intro">
+                <div class="c-text">
+                  <h3>Textarea</h3>
+                  <p>Das textarea-Element repräsentiert ein mehrzeiliges Eingabeelement.</p>
+                </div>
               </div>
+              <div class="c-code-block">
+                <div class="c-code-block__preview">
+                  <label class="c-label" for="textarea">Textarea:</label>
 
-              <p class="headline-lined">Source</p>
-              <pre><code class="hljs html">
+                  <textarea class="c-input" name="textarea" data-type="text" id="textarea" aria-label="Bitte Text eintragen" placeholder="Bitte trage eine Beschreibung ein."></textarea>
+                  <div class="c-message">
+                    <span>Error message</span>
+                  </div>
+                </div>
+
+                <div class="c-code-block__source-wrapper">
+                  <div class="c-code-block__source">
+                    <pre><code class="hljs html">
     <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-label&quot;</span> <span class="hljs-attr">for</span>=<span class="hljs-string">&quot;textarea&quot;</span>&gt;</span>Textarea:<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">textarea</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-form__input&quot;</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;textarea&quot;</span> <span class="hljs-attr">data-type</span>=<span class="hljs-string">&quot;text&quot;</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;textarea&quot;</span> <span class="hljs-attr">aria-label</span>=<span class="hljs-string">&quot;Bitte Text eintragen&quot;</span> <span class="hljs-attr">placeholder</span>=<span class="hljs-string">&quot;Text Area&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">textarea</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">textarea</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-input&quot;</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;textarea&quot;</span> <span class="hljs-attr">data-type</span>=<span class="hljs-string">&quot;text&quot;</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;textarea&quot;</span> <span class="hljs-attr">aria-label</span>=<span class="hljs-string">&quot;Bitte Text eintragen&quot;</span> <span class="hljs-attr">placeholder</span>=<span class="hljs-string">&quot;Bitte trage eine Beschreibung ein.&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">textarea</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-message&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span>Error message<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
     </code></pre>
+                  </div>
+                  <button class="c-code-block__copy-code-button">
+                    <span class="label">Copy</span>
+                    <span class="error">Failed to copy</span>
+                    <span class="success">Copied</span>
+                  </button>
+                </div>
+
+                <div class="c-code-block__buttons">
+                  <button type="button" class="c-code-block__button c-code-block__toggle">Source
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <polyline points="6 9 12 15 18 9"></polyline>
+                    </svg>
+                  </button>
+                </div>
+              </div>
             </div>
             <div class="g-col-12 g-col-tp-6">
-              <label class="c-label" for="textarea2">Textarea mit Fehlermeldung:</label>
+              <div class="c-code-block__intro">
+                <div class="c-text">
+                  <h3>Textarea with Error</h3>
 
-              <textarea class="c-form__input is-error" name="textarea2" data-type="text" id="textarea2" aria-label="Bitte Text eintragen" placeholder="Text Area"></textarea>
-              <div class="c-message is-error">
-                <span>Error message</span>
+                </div>
               </div>
+              <div class="c-code-block">
+                <div class="c-code-block__preview">
+                  <label class="c-label" for="textarea2">Textarea mit Fehlermeldung:</label>
 
-              <p class="headline-lined">Source</p>
-              <pre><code class="hljs html">
+                  <textarea class="c-input is-error" name="textarea2" data-type="text" id="textarea2" aria-label="Bitte Text eintragen" placeholder="Bitte trage eine Beschreibung ein."></textarea>
+                  <div class="c-message is-error">
+                    <span>Error message</span>
+                  </div>
+                </div>
+
+                <div class="c-code-block__source-wrapper">
+                  <div class="c-code-block__source">
+                    <pre><code class="hljs html">
     <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-label&quot;</span> <span class="hljs-attr">for</span>=<span class="hljs-string">&quot;textarea2&quot;</span>&gt;</span>Textarea mit Fehlermeldung:<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">textarea</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-form__input is-error&quot;</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;textarea2&quot;</span> <span class="hljs-attr">data-type</span>=<span class="hljs-string">&quot;text&quot;</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;textarea2&quot;</span> <span class="hljs-attr">aria-label</span>=<span class="hljs-string">&quot;Bitte Text eintragen&quot;</span> <span class="hljs-attr">placeholder</span>=<span class="hljs-string">&quot;Text Area&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">textarea</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">textarea</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-input is-error&quot;</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;textarea2&quot;</span> <span class="hljs-attr">data-type</span>=<span class="hljs-string">&quot;text&quot;</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;textarea2&quot;</span> <span class="hljs-attr">aria-label</span>=<span class="hljs-string">&quot;Bitte Text eintragen&quot;</span> <span class="hljs-attr">placeholder</span>=<span class="hljs-string">&quot;Bitte trage eine Beschreibung ein.&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">textarea</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-message is-error&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span>Error message<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
     </code></pre>
+                  </div>
+                  <button class="c-code-block__copy-code-button">
+                    <span class="label">Copy</span>
+                    <span class="error">Failed to copy</span>
+                    <span class="success">Copied</span>
+                  </button>
+                </div>
+
+                <div class="c-code-block__buttons">
+                  <button type="button" class="c-code-block__button c-code-block__toggle">Source
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <polyline points="6 9 12 15 18 9"></polyline>
+                    </svg>
+                  </button>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -485,8 +1277,8 @@
 
       <aside class="sidebar">
         <nav class="c-side-nav">
-          <button class="c-side-nav__nav-toggle" id="c-side-nav__toggle" onclick="document.body.classList.toggle('is-nav-close');">
-            <i class="ic ic__arrow-left"></i>
+          <button class="c-side-nav__nav-toggle" id="c-side-nav__toggle">
+            <span class="c-side-nav__toggle-icon"></span>
           </button>
           <div class="c-side-nav__picture-wrapper">
             <a class="c-side-nav__picture-link" href="/">
@@ -530,14 +1322,14 @@
 
                   </li>
                   <li>
-                    <a class="" href="theming.html" title="Theming">
-                      Theming
+                    <a class="" href="principles.html" title="Principles">
+                      Principles
                     </a>
 
                   </li>
                   <li>
-                    <a class="" href="mobile-first.html" title="Mobile First">
-                      Mobile First
+                    <a class="" href="theming.html" title="Theming">
+                      Theming
                     </a>
 
                   </li>
@@ -848,13 +1640,33 @@
           </div>
         </nav>
       </aside>
-
     </main>
     <footer>
 
+      <div class="c-footer p-1">
+        <div class="g-container">
+          <div class="g-row">
+            <div class="g-col-12">
+              <div class="c-footer__nav-wrapper">
+                <nav class="c-footer__nav">
+                  <ul class="c-footer__nav-list">
+                    <li class="c-footer__nav-list-item">
+                      <a href="impressum.html" title="Impressum">Impressum</a>
+                    </li>
+                    <li class="c-footer__nav-list-item">
+                      <a href="datenschutz.html" title="Datenschutz">Datenschutz</a>
+                    </li>
+                  </ul>
+                </nav>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </footer>
     <script src="assets/js/app.js"></script>
     <script src="assets/js/side-nav.js"></script>
+    <script src="assets/js/code-block.js"></script>
 
   </body>
 

@@ -87,10 +87,7 @@
                 <p>Die Struktur der Registerkarten besteht aus einer ungeordneten Liste von CTAs, deren Hashes den Registerkarten-IDs entsprechen. Wenn Sie dann auf die einzelnen Registerkarten klicken, wird nur der Container mit der entsprechenden Registerkarten-ID sichtbar.</p>
                 <p>Folgende Klassen können gesetzt werden:</p>
                 <ul>
-                  <li><code>c-tabs--cta-right</code></li>
-                  <li><code>c-tabs--cta-center</code></li>
-                  <li><code>c-tabs--cta-space</code></li>
-                  <li><code>c-tabs--cta-stack</code></li>
+                  <li><code>c-tabs--arrows</code></li>
                 </ul>
 
               </div>
@@ -121,448 +118,91 @@
 
         <div class="g-container">
           <div class="g-row">
-            <div class="g-col-12 g-col-tp-6">
-              <h2>Default</h2>
-
-              <div class="c-tabs" id="defaultTabs" data-json="{}">
-                <div class="c-tabs__cta-list-wrapper">
-                  <ul class="c-tabs__cta-list" role="tablist" aria-label="defaultTabs">
-                    <li class="c-tabs__cta-wrapper">
-                      <button class="c-tabs__cta is-active" role="tab" aria-selected="true" aria-controls="defaultTabs-panel-1" data-toggle="tabs" data-target="#defaultTabs-panel-1" data-parent="#defaultTabs" id="defaultTabs-tab-1" tabindex="0">
-                        Button 1
-                      </button>
-                    </li>
-                    <li class="c-tabs__cta-wrapper">
-                      <button class="c-tabs__cta" role="tab" aria-selected="false" aria-controls="defaultTabs-panel-2" data-toggle="tabs" data-target="#defaultTabs-panel-2" data-parent="#defaultTabs" id="defaultTabs-tab-2" tabindex="-1">
-                        Button 2
-                      </button>
-                    </li>
-                    <li class="c-tabs__cta-wrapper">
-                      <button class="c-tabs__cta" role="tab" aria-selected="false" aria-controls="defaultTabs-panel-3" data-toggle="tabs" data-target="#defaultTabs-panel-3" data-parent="#defaultTabs" id="defaultTabs-tab-3" tabindex="-1">
-                        Button 3
-                      </button>
-                    </li>
-                  </ul>
-                </div>
-
-                <div class="c-tabs__content-wrapper">
-                  <div class="c-tabs__content is-active" id="defaultTabs-panel-1" role="tabpanel" tabindex="0" aria-labelledby="defaultTabs-tab-1">
-                    <div class="c-tabs__content-inner">
-                      <div class="c-text">
-                        <h4>Lorem Ipsum Content 1</h4>
-
-                        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.</p>
-
-                      </div>
-                    </div>
-                  </div>
-                  <div class="c-tabs__content" id="defaultTabs-panel-2" role="tabpanel" tabindex="0" aria-labelledby="defaultTabs-tab-2">
-                    <div class="c-tabs__content-inner">
-                      <div class="c-text">
-                        <h4>Lorem Ipsum Content 2</h4>
-
-                        <p>Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
-                        <p>Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
-
-                      </div>
-                    </div>
-                  </div>
-                  <div class="c-tabs__content" id="defaultTabs-panel-3" role="tabpanel" tabindex="0" aria-labelledby="defaultTabs-tab-3">
-                    <div class="c-tabs__content-inner">
-                      <div class="c-text">
-                        <h4>Lorem Ipsum Content 3</h4>
-
-                        <p>At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
-
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="g-container m-2">
-          <div class="g-row">
             <div class="g-col-12">
-              <h2>Two Columns Content</h2>
+              <div class="c-code-block__intro">
+                <div class="c-text">
+                  <h3>Default</h3>
 
-              <div class="c-tabs" id="colTabs" data-json="{}">
-                <div class="c-tabs__cta-list-wrapper">
-                  <ul class="c-tabs__cta-list" role="tablist" aria-label="colTabs">
-                    <li class="c-tabs__cta-wrapper">
-                      <button class="c-tabs__cta is-active" role="tab" aria-selected="true" aria-controls="colTabs-panel-1" data-toggle="tabs" data-target="#colTabs-panel-1" data-parent="#colTabs" id="colTabs-tab-1" tabindex="0">
-                        Button 1
-                      </button>
-                    </li>
-                    <li class="c-tabs__cta-wrapper">
-                      <button class="c-tabs__cta" role="tab" aria-selected="false" aria-controls="colTabs-panel-2" data-toggle="tabs" data-target="#colTabs-panel-2" data-parent="#colTabs" id="colTabs-tab-2" tabindex="-1">
-                        Button 2
-                      </button>
-                    </li>
-                    <li class="c-tabs__cta-wrapper">
-                      <button class="c-tabs__cta" role="tab" aria-selected="false" aria-controls="colTabs-panel-3" data-toggle="tabs" data-target="#colTabs-panel-3" data-parent="#colTabs" id="colTabs-tab-3" tabindex="-1">
-                        Button 3
-                      </button>
-                    </li>
-                  </ul>
-                </div>
-
-                <div class="c-tabs__content-wrapper">
-                  <div class="c-tabs__content is-active" id="colTabs-panel-1" role="tabpanel" tabindex="0" aria-labelledby="colTabs-tab-1">
-                    <div class="c-tabs__content-inner">
-
-                      <div class="g-row">
-                        <div class="g-col-12 g-col-tp-6">
-                          <figure class="c-picture">
-
-                            <picture>
-                              <img src="assets/picts/placeholder-2.svg" alt="">
-                            </picture>
-
-                          </figure>
-                        </div>
-                        <div class="g-col-12 g-col-tp-6 mt-mw-auto">
-                          <blockquote class="c-quote c-quote--smaller">
-                            <div class="c-quote__avatar-wrapper">
-                              <picture class="c-quote__image">
-                                <img src="assets/picts/avatar-male.svg" alt="Tempor incididunt">
-                              </picture>
-                            </div>
-
-                            <div class="c-quote__content-wrapper">
-                              <div class="c-quote__content">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                              </div>
-
-                              <footer class="c-quote__author">
-                                <p>Tempor incididunt, labore et dolore</p>
-                              </footer>
-                            </div>
-                          </blockquote>
-                        </div>
-                      </div>
-
-                    </div>
-                  </div>
-                  <div class="c-tabs__content" id="colTabs-panel-2" role="tabpanel" tabindex="0" aria-labelledby="colTabs-tab-2">
-                    <div class="c-tabs__content-inner">
-
-                      <div class="g-row">
-                        <div class="g-col-12 g-col-tp-6">
-                          <figure class="c-picture">
-
-                            <picture>
-                              <img src="assets/picts/placeholder-2.svg" alt="">
-                            </picture>
-
-                          </figure>
-                        </div>
-                        <div class="g-col-12 g-col-tp-6 mt-mw-auto">
-                          <blockquote class="c-quote c-quote--smaller">
-                            <div class="c-quote__avatar-wrapper">
-                              <picture class="c-quote__image">
-                                <img src="assets/picts/avatar-female.svg" alt="Tempor incididunt">
-                              </picture>
-                            </div>
-
-                            <div class="c-quote__content-wrapper">
-                              <div class="c-quote__content">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                              </div>
-
-                              <footer class="c-quote__author">
-                                <p>Tempor incididunt, labore et dolore</p>
-                              </footer>
-                            </div>
-                          </blockquote>
-                        </div>
-                      </div>
-
-                    </div>
-                  </div>
-                  <div class="c-tabs__content" id="colTabs-panel-3" role="tabpanel" tabindex="0" aria-labelledby="colTabs-tab-3">
-                    <div class="c-tabs__content-inner">
-
-                      <div class="g-row">
-                        <div class="g-col-12 g-col-tp-6">
-                          <figure class="c-picture">
-
-                            <picture>
-                              <img src="assets/picts/placeholder-2.svg" alt="">
-                            </picture>
-
-                          </figure>
-                        </div>
-                        <div class="g-col-12 g-col-tp-6 mt-mw-auto">
-                          <blockquote class="c-quote c-quote--smaller">
-                            <div class="c-quote__avatar-wrapper">
-                              <picture class="c-quote__image">
-                                <img src="assets/picts/avatar-male.svg" alt="Tempor incididunt">
-                              </picture>
-                            </div>
-
-                            <div class="c-quote__content-wrapper">
-                              <div class="c-quote__content">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                              </div>
-
-                              <footer class="c-quote__author">
-                                <p>Tempor incididunt, labore et dolore</p>
-                              </footer>
-                            </div>
-                          </blockquote>
-                        </div>
-                      </div>
-
-                    </div>
-                  </div>
                 </div>
               </div>
-            </div>
-          </div>
-        </div>
-        <div class="g-container m-2">
-          <div class="g-row">
-            <div class="g-col-12 g-col-tp-6">
-              <h2>CTA Right</h2>
+              <div class="c-code-block">
+                <div class="c-code-block__preview">
 
-              <div class="c-tabs c-tabs--cta-right" id="rightCtaTabs" data-json="{}">
-                <div class="c-tabs__cta-list-wrapper">
-                  <ul class="c-tabs__cta-list" role="tablist" aria-label="rightCtaTabs">
-                    <li class="c-tabs__cta-wrapper">
-                      <button class="c-tabs__cta is-active" role="tab" aria-selected="true" aria-controls="rightCtaTabs-panel-1" data-toggle="tabs" data-target="#rightCtaTabs-panel-1" data-parent="#rightCtaTabs" id="rightCtaTabs-tab-1" tabindex="0">
-                        Button 1
-                      </button>
-                    </li>
-                    <li class="c-tabs__cta-wrapper">
-                      <button class="c-tabs__cta" role="tab" aria-selected="false" aria-controls="rightCtaTabs-panel-2" data-toggle="tabs" data-target="#rightCtaTabs-panel-2" data-parent="#rightCtaTabs" id="rightCtaTabs-tab-2" tabindex="-1">
-                        Button 2
-                      </button>
-                    </li>
-                    <li class="c-tabs__cta-wrapper">
-                      <button class="c-tabs__cta" role="tab" aria-selected="false" aria-controls="rightCtaTabs-panel-3" data-toggle="tabs" data-target="#rightCtaTabs-panel-3" data-parent="#rightCtaTabs" id="rightCtaTabs-tab-3" tabindex="-1">
-                        Button 3
-                      </button>
-                    </li>
-                  </ul>
-                </div>
-
-                <div class="c-tabs__content-wrapper">
-                  <div class="c-tabs__content is-active" id="rightCtaTabs-panel-1" role="tabpanel" tabindex="0" aria-labelledby="rightCtaTabs-tab-1">
-                    <div class="c-tabs__content-inner">
-                      <div class="c-text">
-                        <h4>Lorem Ipsum Content 1</h4>
-
-                        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.</p>
-
-                      </div>
+                  <div class="c-tabs" id="defaultTabs" data-json="{}">
+                    <div class="c-tabs__cta-list-wrapper">
+                      <ul class="c-tabs__cta-list" role="tablist" aria-label="defaultTabs">
+                        <li class="c-tabs__cta-wrapper">
+                          <button class="c-tabs__cta is-active" role="tab" aria-selected="true" aria-controls="defaultTabs-panel-1" data-toggle="tabs" data-target="#defaultTabs-panel-1" data-parent="#defaultTabs" id="defaultTabs-tab-1" tabindex="0">
+                            Button 1
+                          </button>
+                        </li>
+                        <li class="c-tabs__cta-wrapper">
+                          <button class="c-tabs__cta" role="tab" aria-selected="false" aria-controls="defaultTabs-panel-2" data-toggle="tabs" data-target="#defaultTabs-panel-2" data-parent="#defaultTabs" id="defaultTabs-tab-2" tabindex="-1">
+                            Button 2
+                          </button>
+                        </li>
+                        <li class="c-tabs__cta-wrapper">
+                          <button class="c-tabs__cta" role="tab" aria-selected="false" aria-controls="defaultTabs-panel-3" data-toggle="tabs" data-target="#defaultTabs-panel-3" data-parent="#defaultTabs" id="defaultTabs-tab-3" tabindex="-1">
+                            Button 3
+                          </button>
+                        </li>
+                        <li class="c-tabs__cta-wrapper">
+                          <button class="c-tabs__cta" role="tab" aria-selected="false" aria-controls="defaultTabs-panel-4" data-toggle="tabs" data-target="#defaultTabs-panel-4" data-parent="#defaultTabs" id="defaultTabs-tab-4" tabindex="-1">
+                            Button 4
+                          </button>
+                        </li>
+                      </ul>
                     </div>
-                  </div>
-                  <div class="c-tabs__content" id="rightCtaTabs-panel-2" role="tabpanel" tabindex="0" aria-labelledby="rightCtaTabs-tab-2">
-                    <div class="c-tabs__content-inner">
-                      <div class="c-text">
-                        <h4>Lorem Ipsum Content 2</h4>
 
-                        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.</p>
+                    <div class="c-tabs__content-wrapper">
+                      <div class="c-tabs__content is-active" id="defaultTabs-panel-1" role="tabpanel" tabindex="0" aria-labelledby="defaultTabs-tab-1">
+                        <div class="c-tabs__content-inner">
+                          <div class="c-text">
+                            <h4>Lorem Ipsum Content 1</h4>
 
+                            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.</p>
+
+                          </div>
+                        </div>
                       </div>
-                    </div>
-                  </div>
-                  <div class="c-tabs__content" id="rightCtaTabs-panel-3" role="tabpanel" tabindex="0" aria-labelledby="rightCtaTabs-tab-3">
-                    <div class="c-tabs__content-inner">
-                      <div class="c-text">
-                        <h4>Lorem Ipsum Content 3</h4>
+                      <div class="c-tabs__content" id="defaultTabs-panel-2" role="tabpanel" tabindex="0" aria-labelledby="defaultTabs-tab-2">
+                        <div class="c-tabs__content-inner">
+                          <div class="c-text">
+                            <h4>Lorem Ipsum Content 2</h4>
 
-                        <p>At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+                            <p>Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
+                            <p>Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
 
+                          </div>
+                        </div>
                       </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="g-col-12 g-col-tp-6">
-              <h2>CTA Center</h2>
+                      <div class="c-tabs__content" id="defaultTabs-panel-3" role="tabpanel" tabindex="0" aria-labelledby="defaultTabs-tab-3">
+                        <div class="c-tabs__content-inner">
+                          <div class="c-text">
+                            <h4>Lorem Ipsum Content 3</h4>
 
-              <div class="c-tabs c-tabs--cta-center" id="centerCtaTabs" data-json="{}">
-                <div class="c-tabs__cta-list-wrapper">
-                  <ul class="c-tabs__cta-list" role="tablist" aria-label="centerCtaTabs">
-                    <li class="c-tabs__cta-wrapper">
-                      <button class="c-tabs__cta is-active" role="tab" aria-selected="true" aria-controls="centerCtaTabs-panel-1" data-toggle="tabs" data-target="#centerCtaTabs-panel-1" data-parent="#centerCtaTabs" id="centerCtaTabs-tab-1" tabindex="0">
-                        Button 1
-                      </button>
-                    </li>
-                    <li class="c-tabs__cta-wrapper">
-                      <button class="c-tabs__cta" role="tab" aria-selected="false" aria-controls="centerCtaTabs-panel-2" data-toggle="tabs" data-target="#centerCtaTabs-panel-2" data-parent="#centerCtaTabs" id="centerCtaTabs-tab-2" tabindex="-1">
-                        Button 2
-                      </button>
-                    </li>
-                    <li class="c-tabs__cta-wrapper">
-                      <button class="c-tabs__cta" role="tab" aria-selected="false" aria-controls="centerCtaTabs-panel-3" data-toggle="tabs" data-target="#centerCtaTabs-panel-3" data-parent="#centerCtaTabs" id="centerCtaTabs-tab-3" tabindex="-1">
-                        Button 3
-                      </button>
-                    </li>
-                  </ul>
-                </div>
+                            <p>At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
 
-                <div class="c-tabs__content-wrapper">
-                  <div class="c-tabs__content is-active" id="centerCtaTabs-panel-1" role="tabpanel" tabindex="0" aria-labelledby="centerCtaTabs-tab-1">
-                    <div class="c-tabs__content-inner">
-                      <div class="c-text">
-                        <h4>Lorem Ipsum Content 1</h4>
-
-                        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.</p>
-
+                          </div>
+                        </div>
                       </div>
-                    </div>
-                  </div>
-                  <div class="c-tabs__content" id="centerCtaTabs-panel-2" role="tabpanel" tabindex="0" aria-labelledby="centerCtaTabs-tab-2">
-                    <div class="c-tabs__content-inner">
-                      <div class="c-text">
-                        <h4>Lorem Ipsum Content 2</h4>
+                      <div class="c-tabs__content" id="defaultTabs-panel-4" role="tabpanel" tabindex="0" aria-labelledby="defaultTabs-tab-4">
+                        <div class="c-tabs__content-inner">
+                          <div class="c-text">
+                            <h4>Lorem Ipsum Content 4</h4>
 
-                        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.</p>
+                            <p>At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
 
-                      </div>
-                    </div>
-                  </div>
-                  <div class="c-tabs__content" id="centerCtaTabs-panel-3" role="tabpanel" tabindex="0" aria-labelledby="centerCtaTabs-tab-3">
-                    <div class="c-tabs__content-inner">
-                      <div class="c-text">
-                        <h4>Lorem Ipsum Content 3</h4>
-
-                        <p>At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
-
+                          </div>
+                        </div>
                       </div>
                     </div>
                   </div>
                 </div>
-              </div>
-            </div>
-          </div>
-          <div class="g-row mt-2">
-            <div class="g-col-12 g-col-tp-6">
-              <h2>CTA Space Between</h2>
 
-              <div class="c-tabs c-tabs--cta-space" id="spaceCtaTabs" data-json="{}">
-                <div class="c-tabs__cta-list-wrapper">
-                  <ul class="c-tabs__cta-list" role="tablist" aria-label="spaceCtaTabs">
-                    <li class="c-tabs__cta-wrapper">
-                      <button class="c-tabs__cta is-active" role="tab" aria-selected="true" aria-controls="spaceCtaTabs-panel-1" data-toggle="tabs" data-target="#spaceCtaTabs-panel-1" data-parent="#spaceCtaTabs" id="spaceCtaTabs-tab-1" tabindex="0">
-                        Button 1
-                      </button>
-                    </li>
-                    <li class="c-tabs__cta-wrapper">
-                      <button class="c-tabs__cta" role="tab" aria-selected="false" aria-controls="spaceCtaTabs-panel-2" data-toggle="tabs" data-target="#spaceCtaTabs-panel-2" data-parent="#spaceCtaTabs" id="spaceCtaTabs-tab-2" tabindex="-1">
-                        Button 2
-                      </button>
-                    </li>
-                    <li class="c-tabs__cta-wrapper">
-                      <button class="c-tabs__cta" role="tab" aria-selected="false" aria-controls="spaceCtaTabs-panel-3" data-toggle="tabs" data-target="#spaceCtaTabs-panel-3" data-parent="#spaceCtaTabs" id="spaceCtaTabs-tab-3" tabindex="-1">
-                        Button 3
-                      </button>
-                    </li>
-                  </ul>
-                </div>
-
-                <div class="c-tabs__content-wrapper">
-                  <div class="c-tabs__content is-active" id="spaceCtaTabs-panel-1" role="tabpanel" tabindex="0" aria-labelledby="spaceCtaTabs-tab-1">
-                    <div class="c-tabs__content-inner">
-                      <div class="c-text">
-                        <h4>Lorem Ipsum Content 1</h4>
-
-                        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.</p>
-
-                      </div>
-                    </div>
-                  </div>
-                  <div class="c-tabs__content" id="spaceCtaTabs-panel-2" role="tabpanel" tabindex="0" aria-labelledby="spaceCtaTabs-tab-2">
-                    <div class="c-tabs__content-inner">
-                      <div class="c-text">
-                        <h4>Lorem Ipsum Content 2</h4>
-
-                        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.</p>
-
-                      </div>
-                    </div>
-                  </div>
-                  <div class="c-tabs__content" id="spaceCtaTabs-panel-3" role="tabpanel" tabindex="0" aria-labelledby="spaceCtaTabs-tab-3">
-                    <div class="c-tabs__content-inner">
-                      <div class="c-text">
-                        <h4>Lorem Ipsum Content 3</h4>
-
-                        <p>At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
-
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="g-col-12 g-col-tp-6">
-              <h2>CTA Stack</h2>
-
-              <div class="c-tabs c-tabs--cta-stack" id="stackCtaTabs" data-json="{}">
-                <div class="c-tabs__cta-list-wrapper">
-                  <ul class="c-tabs__cta-list" role="tablist" aria-label="stackCtaTabs">
-                    <li class="c-tabs__cta-wrapper">
-                      <button class="c-tabs__cta is-active" role="tab" aria-selected="true" aria-controls="stackCtaTabs-panel-1" data-toggle="tabs" data-target="#stackCtaTabs-panel-1" data-parent="#stackCtaTabs" id="stackCtaTabs-tab-1" tabindex="0">
-                        Button 1
-                      </button>
-                    </li>
-                    <li class="c-tabs__cta-wrapper">
-                      <button class="c-tabs__cta" role="tab" aria-selected="false" aria-controls="stackCtaTabs-panel-2" data-toggle="tabs" data-target="#stackCtaTabs-panel-2" data-parent="#stackCtaTabs" id="stackCtaTabs-tab-2" tabindex="-1">
-                        Button 2
-                      </button>
-                    </li>
-                    <li class="c-tabs__cta-wrapper">
-                      <button class="c-tabs__cta" role="tab" aria-selected="false" aria-controls="stackCtaTabs-panel-3" data-toggle="tabs" data-target="#stackCtaTabs-panel-3" data-parent="#stackCtaTabs" id="stackCtaTabs-tab-3" tabindex="-1">
-                        Button 3
-                      </button>
-                    </li>
-                  </ul>
-                </div>
-
-                <div class="c-tabs__content-wrapper">
-                  <div class="c-tabs__content is-active" id="stackCtaTabs-panel-1" role="tabpanel" tabindex="0" aria-labelledby="stackCtaTabs-tab-1">
-                    <div class="c-tabs__content-inner">
-                      <div class="c-text">
-                        <h4>Lorem Ipsum Content 1</h4>
-
-                        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.</p>
-
-                      </div>
-                    </div>
-                  </div>
-                  <div class="c-tabs__content" id="stackCtaTabs-panel-2" role="tabpanel" tabindex="0" aria-labelledby="stackCtaTabs-tab-2">
-                    <div class="c-tabs__content-inner">
-                      <div class="c-text">
-                        <h4>Lorem Ipsum Content 2</h4>
-
-                        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.</p>
-
-                      </div>
-                    </div>
-                  </div>
-                  <div class="c-tabs__content" id="stackCtaTabs-panel-3" role="tabpanel" tabindex="0" aria-labelledby="stackCtaTabs-tab-3">
-                    <div class="c-tabs__content-inner">
-                      <div class="c-text">
-                        <h4>Lorem Ipsum Content 3</h4>
-
-                        <p>At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
-
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="g-row mt-1">
-            <div class="g-col-12">
-              <p class="headline-lined">Source</p>
-              <pre><code class="hljs html">
+                <div class="c-code-block__source-wrapper">
+                  <div class="c-code-block__source">
+                    <pre><code class="hljs html">
     <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-tabs&quot;</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;defaultTabs&quot;</span> <span class="hljs-attr">data-json</span>=<span class="hljs-string">&quot;{}&quot;</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-tabs__cta-list-wrapper&quot;</span>&gt;</span>
             <span class="hljs-tag">&lt;<span class="hljs-name">ul</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-tabs__cta-list&quot;</span> <span class="hljs-attr">role</span>=<span class="hljs-string">&quot;tablist&quot;</span> <span class="hljs-attr">aria-label</span>=<span class="hljs-string">&quot;defaultTabs&quot;</span>&gt;</span>
@@ -579,6 +219,11 @@
                 <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-tabs__cta-wrapper&quot;</span>&gt;</span>
                     <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-tabs__cta&quot;</span> <span class="hljs-attr">role</span>=<span class="hljs-string">&quot;tab&quot;</span> <span class="hljs-attr">aria-selected</span>=<span class="hljs-string">&quot;false&quot;</span> <span class="hljs-attr">aria-controls</span>=<span class="hljs-string">&quot;defaultTabs-panel-3&quot;</span> <span class="hljs-attr">data-toggle</span>=<span class="hljs-string">&quot;tabs&quot;</span> <span class="hljs-attr">data-target</span>=<span class="hljs-string">&quot;#defaultTabs-panel-3&quot;</span> <span class="hljs-attr">data-parent</span>=<span class="hljs-string">&quot;#defaultTabs&quot;</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;defaultTabs-tab-3&quot;</span> <span class="hljs-attr">tabindex</span>=<span class="hljs-string">&quot;-1&quot;</span>&gt;</span>
                         Button 3
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-tabs__cta-wrapper&quot;</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-tabs__cta&quot;</span> <span class="hljs-attr">role</span>=<span class="hljs-string">&quot;tab&quot;</span> <span class="hljs-attr">aria-selected</span>=<span class="hljs-string">&quot;false&quot;</span> <span class="hljs-attr">aria-controls</span>=<span class="hljs-string">&quot;defaultTabs-panel-4&quot;</span> <span class="hljs-attr">data-toggle</span>=<span class="hljs-string">&quot;tabs&quot;</span> <span class="hljs-attr">data-target</span>=<span class="hljs-string">&quot;#defaultTabs-panel-4&quot;</span> <span class="hljs-attr">data-parent</span>=<span class="hljs-string">&quot;#defaultTabs&quot;</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;defaultTabs-tab-4&quot;</span> <span class="hljs-attr">tabindex</span>=<span class="hljs-string">&quot;-1&quot;</span>&gt;</span>
+                        Button 4
                     <span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
                 <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
             <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
@@ -609,9 +254,431 @@
                     <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
                 <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
             <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-tabs__content&quot;</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;defaultTabs-panel-4&quot;</span> <span class="hljs-attr">role</span>=<span class="hljs-string">&quot;tabpanel&quot;</span> <span class="hljs-attr">tabindex</span>=<span class="hljs-string">&quot;0&quot;</span> <span class="hljs-attr">aria-labelledby</span>=<span class="hljs-string">&quot;defaultTabs-tab-4&quot;</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-tabs__content-inner&quot;</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-text&quot;</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">h4</span>&gt;</span>Lorem Ipsum Content 4<span class="hljs-tag">&lt;/<span class="hljs-name">h4</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
         <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
     <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
     </code></pre>
+                  </div>
+                  <button class="c-code-block__copy-code-button">
+                    <span class="label">Copy</span>
+                    <span class="error">Failed to copy</span>
+                    <span class="success">Copied</span>
+                  </button>
+                </div>
+
+                <div class="c-code-block__buttons">
+                  <button type="button" class="c-code-block__button c-code-block__toggle">Source
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <polyline points="6 9 12 15 18 9"></polyline>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="g-container m-2">
+          <div class="g-row">
+            <div class="g-col-12">
+              <div class="c-code-block__intro">
+                <div class="c-text">
+                  <h3>Two Columns Content</h3>
+
+                </div>
+              </div>
+              <div class="c-code-block">
+                <div class="c-code-block__preview">
+
+                  <div class="c-tabs" id="colTabs" data-json="{}">
+                    <div class="c-tabs__cta-list-wrapper">
+                      <ul class="c-tabs__cta-list" role="tablist" aria-label="colTabs">
+                        <li class="c-tabs__cta-wrapper">
+                          <button class="c-tabs__cta is-active" role="tab" aria-selected="true" aria-controls="colTabs-panel-1" data-toggle="tabs" data-target="#colTabs-panel-1" data-parent="#colTabs" id="colTabs-tab-1" tabindex="0">
+                            Button 1
+                          </button>
+                        </li>
+                        <li class="c-tabs__cta-wrapper">
+                          <button class="c-tabs__cta" role="tab" aria-selected="false" aria-controls="colTabs-panel-2" data-toggle="tabs" data-target="#colTabs-panel-2" data-parent="#colTabs" id="colTabs-tab-2" tabindex="-1">
+                            Button 2
+                          </button>
+                        </li>
+                        <li class="c-tabs__cta-wrapper">
+                          <button class="c-tabs__cta" role="tab" aria-selected="false" aria-controls="colTabs-panel-3" data-toggle="tabs" data-target="#colTabs-panel-3" data-parent="#colTabs" id="colTabs-tab-3" tabindex="-1">
+                            Button 3
+                          </button>
+                        </li>
+                      </ul>
+                    </div>
+
+                    <div class="c-tabs__content-wrapper">
+                      <div class="c-tabs__content is-active" id="colTabs-panel-1" role="tabpanel" tabindex="0" aria-labelledby="colTabs-tab-1">
+                        <div class="c-tabs__content-inner">
+                          <div class="g-row">
+                            <div class="g-col-12 g-col-tp-6">
+                              <div class="c-text">
+                                <h4>Lorem Ipsum Content 3</h4>
+
+                                <p>At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+
+                              </div>
+                            </div>
+                            <div class="g-col-12 g-col-tp-6 mt-mw-auto">
+                              <div class="c-text">
+                                <h4>Lorem Ipsum Content 3</h4>
+
+                                <p>At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="c-tabs__content" id="colTabs-panel-2" role="tabpanel" tabindex="0" aria-labelledby="colTabs-tab-2">
+                        <div class="c-tabs__content-inner">
+                          <div class="g-row">
+                            <div class="g-col-12 g-col-tp-6">
+                              <div class="c-text">
+                                <h4>Lorem Ipsum Content 3</h4>
+
+                                <p>At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+
+                              </div>
+                            </div>
+                            <div class="g-col-12 g-col-tp-6 mt-mw-auto">
+                              <div class="c-text">
+                                <h4>Lorem Ipsum Content 3</h4>
+
+                                <p>At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="c-tabs__content" id="colTabs-panel-3" role="tabpanel" tabindex="0" aria-labelledby="colTabs-tab-3">
+                        <div class="c-tabs__content-inner">
+                          <div class="g-row">
+                            <div class="g-col-12 g-col-tp-6">
+                              <div class="c-text">
+                                <h4>Lorem Ipsum Content 3</h4>
+
+                                <p>At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+
+                              </div>
+                            </div>
+                            <div class="g-col-12 g-col-tp-6 mt-mw-auto">
+                              <div class="c-text">
+                                <h4>Lorem Ipsum Content 3</h4>
+
+                                <p>At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="c-code-block__source-wrapper">
+                  <div class="c-code-block__source">
+                    <pre><code class="hljs html">
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-tabs&quot;</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;colTabs&quot;</span> <span class="hljs-attr">data-json</span>=<span class="hljs-string">&quot;{}&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-tabs__cta-list-wrapper&quot;</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">ul</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-tabs__cta-list&quot;</span> <span class="hljs-attr">role</span>=<span class="hljs-string">&quot;tablist&quot;</span> <span class="hljs-attr">aria-label</span>=<span class="hljs-string">&quot;colTabs&quot;</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-tabs__cta-wrapper&quot;</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-tabs__cta is-active&quot;</span> <span class="hljs-attr">role</span>=<span class="hljs-string">&quot;tab&quot;</span> <span class="hljs-attr">aria-selected</span>=<span class="hljs-string">&quot;true&quot;</span> <span class="hljs-attr">aria-controls</span>=<span class="hljs-string">&quot;colTabs-panel-1&quot;</span> <span class="hljs-attr">data-toggle</span>=<span class="hljs-string">&quot;tabs&quot;</span> <span class="hljs-attr">data-target</span>=<span class="hljs-string">&quot;#colTabs-panel-1&quot;</span> <span class="hljs-attr">data-parent</span>=<span class="hljs-string">&quot;#colTabs&quot;</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;colTabs-tab-1&quot;</span> <span class="hljs-attr">tabindex</span>=<span class="hljs-string">&quot;0&quot;</span>&gt;</span>
+                        Button 1
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-tabs__cta-wrapper&quot;</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-tabs__cta&quot;</span> <span class="hljs-attr">role</span>=<span class="hljs-string">&quot;tab&quot;</span> <span class="hljs-attr">aria-selected</span>=<span class="hljs-string">&quot;false&quot;</span> <span class="hljs-attr">aria-controls</span>=<span class="hljs-string">&quot;colTabs-panel-2&quot;</span> <span class="hljs-attr">data-toggle</span>=<span class="hljs-string">&quot;tabs&quot;</span> <span class="hljs-attr">data-target</span>=<span class="hljs-string">&quot;#colTabs-panel-2&quot;</span> <span class="hljs-attr">data-parent</span>=<span class="hljs-string">&quot;#colTabs&quot;</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;colTabs-tab-2&quot;</span> <span class="hljs-attr">tabindex</span>=<span class="hljs-string">&quot;-1&quot;</span>&gt;</span>
+                        Button 2
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-tabs__cta-wrapper&quot;</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-tabs__cta&quot;</span> <span class="hljs-attr">role</span>=<span class="hljs-string">&quot;tab&quot;</span> <span class="hljs-attr">aria-selected</span>=<span class="hljs-string">&quot;false&quot;</span> <span class="hljs-attr">aria-controls</span>=<span class="hljs-string">&quot;colTabs-panel-3&quot;</span> <span class="hljs-attr">data-toggle</span>=<span class="hljs-string">&quot;tabs&quot;</span> <span class="hljs-attr">data-target</span>=<span class="hljs-string">&quot;#colTabs-panel-3&quot;</span> <span class="hljs-attr">data-parent</span>=<span class="hljs-string">&quot;#colTabs&quot;</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;colTabs-tab-3&quot;</span> <span class="hljs-attr">tabindex</span>=<span class="hljs-string">&quot;-1&quot;</span>&gt;</span>
+                        Button 3
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-tabs__content-wrapper&quot;</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-tabs__content is-active&quot;</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;colTabs-panel-1&quot;</span> <span class="hljs-attr">role</span>=<span class="hljs-string">&quot;tabpanel&quot;</span> <span class="hljs-attr">tabindex</span>=<span class="hljs-string">&quot;0&quot;</span> <span class="hljs-attr">aria-labelledby</span>=<span class="hljs-string">&quot;colTabs-tab-1&quot;</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-tabs__content-inner&quot;</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;g-row&quot;</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;g-col-12 g-col-tp-6&quot;</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-text&quot;</span>&gt;</span>
+                                <span class="hljs-tag">&lt;<span class="hljs-name">h4</span>&gt;</span>Lorem Ipsum Content 3<span class="hljs-tag">&lt;/<span class="hljs-name">h4</span>&gt;</span>
+                                <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+                            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;g-col-12 g-col-tp-6 mt-mw-auto&quot;</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-text&quot;</span>&gt;</span>
+                                <span class="hljs-tag">&lt;<span class="hljs-name">h4</span>&gt;</span>Lorem Ipsum Content 3<span class="hljs-tag">&lt;/<span class="hljs-name">h4</span>&gt;</span>
+                                <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+                            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-tabs__content&quot;</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;colTabs-panel-2&quot;</span> <span class="hljs-attr">role</span>=<span class="hljs-string">&quot;tabpanel&quot;</span> <span class="hljs-attr">tabindex</span>=<span class="hljs-string">&quot;0&quot;</span> <span class="hljs-attr">aria-labelledby</span>=<span class="hljs-string">&quot;colTabs-tab-2&quot;</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-tabs__content-inner&quot;</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;g-row&quot;</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;g-col-12 g-col-tp-6&quot;</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-text&quot;</span>&gt;</span>
+                                <span class="hljs-tag">&lt;<span class="hljs-name">h4</span>&gt;</span>Lorem Ipsum Content 3<span class="hljs-tag">&lt;/<span class="hljs-name">h4</span>&gt;</span>
+                                <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+                            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;g-col-12 g-col-tp-6 mt-mw-auto&quot;</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-text&quot;</span>&gt;</span>
+                                <span class="hljs-tag">&lt;<span class="hljs-name">h4</span>&gt;</span>Lorem Ipsum Content 3<span class="hljs-tag">&lt;/<span class="hljs-name">h4</span>&gt;</span>
+                                <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+                            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-tabs__content&quot;</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;colTabs-panel-3&quot;</span> <span class="hljs-attr">role</span>=<span class="hljs-string">&quot;tabpanel&quot;</span> <span class="hljs-attr">tabindex</span>=<span class="hljs-string">&quot;0&quot;</span> <span class="hljs-attr">aria-labelledby</span>=<span class="hljs-string">&quot;colTabs-tab-3&quot;</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-tabs__content-inner&quot;</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;g-row&quot;</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;g-col-12 g-col-tp-6&quot;</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-text&quot;</span>&gt;</span>
+                                <span class="hljs-tag">&lt;<span class="hljs-name">h4</span>&gt;</span>Lorem Ipsum Content 3<span class="hljs-tag">&lt;/<span class="hljs-name">h4</span>&gt;</span>
+                                <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+                            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;g-col-12 g-col-tp-6 mt-mw-auto&quot;</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-text&quot;</span>&gt;</span>
+                                <span class="hljs-tag">&lt;<span class="hljs-name">h4</span>&gt;</span>Lorem Ipsum Content 3<span class="hljs-tag">&lt;/<span class="hljs-name">h4</span>&gt;</span>
+                                <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+                            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    </code></pre>
+                  </div>
+                  <button class="c-code-block__copy-code-button">
+                    <span class="label">Copy</span>
+                    <span class="error">Failed to copy</span>
+                    <span class="success">Copied</span>
+                  </button>
+                </div>
+
+                <div class="c-code-block__buttons">
+                  <button type="button" class="c-code-block__button c-code-block__toggle">Source
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <polyline points="6 9 12 15 18 9"></polyline>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="g-container m-2">
+          <div class="g-row">
+            <div class="g-col-12">
+              <div class="c-code-block__intro">
+                <div class="c-text">
+                  <h3>Arrows</h3>
+
+                </div>
+              </div>
+              <div class="c-code-block">
+                <div class="c-code-block__preview">
+
+                  <div class="c-tabs c-tabs--arrows" id="arrowsTabs" data-json="{}">
+                    <div class="c-tabs__cta-list-wrapper">
+                      <ul class="c-tabs__cta-list" role="tablist" aria-label="arrowsTabs">
+                        <li class="c-tabs__cta-wrapper">
+                          <button class="c-tabs__cta is-active" role="tab" aria-selected="true" aria-controls="arrowsTabs-panel-1" data-toggle="tabs" data-target="#arrowsTabs-panel-1" data-parent="#arrowsTabs" id="arrowsTabs-tab-1" tabindex="0">
+                            Button 1
+                          </button>
+                        </li>
+                        <li class="c-tabs__cta-wrapper">
+                          <button class="c-tabs__cta" role="tab" aria-selected="false" aria-controls="arrowsTabs-panel-2" data-toggle="tabs" data-target="#arrowsTabs-panel-2" data-parent="#arrowsTabs" id="arrowsTabs-tab-2" tabindex="-1">
+                            Button 2
+                          </button>
+                        </li>
+                        <li class="c-tabs__cta-wrapper">
+                          <button class="c-tabs__cta" role="tab" aria-selected="false" aria-controls="arrowsTabs-panel-3" data-toggle="tabs" data-target="#arrowsTabs-panel-3" data-parent="#arrowsTabs" id="arrowsTabs-tab-3" tabindex="-1">
+                            Button 3
+                          </button>
+                        </li>
+                        <li class="c-tabs__cta-wrapper">
+                          <button class="c-tabs__cta" role="tab" aria-selected="false" aria-controls="arrowsTabs-panel-4" data-toggle="tabs" data-target="#arrowsTabs-panel-4" data-parent="#arrowsTabs" id="arrowsTabs-tab-4" tabindex="-1">
+                            Button 4
+                          </button>
+                        </li>
+                        <li class="c-tabs__cta-wrapper">
+                          <button class="c-tabs__cta" role="tab" aria-selected="false" aria-controls="arrowsTabs-panel-5" data-toggle="tabs" data-target="#arrowsTabs-panel-5" data-parent="#arrowsTabs" id="arrowsTabs-tab-5" tabindex="-1">
+                            Button 5
+                          </button>
+                        </li>
+                      </ul>
+                    </div>
+
+                    <div class="c-tabs__content-wrapper">
+                      <div class="c-tabs__content is-active" id="arrowsTabs-panel-1" role="tabpanel" tabindex="0" aria-labelledby="arrowsTabs-tab-1">
+                        <div class="c-tabs__content-inner">
+                          <div class="c-text">
+                            <h4>Lorem Ipsum Content 1</h4>
+
+                            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.</p>
+
+                          </div>
+                        </div>
+                      </div>
+                      <div class="c-tabs__content" id="arrowsTabs-panel-2" role="tabpanel" tabindex="0" aria-labelledby="arrowsTabs-tab-2">
+                        <div class="c-tabs__content-inner">
+                          <div class="c-text">
+                            <h4>Lorem Ipsum Content 2</h4>
+
+                            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.</p>
+
+                          </div>
+                        </div>
+                      </div>
+                      <div class="c-tabs__content" id="arrowsTabs-panel-3" role="tabpanel" tabindex="0" aria-labelledby="arrowsTabs-tab-3">
+                        <div class="c-tabs__content-inner">
+                          <div class="c-text">
+                            <h4>Lorem Ipsum Content 3</h4>
+
+                            <p>At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+
+                          </div>
+                        </div>
+                      </div>
+                      <div class="c-tabs__content" id="arrowsTabs-panel-4" role="tabpanel" tabindex="0" aria-labelledby="arrowsTabs-tab-4">
+                        <div class="c-tabs__content-inner">
+                          <div class="c-text">
+                            <h4>Lorem Ipsum Content 4</h4>
+
+                            <p>At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+
+                          </div>
+                        </div>
+                      </div>
+                      <div class="c-tabs__content" id="arrowsTabs-panel-5" role="tabpanel" tabindex="0" aria-labelledby="arrowsTabs-tab-5">
+                        <div class="c-tabs__content-inner">
+                          <div class="c-text">
+                            <h4>Lorem Ipsum Content 5</h4>
+
+                            <p>At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="c-code-block__source-wrapper">
+                  <div class="c-code-block__source">
+                    <pre><code class="hljs html">
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-tabs c-tabs--arrows&quot;</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;arrowsTabs&quot;</span> <span class="hljs-attr">data-json</span>=<span class="hljs-string">&quot;{}&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-tabs__cta-list-wrapper&quot;</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">ul</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-tabs__cta-list&quot;</span> <span class="hljs-attr">role</span>=<span class="hljs-string">&quot;tablist&quot;</span> <span class="hljs-attr">aria-label</span>=<span class="hljs-string">&quot;arrowsTabs&quot;</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-tabs__cta-wrapper&quot;</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-tabs__cta is-active&quot;</span> <span class="hljs-attr">role</span>=<span class="hljs-string">&quot;tab&quot;</span> <span class="hljs-attr">aria-selected</span>=<span class="hljs-string">&quot;true&quot;</span> <span class="hljs-attr">aria-controls</span>=<span class="hljs-string">&quot;arrowsTabs-panel-1&quot;</span> <span class="hljs-attr">data-toggle</span>=<span class="hljs-string">&quot;tabs&quot;</span> <span class="hljs-attr">data-target</span>=<span class="hljs-string">&quot;#arrowsTabs-panel-1&quot;</span> <span class="hljs-attr">data-parent</span>=<span class="hljs-string">&quot;#arrowsTabs&quot;</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;arrowsTabs-tab-1&quot;</span> <span class="hljs-attr">tabindex</span>=<span class="hljs-string">&quot;0&quot;</span>&gt;</span>
+                        Button 1
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-tabs__cta-wrapper&quot;</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-tabs__cta&quot;</span> <span class="hljs-attr">role</span>=<span class="hljs-string">&quot;tab&quot;</span> <span class="hljs-attr">aria-selected</span>=<span class="hljs-string">&quot;false&quot;</span> <span class="hljs-attr">aria-controls</span>=<span class="hljs-string">&quot;arrowsTabs-panel-2&quot;</span> <span class="hljs-attr">data-toggle</span>=<span class="hljs-string">&quot;tabs&quot;</span> <span class="hljs-attr">data-target</span>=<span class="hljs-string">&quot;#arrowsTabs-panel-2&quot;</span> <span class="hljs-attr">data-parent</span>=<span class="hljs-string">&quot;#arrowsTabs&quot;</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;arrowsTabs-tab-2&quot;</span> <span class="hljs-attr">tabindex</span>=<span class="hljs-string">&quot;-1&quot;</span>&gt;</span>
+                        Button 2
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-tabs__cta-wrapper&quot;</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-tabs__cta&quot;</span> <span class="hljs-attr">role</span>=<span class="hljs-string">&quot;tab&quot;</span> <span class="hljs-attr">aria-selected</span>=<span class="hljs-string">&quot;false&quot;</span> <span class="hljs-attr">aria-controls</span>=<span class="hljs-string">&quot;arrowsTabs-panel-3&quot;</span> <span class="hljs-attr">data-toggle</span>=<span class="hljs-string">&quot;tabs&quot;</span> <span class="hljs-attr">data-target</span>=<span class="hljs-string">&quot;#arrowsTabs-panel-3&quot;</span> <span class="hljs-attr">data-parent</span>=<span class="hljs-string">&quot;#arrowsTabs&quot;</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;arrowsTabs-tab-3&quot;</span> <span class="hljs-attr">tabindex</span>=<span class="hljs-string">&quot;-1&quot;</span>&gt;</span>
+                        Button 3
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-tabs__cta-wrapper&quot;</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-tabs__cta&quot;</span> <span class="hljs-attr">role</span>=<span class="hljs-string">&quot;tab&quot;</span> <span class="hljs-attr">aria-selected</span>=<span class="hljs-string">&quot;false&quot;</span> <span class="hljs-attr">aria-controls</span>=<span class="hljs-string">&quot;arrowsTabs-panel-4&quot;</span> <span class="hljs-attr">data-toggle</span>=<span class="hljs-string">&quot;tabs&quot;</span> <span class="hljs-attr">data-target</span>=<span class="hljs-string">&quot;#arrowsTabs-panel-4&quot;</span> <span class="hljs-attr">data-parent</span>=<span class="hljs-string">&quot;#arrowsTabs&quot;</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;arrowsTabs-tab-4&quot;</span> <span class="hljs-attr">tabindex</span>=<span class="hljs-string">&quot;-1&quot;</span>&gt;</span>
+                        Button 4
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-tabs__cta-wrapper&quot;</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-tabs__cta&quot;</span> <span class="hljs-attr">role</span>=<span class="hljs-string">&quot;tab&quot;</span> <span class="hljs-attr">aria-selected</span>=<span class="hljs-string">&quot;false&quot;</span> <span class="hljs-attr">aria-controls</span>=<span class="hljs-string">&quot;arrowsTabs-panel-5&quot;</span> <span class="hljs-attr">data-toggle</span>=<span class="hljs-string">&quot;tabs&quot;</span> <span class="hljs-attr">data-target</span>=<span class="hljs-string">&quot;#arrowsTabs-panel-5&quot;</span> <span class="hljs-attr">data-parent</span>=<span class="hljs-string">&quot;#arrowsTabs&quot;</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;arrowsTabs-tab-5&quot;</span> <span class="hljs-attr">tabindex</span>=<span class="hljs-string">&quot;-1&quot;</span>&gt;</span>
+                        Button 5
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-tabs__content-wrapper&quot;</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-tabs__content is-active&quot;</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;arrowsTabs-panel-1&quot;</span> <span class="hljs-attr">role</span>=<span class="hljs-string">&quot;tabpanel&quot;</span> <span class="hljs-attr">tabindex</span>=<span class="hljs-string">&quot;0&quot;</span> <span class="hljs-attr">aria-labelledby</span>=<span class="hljs-string">&quot;arrowsTabs-tab-1&quot;</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-tabs__content-inner&quot;</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-text&quot;</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">h4</span>&gt;</span>Lorem Ipsum Content 1<span class="hljs-tag">&lt;/<span class="hljs-name">h4</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-tabs__content&quot;</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;arrowsTabs-panel-2&quot;</span> <span class="hljs-attr">role</span>=<span class="hljs-string">&quot;tabpanel&quot;</span> <span class="hljs-attr">tabindex</span>=<span class="hljs-string">&quot;0&quot;</span> <span class="hljs-attr">aria-labelledby</span>=<span class="hljs-string">&quot;arrowsTabs-tab-2&quot;</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-tabs__content-inner&quot;</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-text&quot;</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">h4</span>&gt;</span>Lorem Ipsum Content 2<span class="hljs-tag">&lt;/<span class="hljs-name">h4</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-tabs__content&quot;</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;arrowsTabs-panel-3&quot;</span> <span class="hljs-attr">role</span>=<span class="hljs-string">&quot;tabpanel&quot;</span> <span class="hljs-attr">tabindex</span>=<span class="hljs-string">&quot;0&quot;</span> <span class="hljs-attr">aria-labelledby</span>=<span class="hljs-string">&quot;arrowsTabs-tab-3&quot;</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-tabs__content-inner&quot;</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-text&quot;</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">h4</span>&gt;</span>Lorem Ipsum Content 3<span class="hljs-tag">&lt;/<span class="hljs-name">h4</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-tabs__content&quot;</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;arrowsTabs-panel-4&quot;</span> <span class="hljs-attr">role</span>=<span class="hljs-string">&quot;tabpanel&quot;</span> <span class="hljs-attr">tabindex</span>=<span class="hljs-string">&quot;0&quot;</span> <span class="hljs-attr">aria-labelledby</span>=<span class="hljs-string">&quot;arrowsTabs-tab-4&quot;</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-tabs__content-inner&quot;</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-text&quot;</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">h4</span>&gt;</span>Lorem Ipsum Content 4<span class="hljs-tag">&lt;/<span class="hljs-name">h4</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-tabs__content&quot;</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;arrowsTabs-panel-5&quot;</span> <span class="hljs-attr">role</span>=<span class="hljs-string">&quot;tabpanel&quot;</span> <span class="hljs-attr">tabindex</span>=<span class="hljs-string">&quot;0&quot;</span> <span class="hljs-attr">aria-labelledby</span>=<span class="hljs-string">&quot;arrowsTabs-tab-5&quot;</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-tabs__content-inner&quot;</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-text&quot;</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">h4</span>&gt;</span>Lorem Ipsum Content 5<span class="hljs-tag">&lt;/<span class="hljs-name">h4</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    </code></pre>
+                  </div>
+                  <button class="c-code-block__copy-code-button">
+                    <span class="label">Copy</span>
+                    <span class="error">Failed to copy</span>
+                    <span class="success">Copied</span>
+                  </button>
+                </div>
+
+                <div class="c-code-block__buttons">
+                  <button type="button" class="c-code-block__button c-code-block__toggle">Source
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <polyline points="6 9 12 15 18 9"></polyline>
+                    </svg>
+                  </button>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -619,8 +686,8 @@
 
       <aside class="sidebar">
         <nav class="c-side-nav">
-          <button class="c-side-nav__nav-toggle" id="c-side-nav__toggle" onclick="document.body.classList.toggle('is-nav-close');">
-            <i class="ic ic__arrow-left"></i>
+          <button class="c-side-nav__nav-toggle" id="c-side-nav__toggle">
+            <span class="c-side-nav__toggle-icon"></span>
           </button>
           <div class="c-side-nav__picture-wrapper">
             <a class="c-side-nav__picture-link" href="/">
@@ -664,14 +731,14 @@
 
                   </li>
                   <li>
-                    <a class="" href="theming.html" title="Theming">
-                      Theming
+                    <a class="" href="principles.html" title="Principles">
+                      Principles
                     </a>
 
                   </li>
                   <li>
-                    <a class="" href="mobile-first.html" title="Mobile First">
-                      Mobile First
+                    <a class="" href="theming.html" title="Theming">
+                      Theming
                     </a>
 
                   </li>
@@ -982,13 +1049,33 @@
           </div>
         </nav>
       </aside>
-
     </main>
     <footer>
 
+      <div class="c-footer p-1">
+        <div class="g-container">
+          <div class="g-row">
+            <div class="g-col-12">
+              <div class="c-footer__nav-wrapper">
+                <nav class="c-footer__nav">
+                  <ul class="c-footer__nav-list">
+                    <li class="c-footer__nav-list-item">
+                      <a href="impressum.html" title="Impressum">Impressum</a>
+                    </li>
+                    <li class="c-footer__nav-list-item">
+                      <a href="datenschutz.html" title="Datenschutz">Datenschutz</a>
+                    </li>
+                  </ul>
+                </nav>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </footer>
     <script src="assets/js/app.js"></script>
     <script src="assets/js/side-nav.js"></script>
+    <script src="assets/js/code-block.js"></script>
 
     <script src="assets/js/tabs.js"></script>
   </body>

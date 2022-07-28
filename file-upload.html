@@ -81,8 +81,6 @@
             <div class="g-col-12 g-col-tp-8">
               <div class="c-text c-markdown">
                 <h1>File-Upload</h1>
-                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
-                </p>
 
               </div>
             </div>
@@ -108,34 +106,36 @@
         </div>
       </div>
 
-      <div class="c-section">
+      <div class="c-section pt-2 pb-3">
 
-        <div class="g-container pt-1">
+        <div class="g-container">
           <div class="g-row">
-            <div class="g-col-12">
-              <p></p>
-            </div>
-          </div>
-        </div>
-        <div class="g-container m-2">
-          <div class="g-row">
-            <div class="g-col-12 g-col-tp-6 g-col-dm-4 g-col-dw-3">
+            <div class="g-col-12 g-col-tp-6 g-col-dm-4">
+              <div class="c-code-block__intro">
+                <div class="c-text">
+                  <h3>Default</h3>
 
-              <div class="c-file-upload">
-                <input class="c-file-upload__native" type="file" id="document" name="file" aria-label="Bitte Datei hinzufügen">
-                <label class="c-file-upload__label" for="document">
-                  <i class="ic ic__plus-solid"></i>Dokument anfügen</label>
-
-                <div class="c-file-upload__hint">max. 5MB</div>
-                <div class="c-file-upload__filename">
-                  <span class="c-file-upload__filename-text"></span>
-                  <i class="c-file-upload__delete-filename ic ic__trash-alt-solid"></i>
                 </div>
               </div>
-            </div>
-            <div class="g-col-12">
-              <p class="headline-lined">Source</p>
-              <pre><code class="hljs html">
+              <div class="c-code-block">
+                <div class="c-code-block__preview">
+
+                  <div class="c-file-upload">
+                    <input class="c-file-upload__native" type="file" id="document" name="file" aria-label="Bitte Datei hinzufügen">
+                    <label class="c-file-upload__label" for="document">
+                      <i class="ic ic__plus-solid"></i>Dokument anfügen</label>
+
+                    <div class="c-file-upload__hint">max. 5MB</div>
+                    <div class="c-file-upload__filename">
+                      <span class="c-file-upload__filename-text"></span>
+                      <i class="c-file-upload__delete-filename ic ic__trash-alt-solid"></i>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="c-code-block__source-wrapper">
+                  <div class="c-code-block__source">
+                    <pre><code class="hljs html">
     <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-file-upload&quot;</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-file-upload__native&quot;</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;file&quot;</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;document&quot;</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;file&quot;</span> <span class="hljs-attr">aria-label</span>=<span class="hljs-string">&quot;Bitte Datei hinzufügen&quot;</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-file-upload__label&quot;</span> <span class="hljs-attr">for</span>=<span class="hljs-string">&quot;document&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;ic ic__plus-solid&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span>Dokument anfügen<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
@@ -146,6 +146,22 @@
         <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
     <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
     </code></pre>
+                  </div>
+                  <button class="c-code-block__copy-code-button">
+                    <span class="label">Copy</span>
+                    <span class="error">Failed to copy</span>
+                    <span class="success">Copied</span>
+                  </button>
+                </div>
+
+                <div class="c-code-block__buttons">
+                  <button type="button" class="c-code-block__button c-code-block__toggle">Source
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <polyline points="6 9 12 15 18 9"></polyline>
+                    </svg>
+                  </button>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -153,8 +169,8 @@
 
       <aside class="sidebar">
         <nav class="c-side-nav">
-          <button class="c-side-nav__nav-toggle" id="c-side-nav__toggle" onclick="document.body.classList.toggle('is-nav-close');">
-            <i class="ic ic__arrow-left"></i>
+          <button class="c-side-nav__nav-toggle" id="c-side-nav__toggle">
+            <span class="c-side-nav__toggle-icon"></span>
           </button>
           <div class="c-side-nav__picture-wrapper">
             <a class="c-side-nav__picture-link" href="/">
@@ -198,14 +214,14 @@
 
                   </li>
                   <li>
-                    <a class="" href="theming.html" title="Theming">
-                      Theming
+                    <a class="" href="principles.html" title="Principles">
+                      Principles
                     </a>
 
                   </li>
                   <li>
-                    <a class="" href="mobile-first.html" title="Mobile First">
-                      Mobile First
+                    <a class="" href="theming.html" title="Theming">
+                      Theming
                     </a>
 
                   </li>
@@ -516,13 +532,33 @@
           </div>
         </nav>
       </aside>
-
     </main>
     <footer>
 
+      <div class="c-footer p-1">
+        <div class="g-container">
+          <div class="g-row">
+            <div class="g-col-12">
+              <div class="c-footer__nav-wrapper">
+                <nav class="c-footer__nav">
+                  <ul class="c-footer__nav-list">
+                    <li class="c-footer__nav-list-item">
+                      <a href="impressum.html" title="Impressum">Impressum</a>
+                    </li>
+                    <li class="c-footer__nav-list-item">
+                      <a href="datenschutz.html" title="Datenschutz">Datenschutz</a>
+                    </li>
+                  </ul>
+                </nav>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </footer>
     <script src="assets/js/app.js"></script>
     <script src="assets/js/side-nav.js"></script>
+    <script src="assets/js/code-block.js"></script>
 
   </body>
 

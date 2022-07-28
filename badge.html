@@ -103,6 +103,10 @@
                 <ul>
                   <li><code>c-badge--notification</code> - Positioniert ein kleines Badge oben rechts</li>
                 </ul>
+                <p>Mehrere Badges können zudem gruppiert werden:</p>
+                <ul>
+                  <li><code>c-badge-group</code></li>
+                </ul>
 
               </div>
             </div>
@@ -132,116 +136,284 @@
 
         <div class="g-container">
           <div class="g-row mb-1">
-            <div class="g-col-12">
-              <div class="c-text">
-                <h2>
-                  <strong>Variationen</strong>
-                </h2>
+            <div class="g-col-12 g-col-tp-6 mb-1">
+              <div class="c-code-block__intro">
+                <div class="c-text">
+                  <h3>Default</h3>
+
+                </div>
+              </div>
+              <div class="c-code-block">
+                <div class="c-code-block__preview">
+
+                  <span class="c-badge">
+                    Lorem Ipsum
+                  </span>
+                </div>
+
+                <div class="c-code-block__source-wrapper">
+                  <div class="c-code-block__source">
+                    <pre><code class="hljs html">
+    <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-badge&quot;</span>&gt;</span>
+                            Lorem Ipsum
+                        <span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+    </code></pre>
+                  </div>
+                  <button class="c-code-block__copy-code-button">
+                    <span class="label">Copy</span>
+                    <span class="error">Failed to copy</span>
+                    <span class="success">Copied</span>
+                  </button>
+                </div>
+
+                <div class="c-code-block__buttons">
+                  <button type="button" class="c-code-block__button c-code-block__toggle">Source
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <polyline points="6 9 12 15 18 9"></polyline>
+                    </svg>
+                  </button>
+                </div>
               </div>
             </div>
             <div class="g-col-12 g-col-tp-6 mb-1">
+              <div class="c-code-block__intro">
+                <div class="c-text">
+                  <h3>Highlight</h3>
 
-              <span class="c-badge">
-                9
-              </span>
+                </div>
+              </div>
+              <div class="c-code-block">
+                <div class="c-code-block__preview">
 
-              <span class="c-badge">
-                Lorem Ipsum
-              </span>
+                  <span class="c-badge bg-highlight">
+                    18
+                  </span>
 
-              <p class="headline-lined">Source</p>
-              <pre><code class="hljs html">
-    <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-badge&quot;</span>&gt;</span>
-                            9
-                        <span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
-    </code></pre>
-            </div>
-            <div class="g-col-12 g-col-tp-6 mb-1">
+                  <span class="c-badge bg-highlight">
+                    Lorem Ipsum
+                  </span>
+                </div>
 
-              <span class="c-badge bg-highlight">
-                18
-              </span>
-
-              <span class="c-badge bg-highlight">
-                Lorem Ipsum
-              </span>
-
-              <p class="headline-lined">Source</p>
-              <pre><code class="hljs html">
+                <div class="c-code-block__source-wrapper">
+                  <div class="c-code-block__source">
+                    <pre><code class="hljs html">
     <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-badge bg-highlight&quot;</span>&gt;</span>
                             18
                         <span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-badge bg-highlight&quot;</span>&gt;</span>
+                            Lorem Ipsum
+                        <span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
     </code></pre>
+                  </div>
+                  <button class="c-code-block__copy-code-button">
+                    <span class="label">Copy</span>
+                    <span class="error">Failed to copy</span>
+                    <span class="success">Copied</span>
+                  </button>
+                </div>
+
+                <div class="c-code-block__buttons">
+                  <button type="button" class="c-code-block__button c-code-block__toggle">Source
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <polyline points="6 9 12 15 18 9"></polyline>
+                    </svg>
+                  </button>
+                </div>
+              </div>
             </div>
-            <div class="g-col-12 g-col-tp-6">
+            <div class="g-col-12 g-col-tp-6 mb-1">
+              <div class="c-code-block__intro">
+                <div class="c-text">
+                  <h3>Info</h3>
 
-              <span class="c-badge bg-info">
-                +100
-              </span>
+                </div>
+              </div>
+              <div class="c-code-block">
+                <div class="c-code-block__preview">
 
-              <span class="c-badge bg-info">
-                Lorem Ipsum
-              </span>
+                  <span class="c-badge bg-info">
+                    +100
+                  </span>
 
-              <p class="headline-lined">Source</p>
-              <pre><code class="hljs html">
+                  <span class="c-badge bg-info">
+                    Lorem Ipsum
+                  </span>
+                </div>
+
+                <div class="c-code-block__source-wrapper">
+                  <div class="c-code-block__source">
+                    <pre><code class="hljs html">
     <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-badge bg-info&quot;</span>&gt;</span>
                             +100
                         <span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-badge bg-info&quot;</span>&gt;</span>
+                            Lorem Ipsum
+                        <span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
     </code></pre>
+                  </div>
+                  <button class="c-code-block__copy-code-button">
+                    <span class="label">Copy</span>
+                    <span class="error">Failed to copy</span>
+                    <span class="success">Copied</span>
+                  </button>
+                </div>
+
+                <div class="c-code-block__buttons">
+                  <button type="button" class="c-code-block__button c-code-block__toggle">Source
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <polyline points="6 9 12 15 18 9"></polyline>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="g-col-12 g-col-tp-6 mb-1">
+              <div class="c-code-block__intro">
+                <div class="c-text">
+                  <h3>Badge-Group</h3>
+
+                </div>
+              </div>
+              <div class="c-code-block">
+                <div class="c-code-block__preview">
+                  <div class="c-badge-group">
+
+                    <span class="c-badge bg-danger">
+                      Lorem Ipsum
+                    </span>
+
+                    <span class="c-badge bg-warning">
+                      Lorem Ipsum
+                    </span>
+
+                    <span class="c-badge bg-success">
+                      Lorem Ipsum
+                    </span>
+                  </div>
+                </div>
+
+                <div class="c-code-block__source-wrapper">
+                  <div class="c-code-block__source">
+                    <pre><code class="hljs html">
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-badge-group&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-badge bg-danger&quot;</span>&gt;</span>
+                                Lorem Ipsum
+                            <span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-badge bg-warning&quot;</span>&gt;</span>
+                                Lorem Ipsum
+                            <span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-badge bg-success&quot;</span>&gt;</span>
+                                Lorem Ipsum
+                            <span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    </code></pre>
+                  </div>
+                  <button class="c-code-block__copy-code-button">
+                    <span class="label">Copy</span>
+                    <span class="error">Failed to copy</span>
+                    <span class="success">Copied</span>
+                  </button>
+                </div>
+
+                <div class="c-code-block__buttons">
+                  <button type="button" class="c-code-block__button c-code-block__toggle">Source
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <polyline points="6 9 12 15 18 9"></polyline>
+                    </svg>
+                  </button>
+                </div>
+              </div>
             </div>
             <div class="g-col-12 g-col-tp-6">
+              <div class="c-code-block__intro">
+                <div class="c-text">
+                  <h3>Rounded</h3>
 
-              <span class="c-badge bg-danger">
-                Lorem Ipsum
-              </span>
+                </div>
+              </div>
+              <div class="c-code-block">
+                <div class="c-code-block__preview">
 
-              <span class="c-badge bg-warning">
-                Lorem Ipsum
-              </span>
+                  <span class="c-badge c-badge--round">
+                    9
+                  </span>
 
-              <span class="c-badge bg-success">
-                Lorem Ipsum
-              </span>
+                  <span class="c-badge c-badge--round">
+                    3
+                  </span>
+                </div>
 
-              <p class="headline-lined">Source</p>
-              <pre><code class="hljs html">
-    <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-badge bg-danger&quot;</span>&gt;</span>
-                            Lorem Ipsum
+                <div class="c-code-block__source-wrapper">
+                  <div class="c-code-block__source">
+                    <pre><code class="hljs html">
+    <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-badge c-badge--round&quot;</span>&gt;</span>
+                            9
                         <span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-badge bg-warning&quot;</span>&gt;</span>
-                            Lorem Ipsum
-                        <span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-badge bg-success&quot;</span>&gt;</span>
-                            Lorem Ipsum
+    <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-badge c-badge--round&quot;</span>&gt;</span>
+                            3
                         <span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
     </code></pre>
+                  </div>
+                  <button class="c-code-block__copy-code-button">
+                    <span class="label">Copy</span>
+                    <span class="error">Failed to copy</span>
+                    <span class="success">Copied</span>
+                  </button>
+                </div>
+
+                <div class="c-code-block__buttons">
+                  <button type="button" class="c-code-block__button c-code-block__toggle">Source
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <polyline points="6 9 12 15 18 9"></polyline>
+                    </svg>
+                  </button>
+                </div>
+              </div>
             </div>
           </div>
           <div class="g-row mb-1">
             <div class="g-col-12">
-              <div class="c-text">
-                <h3>
-                  <strong>Notification</strong>
-                </h3>
+              <div class="c-code-block__intro">
+                <div class="c-text">
+                  <h3>Notification</h3>
+
+                </div>
               </div>
-            </div>
-            <div class="g-col-12">
-              <button type="button" class="c-icon-button ic__bus-solid">
+              <div class="c-code-block">
+                <div class="c-code-block__preview">
+                  <button type="button" class="c-icon-button ic__bus-solid">
 
-                <span class="c-badge c-badge--notification">
+                    <span class="c-badge c-badge--notification">
 
-                </span>
-              </button>
+                    </span>
+                  </button>
+                </div>
 
-              <p class="headline-lined">Source</p>
-              <pre><code class="hljs html">
+                <div class="c-code-block__source-wrapper">
+                  <div class="c-code-block__source">
+                    <pre><code class="hljs html">
     <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;button&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-icon-button ic__bus-solid&quot;</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-badge c-badge--notification&quot;</span>&gt;</span>
                                 
                             <span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
     <span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
     </code></pre>
+                  </div>
+                  <button class="c-code-block__copy-code-button">
+                    <span class="label">Copy</span>
+                    <span class="error">Failed to copy</span>
+                    <span class="success">Copied</span>
+                  </button>
+                </div>
+
+                <div class="c-code-block__buttons">
+                  <button type="button" class="c-code-block__button c-code-block__toggle">Source
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <polyline points="6 9 12 15 18 9"></polyline>
+                    </svg>
+                  </button>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -249,8 +421,8 @@
 
       <aside class="sidebar">
         <nav class="c-side-nav">
-          <button class="c-side-nav__nav-toggle" id="c-side-nav__toggle" onclick="document.body.classList.toggle('is-nav-close');">
-            <i class="ic ic__arrow-left"></i>
+          <button class="c-side-nav__nav-toggle" id="c-side-nav__toggle">
+            <span class="c-side-nav__toggle-icon"></span>
           </button>
           <div class="c-side-nav__picture-wrapper">
             <a class="c-side-nav__picture-link" href="/">
@@ -294,14 +466,14 @@
 
                   </li>
                   <li>
-                    <a class="" href="theming.html" title="Theming">
-                      Theming
+                    <a class="" href="principles.html" title="Principles">
+                      Principles
                     </a>
 
                   </li>
                   <li>
-                    <a class="" href="mobile-first.html" title="Mobile First">
-                      Mobile First
+                    <a class="" href="theming.html" title="Theming">
+                      Theming
                     </a>
 
                   </li>
@@ -612,13 +784,33 @@
           </div>
         </nav>
       </aside>
-
     </main>
     <footer>
 
+      <div class="c-footer p-1">
+        <div class="g-container">
+          <div class="g-row">
+            <div class="g-col-12">
+              <div class="c-footer__nav-wrapper">
+                <nav class="c-footer__nav">
+                  <ul class="c-footer__nav-list">
+                    <li class="c-footer__nav-list-item">
+                      <a href="impressum.html" title="Impressum">Impressum</a>
+                    </li>
+                    <li class="c-footer__nav-list-item">
+                      <a href="datenschutz.html" title="Datenschutz">Datenschutz</a>
+                    </li>
+                  </ul>
+                </nav>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </footer>
     <script src="assets/js/app.js"></script>
     <script src="assets/js/side-nav.js"></script>
+    <script src="assets/js/code-block.js"></script>
 
   </body>
 

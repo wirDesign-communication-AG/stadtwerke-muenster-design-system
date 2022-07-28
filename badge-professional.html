@@ -103,6 +103,10 @@
                 <ul>
                   <li><code>c-badge--notification</code> - Positioniert ein kleines Badge oben rechts</li>
                 </ul>
+                <p>Mehrere Badges können zudem gruppiert werden:</p>
+                <ul>
+                  <li><code>c-badge-group</code></li>
+                </ul>
 
               </div>
             </div>
@@ -141,7 +145,7 @@
             </div>
             <div class="g-col-12 g-col-tp-4">
 
-              <span class="c-badge">
+              <span class="c-badge c-badge--round">
                 9
               </span>
 
@@ -151,7 +155,7 @@
 
               <p class="headline-lined">Source</p>
               <pre><code class="hljs html">
-    <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-badge&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-badge c-badge--round&quot;</span>&gt;</span>
                             9
                         <span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
     </code></pre>
@@ -222,8 +226,8 @@
 
       <aside class="sidebar">
         <nav class="c-side-nav">
-          <button class="c-side-nav__nav-toggle" id="c-side-nav__toggle" onclick="document.body.classList.toggle('is-nav-close');">
-            <i class="ic ic__arrow-left"></i>
+          <button class="c-side-nav__nav-toggle" id="c-side-nav__toggle">
+            <span class="c-side-nav__toggle-icon"></span>
           </button>
           <div class="c-side-nav__picture-wrapper">
             <a class="c-side-nav__picture-link" href="/">
@@ -267,14 +271,14 @@
 
                   </li>
                   <li>
-                    <a class="" href="theming.html" title="Theming">
-                      Theming
+                    <a class="" href="principles.html" title="Principles">
+                      Principles
                     </a>
 
                   </li>
                   <li>
-                    <a class="" href="mobile-first.html" title="Mobile First">
-                      Mobile First
+                    <a class="" href="theming.html" title="Theming">
+                      Theming
                     </a>
 
                   </li>
@@ -391,7 +395,7 @@
                 <p>Form-Elements</p>
                 <ul>
                   <li>
-                    <a class="" href="checkbox-professional.html" title="Checkbox">
+                    <a class="" href="checkbox.html" title="Checkbox">
                       Checkbox
                     </a>
 
@@ -403,7 +407,7 @@
 
                   </li>
                   <li>
-                    <a class="" href="dropdown-professional.html" title="Dropdown">
+                    <a class="" href="dropdown.html" title="Dropdown">
                       Dropdown
                     </a>
 
@@ -415,25 +419,25 @@
 
                   </li>
                   <li>
-                    <a class="" href="form-professional.html" title="Form">
+                    <a class="" href="form.html" title="Form">
                       Form
                     </a>
 
                   </li>
                   <li>
-                    <a class="" href="input-professional.html" title="Input">
+                    <a class="" href="input.html" title="Input">
                       Input
                     </a>
 
                   </li>
                   <li>
-                    <a class="" href="radio-button-professional.html" title="Radio-Button">
+                    <a class="" href="radio-button.html" title="Radio-Button">
                       Radio-Button
                     </a>
 
                   </li>
                   <li>
-                    <a class="" href="switch-professional.html" title="Switch">
+                    <a class="" href="switch.html" title="Switch">
                       Switch
                     </a>
 
@@ -456,7 +460,7 @@
                 <p>Basic Components</p>
                 <ul>
                   <li>
-                    <a class="is-active" href="badge-professional.html" title="Badge">
+                    <a class="" href="badge.html" title="Badge">
                       Badge
                     </a>
 
@@ -538,7 +542,7 @@
                 <p>Modules</p>
                 <ul>
                   <li>
-                    <a class="" href="accordion-professional.html" title="Accordion">
+                    <a class="" href="accordion.html" title="Accordion">
                       Accordion
                     </a>
 
@@ -589,9 +593,30 @@
     </main>
     <footer>
 
+      <div class="c-footer p-1">
+        <div class="g-container">
+          <div class="g-row">
+            <div class="g-col-12">
+              <div class="c-footer__nav-wrapper">
+                <nav class="c-footer__nav">
+                  <ul class="c-footer__nav-list">
+                    <li class="c-footer__nav-list-item">
+                      <a href="impressum.html" title="Impressum">Impressum</a>
+                    </li>
+                    <li class="c-footer__nav-list-item">
+                      <a href="datenschutz.html" title="Datenschutz">Datenschutz</a>
+                    </li>
+                  </ul>
+                </nav>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </footer>
     <script src="assets/js/app.js"></script>
     <script src="assets/js/side-nav.js"></script>
+    <script src="assets/js/code-block.js"></script>
 
   </body>
 

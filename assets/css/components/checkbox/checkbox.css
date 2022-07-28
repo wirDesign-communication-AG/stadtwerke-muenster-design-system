@@ -7,6 +7,11 @@ COMPONENT BASICS
 /* ===================================================
 REM-CALC
 =================================================== */
+/******************************************************
+
+    MAIN THEME
+
+******************************************************/
 /* ===================================================
 COLOR DEFINITIONS
 =================================================== */
@@ -64,19 +69,16 @@ COMPONENT HEADER
 COMPONENT NAV
 =================================================== */
 /* ===================================================
-COMPONENT COPY
-=================================================== */
-/* ===================================================
-COMPONENT UPLOAD
-=================================================== */
-/* ===================================================
-COMPONENT MESSAGE
-=================================================== */
-/* ===================================================
 COMPONENT HERO
 =================================================== */
 /* ===================================================
 COMPONENT QUOTE
+=================================================== */
+/* ===================================================
+COMPONENT CARD
+=================================================== */
+/* ===================================================
+COMPONENT CHIPS
 =================================================== */
 /* ================================================ */
 /* ===================================================
@@ -139,6 +141,10 @@ Global Styles
       border-width: 0 2px 2px 0;
       content: url("data:image/svg+xml; utf8, <svg width='14' height='12' viewBox='0 0 14 12' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M0.75 6.603L4.211 10.506L12.864 0.75' stroke='%23fff' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/></svg> ");
       z-index: 3; }
+  .c-checkbox__native.is-error:checked + .c-checkbox__background {
+    background: #F07855; }
+  .c-checkbox__native.is-error + .c-checkbox__background {
+    border: 1px solid #F07855; }
 
 .c-checkbox__background {
   position: absolute;
@@ -158,7 +164,7 @@ Global Styles
   margin-bottom: .5rem; }
   .c-checkbox__wrapper.is-inline {
     display: inline-flex;
-    margin: 0 .5rem .5rem 0; }
+    margin: 0 1.5rem .5rem 0; }
 
 /* ---------------------------------------------------
 Context:Type Radio
@@ -174,6 +180,12 @@ Context:Type Radio
     background: #00693C;
     border-radius: 50%;
     content: ""; }
+
+.c-checkbox--radio .c-checkbox__native.is-error:checked + .c-checkbox__background::before {
+  background: #F07855; }
+
+.c-checkbox--radio .c-checkbox__native.is-error + .c-checkbox__background {
+  border: 1px solid #F07855; }
 
 .c-checkbox--radio .c-checkbox__background {
   border-radius: 50%; }

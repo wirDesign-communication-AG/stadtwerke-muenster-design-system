@@ -8,7 +8,7 @@ require=(function(){function r(e,n,t){function o(i,f){if(!n[i]){if(!e[i]){var c=
  * ------------------------------------------------------------------------
  * Constants
  * ------------------------------------------------------------------------
- */var NAME='side-nav';var VERSION='0.0.1';var DATA_KEY='ide.side-nav';var Data={JSON:'json',ANCHOR:'target',PARENT:'parent'};/**
+ */var NAME='side-nav';var VERSION='0.0.1';var DATA_KEY='ide.side-nav';var Data={JSON:'json',ANCHOR:'target',PARENT:'parent'};var Selector={MENU_TOGGLE:'#c-side-nav__toggle'};/**
  * ------------------------------------------------------------------------
  * Class Definition SideNav
  * ------------------------------------------------------------------------
@@ -18,7 +18,10 @@ require=(function(){function r(e,n,t){function o(i,f){if(!n[i]){if(!e[i]){var c=
      */_createClass(SideNav,[{key:"_getConfig",value:function _getConfig(config){config=_objectSpread(_objectSpread({},Default),config);_util["default"].typeCheckConfig(NAME,VERSION,config,DefaultType);return config;}/**
      * Init Side Nav
      *
-     */},{key:"init",value:function init(){var _this=this;var sidebarTop=sessionStorage.getItem("sidebar-scroll");if(sidebarTop!==null){this._element.scrollTop=parseInt(sidebarTop,10);}window.addEventListener("beforeunload",function(){sessionStorage.setItem("sidebar-scroll",_this._element.scrollTop);});}/**
+     */},{key:"init",value:function init(){var _this=this;var sidebarTop=sessionStorage.getItem("sidebar-scroll");var menuToggle=document.querySelector(Selector.MENU_TOGGLE);// if (window.innerWidth < 1200) {
+//     document.body.classList.add('is-nav-close');
+// }
+if(sidebarTop!==null){this._element.scrollTop=parseInt(sidebarTop,10);}window.addEventListener("beforeunload",function(){sessionStorage.setItem("sidebar-scroll",_this._element.scrollTop);});if(menuToggle){menuToggle.addEventListener('click',function(e){document.body.classList.toggle('is-nav-close');},false);}}/**
      * Static: Set DOM interface
      *
      */}],[{key:"_DomInterface",value:function _DomInterface(toggle){var data=_util["default"].handleData(toggle,DATA_KEY);if(!data){var config;if(toggle.hasAttribute('data-'+Data.JSON)){var jsonString=_util["default"].getJsonFromElement(toggle,Data.JSON);config=JSON.parse(jsonString);}data=new SideNav(toggle,config);_util["default"].handleData(toggle,DATA_KEY,data);}}}]);return SideNav;}();/**

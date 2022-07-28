@@ -66,6 +66,15 @@
                     <a class="c-cta c-cta--small is-active" href="quote.html">
                       <span class="c-cta__text">Main</span>
                     </a>
+                    <a class="c-cta c-cta--small" href="quote-sustainable.html">
+                      <span class="c-cta__text">Sustainable</span>
+                    </a>
+                    <a class="c-cta c-cta--small" href="quote-dynamic.html">
+                      <span class="c-cta__text">Dynamic</span>
+                    </a>
+                    <a class="c-cta c-cta--small" href="quote-professional.html">
+                      <span class="c-cta__text">Professional</span>
+                    </a>
                   </div>
                 </div>
               </div>
@@ -85,6 +94,7 @@
                 <p>Folgende Klassen können gesetzt werden:</p>
                 <ul>
                   <li><code>c-quote--smaller</code> - kleinere Darstellung des Inhalts</li>
+                  <li><code>c-quote--two-column</code> - zweispaltige Darstellung von Text und Bild</li>
                 </ul>
 
               </div>
@@ -111,99 +121,45 @@
         </div>
       </div>
 
-      <div class="c-section pt-2">
+      <div class="c-section pt-2 pb-1">
 
         <div class="g-container">
           <div class="g-row">
             <div class="g-col-12">
-              <h2>Center</h2>
-            </div>
-          </div>
-        </div>
-      </div>
+              <div class="c-code-block__intro">
+                <div class="c-text">
+                  <h3>Default</h3>
 
-      <div class="c-section bg-shade pb-2">
+                </div>
+              </div>
+              <div class="c-code-block">
+                <div class="c-code-block__preview">
+                  <blockquote class="c-quote">
+                    <div class="c-quote__avatar-wrapper">
+                      <picture class="c-quote__image">
+                        <img src="assets/picts/avatar.jpg" alt="Tempor incididunt">
+                      </picture>
+                    </div>
 
-        <div class="g-container">
-          <div class="g-row">
-            <div class="g-col-12 g-col-tp-6 g-offset-tp-3">
-              <blockquote class="c-quote c-quote--center -mt-3">
-                <div class="c-quote__avatar-wrapper">
-                  <picture class="c-quote__image">
-                    <img src="assets/picts/avatar-female.svg" alt="Tempor incididunt">
-                  </picture>
+                    <div class="c-quote__content-wrapper">
+                      <div class="c-quote__content">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                      </div>
+
+                      <footer class="c-quote__author">
+                        <p>Tempor incididunt, labore et dolore</p>
+                      </footer>
+                    </div>
+                  </blockquote>
                 </div>
 
-                <div class="c-quote__content-wrapper">
-                  <div class="c-quote__content">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                  </div>
-
-                  <footer class="c-quote__author">
-                    <p>Tempor incididunt, labore et dolore</p>
-                  </footer>
-                </div>
-              </blockquote>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="c-section pt-2">
-
-        <div class="g-container">
-          <div class="g-row">
-            <div class="g-col-12">
-              <p class="headline-lined mt-1">Source</p>
-              <pre><code class="hljs html">
-    <span class="hljs-tag">&lt;<span class="hljs-name">blockquote</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-quote c-quote--center&quot;</span>&gt;</span>
+                <div class="c-code-block__source-wrapper">
+                  <div class="c-code-block__source">
+                    <pre><code class="hljs html">
+    <span class="hljs-tag">&lt;<span class="hljs-name">blockquote</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-quote&quot;</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-quote__avatar-wrapper&quot;</span>&gt;</span>
             <span class="hljs-tag">&lt;<span class="hljs-name">picture</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-quote__image&quot;</span>&gt;</span>
-                <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;assets/picts/avatar-female.svg&quot;</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">&quot;Tempor incididunt&quot;</span>&gt;</span>
-            <span class="hljs-tag">&lt;/<span class="hljs-name">picture</span>&gt;</span>
-        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-quote__content-wrapper&quot;</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-quote__content&quot;</span>&gt;</span>
-                <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Lorem ipsum dolor sit amet, consectetur adipisicing elit.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
-            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-name">footer</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-quote__author&quot;</span>&gt;</span>
-                <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Tempor incididunt, labore et dolore<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
-            <span class="hljs-tag">&lt;/<span class="hljs-name">footer</span>&gt;</span>
-        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-    <span class="hljs-tag">&lt;/<span class="hljs-name">blockquote</span>&gt;</span>
-    </code></pre>
-            </div>
-          </div>
-          <div class="g-row mt-2">
-            <div class="g-col-12">
-              <h2>Center - Small</h2>
-            </div>
-            <div class="g-col-12 g-col-tp-6 g-offset-tp-3">
-              <blockquote class="c-quote c-quote--smaller c-quote--center">
-                <div class="c-quote__avatar-wrapper">
-                  <picture class="c-quote__image">
-                    <img src="assets/picts/avatar-female.svg" alt="Tempor incididunt">
-                  </picture>
-                </div>
-
-                <div class="c-quote__content-wrapper">
-                  <div class="c-quote__content">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                  </div>
-
-                  <footer class="c-quote__author">
-                    <p>Tempor incididunt, labore et dolore</p>
-                  </footer>
-                </div>
-              </blockquote>
-            </div>
-            <div class="g-col-12">
-              <p class="headline-lined mt-1">Source</p>
-              <pre><code class="hljs html">
-    <span class="hljs-tag">&lt;<span class="hljs-name">blockquote</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-quote c-quote--smaller c-quote--center&quot;</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-quote__avatar-wrapper&quot;</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-name">picture</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-quote__image&quot;</span>&gt;</span>
-                <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;assets/picts/avatar-female.svg&quot;</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">&quot;Tempor incididunt&quot;</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;assets/picts/avatar.jpg&quot;</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">&quot;Tempor incididunt&quot;</span>&gt;</span>
             <span class="hljs-tag">&lt;/<span class="hljs-name">picture</span>&gt;</span>
         <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-quote__content-wrapper&quot;</span>&gt;</span>
@@ -216,44 +172,66 @@
         <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
     <span class="hljs-tag">&lt;/<span class="hljs-name">blockquote</span>&gt;</span>
     </code></pre>
+                  </div>
+                  <button class="c-code-block__copy-code-button">
+                    <span class="label">Copy</span>
+                    <span class="error">Failed to copy</span>
+                    <span class="success">Copied</span>
+                  </button>
+                </div>
+
+                <div class="c-code-block__buttons">
+                  <button type="button" class="c-code-block__button c-code-block__toggle">Source
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <polyline points="6 9 12 15 18 9"></polyline>
+                    </svg>
+                  </button>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
 
-      <div class="c-section pt-2">
+      <div class="c-section p-1">
 
         <div class="g-container">
-          <div class="g-row mt-2">
+          <div class="g-row">
             <div class="g-col-12">
-              <h2>Center - Small</h2>
-            </div>
-            <div class="g-col-12 g-col-tp-6 g-offset-tp-3">
-              <blockquote class="c-quote c-quote--smaller c-quote--center">
-                <div class="c-quote__avatar-wrapper">
-                  <picture class="c-quote__image">
-                    <img src="assets/picts/avatar-female.svg" alt="Tempor incididunt">
-                  </picture>
+              <div class="c-code-block__intro">
+                <div class="c-text">
+                  <h3>Small</h3>
+
+                </div>
+              </div>
+              <div class="c-code-block">
+                <div class="c-code-block__preview">
+                  <blockquote class="c-quote c-quote--smaller">
+                    <div class="c-quote__avatar-wrapper">
+                      <picture class="c-quote__image">
+                        <img src="assets/picts/avatar.jpg" alt="Tempor incididunt">
+                      </picture>
+                    </div>
+
+                    <div class="c-quote__content-wrapper">
+                      <div class="c-quote__content">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                      </div>
+
+                      <footer class="c-quote__author">
+                        <p>Tempor incididunt, labore et dolore</p>
+                      </footer>
+                    </div>
+                  </blockquote>
                 </div>
 
-                <div class="c-quote__content-wrapper">
-                  <div class="c-quote__content">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                  </div>
-
-                  <footer class="c-quote__author">
-                    <p>Tempor incididunt, labore et dolore</p>
-                  </footer>
-                </div>
-              </blockquote>
-            </div>
-            <div class="g-col-12">
-              <p class="headline-lined mt-1">Source</p>
-              <pre><code class="hljs html">
-    <span class="hljs-tag">&lt;<span class="hljs-name">blockquote</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-quote c-quote--smaller c-quote--center&quot;</span>&gt;</span>
+                <div class="c-code-block__source-wrapper">
+                  <div class="c-code-block__source">
+                    <pre><code class="hljs html">
+    <span class="hljs-tag">&lt;<span class="hljs-name">blockquote</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-quote c-quote--smaller&quot;</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-quote__avatar-wrapper&quot;</span>&gt;</span>
             <span class="hljs-tag">&lt;<span class="hljs-name">picture</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-quote__image&quot;</span>&gt;</span>
-                <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;assets/picts/avatar-female.svg&quot;</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">&quot;Tempor incididunt&quot;</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;assets/picts/avatar.jpg&quot;</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">&quot;Tempor incididunt&quot;</span>&gt;</span>
             <span class="hljs-tag">&lt;/<span class="hljs-name">picture</span>&gt;</span>
         <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-quote__content-wrapper&quot;</span>&gt;</span>
@@ -266,44 +244,66 @@
         <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
     <span class="hljs-tag">&lt;/<span class="hljs-name">blockquote</span>&gt;</span>
     </code></pre>
+                  </div>
+                  <button class="c-code-block__copy-code-button">
+                    <span class="label">Copy</span>
+                    <span class="error">Failed to copy</span>
+                    <span class="success">Copied</span>
+                  </button>
+                </div>
+
+                <div class="c-code-block__buttons">
+                  <button type="button" class="c-code-block__button c-code-block__toggle">Source
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <polyline points="6 9 12 15 18 9"></polyline>
+                    </svg>
+                  </button>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
 
-      <div class="c-section p-2">
+      <div class="c-section p-1">
 
         <div class="g-container">
           <div class="g-row">
             <div class="g-col-12">
-              <h2>Two Columns</h2>
-            </div>
-            <div class="g-col-12">
-              <blockquote class="c-quote c-quote--two-column">
-                <div class="c-quote__avatar-wrapper">
-                  <picture class="c-quote__image">
-                    <img src="assets/picts/placeholder-2.svg" alt="Tempor incididunt">
-                  </picture>
+              <div class="c-code-block__intro">
+                <div class="c-text">
+                  <h3>Two Columns</h3>
+
+                </div>
+              </div>
+              <div class="c-code-block">
+                <div class="c-code-block__preview">
+                  <blockquote class="c-quote c-quote--two-column">
+                    <div class="c-quote__avatar-wrapper">
+                      <picture class="c-quote__image">
+                        <img src="assets/picts/Stadtwerke-MS_INNENSTADT_20211027_1840357.jpg" alt="Tempor incididunt">
+                      </picture>
+                    </div>
+
+                    <div class="c-quote__content-wrapper">
+                      <div class="c-quote__content">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                      </div>
+
+                      <footer class="c-quote__author">
+                        <p>Tempor incididunt, labore et dolore</p>
+                      </footer>
+                    </div>
+                  </blockquote>
                 </div>
 
-                <div class="c-quote__content-wrapper">
-                  <div class="c-quote__content">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                  </div>
-
-                  <footer class="c-quote__author">
-                    <p>Tempor incididunt, labore et dolore</p>
-                  </footer>
-                </div>
-              </blockquote>
-            </div>
-            <div class="g-col-12">
-              <p class="headline-lined mt-1">Source</p>
-              <pre><code class="hljs html">
+                <div class="c-code-block__source-wrapper">
+                  <div class="c-code-block__source">
+                    <pre><code class="hljs html">
     <span class="hljs-tag">&lt;<span class="hljs-name">blockquote</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-quote c-quote--two-column&quot;</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-quote__avatar-wrapper&quot;</span>&gt;</span>
             <span class="hljs-tag">&lt;<span class="hljs-name">picture</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-quote__image&quot;</span>&gt;</span>
-                <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;assets/picts/placeholder-2.svg&quot;</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">&quot;Tempor incididunt&quot;</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;assets/picts/Stadtwerke-MS_INNENSTADT_20211027_1840357.jpg&quot;</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">&quot;Tempor incididunt&quot;</span>&gt;</span>
             <span class="hljs-tag">&lt;/<span class="hljs-name">picture</span>&gt;</span>
         <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-quote__content-wrapper&quot;</span>&gt;</span>
@@ -316,38 +316,66 @@
         <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
     <span class="hljs-tag">&lt;/<span class="hljs-name">blockquote</span>&gt;</span>
     </code></pre>
+                  </div>
+                  <button class="c-code-block__copy-code-button">
+                    <span class="label">Copy</span>
+                    <span class="error">Failed to copy</span>
+                    <span class="success">Copied</span>
+                  </button>
+                </div>
+
+                <div class="c-code-block__buttons">
+                  <button type="button" class="c-code-block__button c-code-block__toggle">Source
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <polyline points="6 9 12 15 18 9"></polyline>
+                    </svg>
+                  </button>
+                </div>
+              </div>
             </div>
           </div>
-          <div class="g-row mt-2">
+        </div>
+      </div>
+
+      <div class="c-section pt-1 pb-3">
+
+        <div class="g-container">
+          <div class="g-row">
             <div class="g-col-12">
-              <h2>Two Columns Small</h2>
-            </div>
-            <div class="g-col-12">
-              <blockquote class="c-quote c-quote--two-column c-quote--smaller">
-                <div class="c-quote__avatar-wrapper">
-                  <picture class="c-quote__image">
-                    <img src="assets/picts/placeholder-2.svg" alt="Tempor incididunt">
-                  </picture>
+              <div class="c-code-block__intro">
+                <div class="c-text">
+                  <h3>Two Columns Small</h3>
+
+                </div>
+              </div>
+              <div class="c-code-block">
+                <div class="c-code-block__preview">
+                  <blockquote class="c-quote c-quote--two-column c-quote--smaller">
+                    <div class="c-quote__avatar-wrapper">
+                      <picture class="c-quote__image">
+                        <img src="assets/picts/Stadtwerke-MS_INNENSTADT_20211027_1840357.jpg" alt="Tempor incididunt">
+                      </picture>
+                    </div>
+
+                    <div class="c-quote__content-wrapper">
+                      <div class="c-quote__content">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                      </div>
+
+                      <footer class="c-quote__author">
+                        <p>Tempor incididunt, labore et dolore</p>
+                      </footer>
+                    </div>
+                  </blockquote>
                 </div>
 
-                <div class="c-quote__content-wrapper">
-                  <div class="c-quote__content">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                  </div>
-
-                  <footer class="c-quote__author">
-                    <p>Tempor incididunt, labore et dolore</p>
-                  </footer>
-                </div>
-              </blockquote>
-            </div>
-            <div class="g-col-12">
-              <p class="headline-lined mt-1">Source</p>
-              <pre><code class="hljs html">
+                <div class="c-code-block__source-wrapper">
+                  <div class="c-code-block__source">
+                    <pre><code class="hljs html">
     <span class="hljs-tag">&lt;<span class="hljs-name">blockquote</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-quote c-quote--two-column c-quote--smaller&quot;</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-quote__avatar-wrapper&quot;</span>&gt;</span>
             <span class="hljs-tag">&lt;<span class="hljs-name">picture</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-quote__image&quot;</span>&gt;</span>
-                <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;assets/picts/placeholder-2.svg&quot;</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">&quot;Tempor incididunt&quot;</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;assets/picts/Stadtwerke-MS_INNENSTADT_20211027_1840357.jpg&quot;</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">&quot;Tempor incididunt&quot;</span>&gt;</span>
             <span class="hljs-tag">&lt;/<span class="hljs-name">picture</span>&gt;</span>
         <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-quote__content-wrapper&quot;</span>&gt;</span>
@@ -360,6 +388,22 @@
         <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
     <span class="hljs-tag">&lt;/<span class="hljs-name">blockquote</span>&gt;</span>
     </code></pre>
+                  </div>
+                  <button class="c-code-block__copy-code-button">
+                    <span class="label">Copy</span>
+                    <span class="error">Failed to copy</span>
+                    <span class="success">Copied</span>
+                  </button>
+                </div>
+
+                <div class="c-code-block__buttons">
+                  <button type="button" class="c-code-block__button c-code-block__toggle">Source
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <polyline points="6 9 12 15 18 9"></polyline>
+                    </svg>
+                  </button>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -367,8 +411,8 @@
 
       <aside class="sidebar">
         <nav class="c-side-nav">
-          <button class="c-side-nav__nav-toggle" id="c-side-nav__toggle" onclick="document.body.classList.toggle('is-nav-close');">
-            <i class="ic ic__arrow-left"></i>
+          <button class="c-side-nav__nav-toggle" id="c-side-nav__toggle">
+            <span class="c-side-nav__toggle-icon"></span>
           </button>
           <div class="c-side-nav__picture-wrapper">
             <a class="c-side-nav__picture-link" href="/">
@@ -412,14 +456,14 @@
 
                   </li>
                   <li>
-                    <a class="" href="theming.html" title="Theming">
-                      Theming
+                    <a class="" href="principles.html" title="Principles">
+                      Principles
                     </a>
 
                   </li>
                   <li>
-                    <a class="" href="mobile-first.html" title="Mobile First">
-                      Mobile First
+                    <a class="" href="theming.html" title="Theming">
+                      Theming
                     </a>
 
                   </li>
@@ -730,13 +774,33 @@
           </div>
         </nav>
       </aside>
-
     </main>
     <footer>
 
+      <div class="c-footer p-1">
+        <div class="g-container">
+          <div class="g-row">
+            <div class="g-col-12">
+              <div class="c-footer__nav-wrapper">
+                <nav class="c-footer__nav">
+                  <ul class="c-footer__nav-list">
+                    <li class="c-footer__nav-list-item">
+                      <a href="impressum.html" title="Impressum">Impressum</a>
+                    </li>
+                    <li class="c-footer__nav-list-item">
+                      <a href="datenschutz.html" title="Datenschutz">Datenschutz</a>
+                    </li>
+                  </ul>
+                </nav>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </footer>
     <script src="assets/js/app.js"></script>
     <script src="assets/js/side-nav.js"></script>
+    <script src="assets/js/code-block.js"></script>
 
   </body>
 

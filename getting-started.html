@@ -63,6 +63,21 @@
                 <h1>
                   <strong>Getting Started</strong>
                 </h1>
+                <p>Für den Einsatz des Mucker Design Systems ist es grundsätzlich wichtig den Umgang mit unseren
+                  <a href="theming.html" title="Themes">Themes</a> zu verstehen. Das Javascript, das Tagging und die Klassen sind für alle Themes gleich. Um das Theme zu wechseln, muss lediglich das komprimierte CSS ausgetauscht werden.</p>
+                <h2>JS</h2>
+                <p>Das notwendige Javascript kann
+                  <a href="https://github.com/wirDesign-communication-AG/stadtwerke-muenster-design-system/tree/main/assets/js" title="hier">hier</a> heruntergeladen werden. Abgelegt sind die für die einzelnen Komponenten notwendigen JS-Dateien sowie das komplette komprimierte JS (app.js).</p>
+                <h2>CSS</h2>
+                <p>Das CSS kann pro Theme komprimiert
+                  <a href="https://github.com/wirDesign-communication-AG/stadtwerke-muenster-design-system/tree/main/assets/css" title="hier">hier</a> heruntergeladen werden. Je nach Umsetzung befinden sich
+                  <a href="https://github.com/wirDesign-communication-AG/stadtwerke-muenster-design-system/tree/main/assets/css/components" title="hier">hier</a> die unkomprimierten Stylesheets je Komponente.</p>
+                <h2>Favicons</h2>
+                <p>Favicons findet ihr
+                  <a href="https://github.com/wirDesign-communication-AG/stadtwerke-muenster-design-system/tree/main/assets/fav" title="hier">hier</a>.</p>
+                <h2>Font und Iconfont</h2>
+                <p>Beides kann
+                  <a href="https://github.com/wirDesign-communication-AG/stadtwerke-muenster-design-system/tree/main/assets/fonts" title="hier">hier</a> heruntergeladen werden.</p>
 
               </div>
             </div>
@@ -72,8 +87,8 @@
 
       <aside class="sidebar">
         <nav class="c-side-nav">
-          <button class="c-side-nav__nav-toggle" id="c-side-nav__toggle" onclick="document.body.classList.toggle('is-nav-close');">
-            <i class="ic ic__arrow-left"></i>
+          <button class="c-side-nav__nav-toggle" id="c-side-nav__toggle">
+            <span class="c-side-nav__toggle-icon"></span>
           </button>
           <div class="c-side-nav__picture-wrapper">
             <a class="c-side-nav__picture-link" href="/">
@@ -117,14 +132,14 @@
 
                   </li>
                   <li>
-                    <a class="" href="theming.html" title="Theming">
-                      Theming
+                    <a class="" href="principles.html" title="Principles">
+                      Principles
                     </a>
 
                   </li>
                   <li>
-                    <a class="" href="mobile-first.html" title="Mobile First">
-                      Mobile First
+                    <a class="" href="theming.html" title="Theming">
+                      Theming
                     </a>
 
                   </li>
@@ -435,13 +450,33 @@
           </div>
         </nav>
       </aside>
-
     </main>
     <footer>
 
+      <div class="c-footer p-1">
+        <div class="g-container">
+          <div class="g-row">
+            <div class="g-col-12">
+              <div class="c-footer__nav-wrapper">
+                <nav class="c-footer__nav">
+                  <ul class="c-footer__nav-list">
+                    <li class="c-footer__nav-list-item">
+                      <a href="impressum.html" title="Impressum">Impressum</a>
+                    </li>
+                    <li class="c-footer__nav-list-item">
+                      <a href="datenschutz.html" title="Datenschutz">Datenschutz</a>
+                    </li>
+                  </ul>
+                </nav>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </footer>
     <script src="assets/js/app.js"></script>
     <script src="assets/js/side-nav.js"></script>
+    <script src="assets/js/code-block.js"></script>
 
   </body>
 

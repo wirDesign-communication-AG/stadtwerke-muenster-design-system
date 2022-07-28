@@ -7,6 +7,11 @@ COMPONENT BASICS
 /* ===================================================
 REM-CALC
 =================================================== */
+/******************************************************
+
+    MAIN THEME
+
+******************************************************/
 /* ===================================================
 COLOR DEFINITIONS
 =================================================== */
@@ -64,19 +69,16 @@ COMPONENT HEADER
 COMPONENT NAV
 =================================================== */
 /* ===================================================
-COMPONENT COPY
-=================================================== */
-/* ===================================================
-COMPONENT UPLOAD
-=================================================== */
-/* ===================================================
-COMPONENT MESSAGE
-=================================================== */
-/* ===================================================
 COMPONENT HERO
 =================================================== */
 /* ===================================================
 COMPONENT QUOTE
+=================================================== */
+/* ===================================================
+COMPONENT CARD
+=================================================== */
+/* ===================================================
+COMPONENT CHIPS
 =================================================== */
 /* ================================================ */
 /* ===================================================
@@ -114,14 +116,18 @@ GRID
 Global Styles
 --------------------------------------------------- */
 .c-quote {
-  position: relative; }
+  position: relative;
+  background-color: #F7F6F4;
+  text-align: center;
+  padding: 130px 0 48px;
+  margin-top: 85px; }
 
 .c-quote__avatar-wrapper {
+  position: absolute;
   max-width: 170px;
-  margin-bottom: 20px; }
-  @media only screen and (min-width: 768px) {
-    .c-quote__avatar-wrapper {
-      margin-bottom: 40px; } }
+  margin-left: 50%;
+  top: 0;
+  transform: translate(-50%, -50%); }
 
 .c-quote__image img {
   border-radius: 50%;
@@ -130,7 +136,10 @@ Global Styles
 
 .c-quote__content {
   display: block;
-  margin-bottom: 0; }
+  margin: 0 auto;
+  max-width: 600px;
+  width: 100%;
+  padding: 0 16px; }
   .c-quote__content p {
     color: #121212;
     font-family: "Roboto", Arial, sans-serif;
@@ -166,7 +175,7 @@ Global Styles
   font-style: normal;
   margin-top: 0.5rem;
   margin-bottom: 0;
-  font-size: 1.25rem;
+  font-size: 1.375rem;
   line-height: 1.2; }
   @media only screen and (min-width: 480px) {
     .c-quote__author p {
@@ -197,34 +206,14 @@ Context: smaller
   max-width: 150px; }
 
 /* ---------------------------------------------------
-Context: center
---------------------------------------------------- */
-.c-quote--center {
-  text-align: center; }
-  .c-quote--center .c-quote__avatar-wrapper {
-    margin: 0 auto 20px; }
-    @media only screen and (min-width: 768px) {
-      .c-quote--center .c-quote__avatar-wrapper {
-        margin: 0 auto 40px; } }
-
-/* ---------------------------------------------------
 Context: two column
 --------------------------------------------------- */
 .c-quote--two-column {
   display: flex;
-  flex-wrap: wrap; }
-  @media only screen and (min-width: 0) {
-    .c-quote--two-column {
-      margin-right: -8px;
-      margin-left: -8px; } }
-  @media only screen and (min-width: 768px) {
-    .c-quote--two-column {
-      margin-right: -12px;
-      margin-left: -12px; } }
-  @media only screen and (min-width: 1200px) {
-    .c-quote--two-column {
-      margin-right: -16px;
-      margin-left: -16px; } }
+  flex-wrap: wrap;
+  text-align: left;
+  padding: 64px 0;
+  margin: 0; }
   .c-quote--two-column .c-quote__content-wrapper {
     flex: 0 0 100%;
     max-width: 100%;
@@ -245,12 +234,15 @@ Context: two column
       .c-quote--two-column .c-quote__content-wrapper {
         padding-right: 16px;
         padding-left: 16px; } }
-    @media only screen and (min-width: 768px) {
+    @media only screen and (min-width: 992px) {
       .c-quote--two-column .c-quote__content-wrapper {
         flex: 0 0 50%;
         max-width: 50%;
         order: 0; } }
   .c-quote--two-column .c-quote__avatar-wrapper {
+    position: relative;
+    margin-left: 0;
+    transform: none;
     flex: 0 0 100%;
     max-width: 100%;
     order: 0;
@@ -267,12 +259,16 @@ Context: two column
       .c-quote--two-column .c-quote__avatar-wrapper {
         padding-right: 16px;
         padding-left: 16px; } }
-    @media only screen and (min-width: 768px) {
+    @media only screen and (min-width: 992px) {
       .c-quote--two-column .c-quote__avatar-wrapper {
         flex: 0 0 50%;
         max-width: 50%;
         order: 1;
         margin-bottom: 0; } }
+  .c-quote--two-column .c-quote__content {
+    margin: 0;
+    max-width: 100%;
+    padding: 0; }
   .c-quote--two-column .c-quote__image img {
     border-radius: 0;
     max-width: 100%; }

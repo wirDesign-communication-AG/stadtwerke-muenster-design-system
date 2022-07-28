@@ -7,6 +7,11 @@ COMPONENT BASICS
 /* ===================================================
 REM-CALC
 =================================================== */
+/******************************************************
+
+    SUSTAINABLE THEME
+
+******************************************************/
 /* ===================================================
 COLOR DEFINITIONS
 =================================================== */
@@ -64,19 +69,16 @@ COMPONENT HEADER
 COMPONENT NAV
 =================================================== */
 /* ===================================================
-COMPONENT COPY
-=================================================== */
-/* ===================================================
-COMPONENT UPLOAD
-=================================================== */
-/* ===================================================
-COMPONENT MESSAGE
-=================================================== */
-/* ===================================================
 COMPONENT HERO
 =================================================== */
 /* ===================================================
 COMPONENT QUOTE
+=================================================== */
+/* ===================================================
+COMPONENT CARD
+=================================================== */
+/* ===================================================
+COMPONENT CHIPS
 =================================================== */
 /* ================================================ */
 /* ===================================================
@@ -146,6 +148,10 @@ Global Styles
       padding-right: 48px; } }
   @media only screen and (min-width: 1200px) {
     .c-hero__content-container {
+      padding-left: 120px;
+      padding-right: 120px; } }
+  @media only screen and (min-width: 1440px) {
+    .c-hero__content-container {
       padding-left: 160px;
       padding-right: 160px; } }
 
@@ -198,8 +204,7 @@ Global Styles
       padding-right: 30px;
       padding-left: 30px;
       order: 1;
-      margin-bottom: 0;
-      padding-bottom: 64px; } }
+      margin-bottom: 0; } }
 
 .c-hero__text-wrapper {
   margin-bottom: 2rem; }
@@ -224,10 +229,14 @@ Global Styles
     @media only screen and (min-width: 768px) {
       .c-hero__background-img.is-mobile {
         display: none; } }
+  .c-hero__background-img + .c-hero__content-container .c-hero__headline,
+  .c-hero__background-img + .c-hero__content-container .c-hero__subheadline {
+    color: #fff; }
 
 .c-hero__headline {
   font-size: 2.5rem;
-  line-height: 1.2; }
+  line-height: 1.2;
+  color: #fff; }
   @media only screen and (min-width: 480px) {
     .c-hero__headline {
       font-size: 3rem; } }
@@ -238,7 +247,8 @@ Global Styles
 .c-hero__subheadline {
   font-size: 1.5rem;
   line-height: 1.2;
-  font-weight: 400; }
+  font-weight: 400;
+  color: #fff; }
   @media only screen and (min-width: 480px) {
     .c-hero__subheadline {
       font-size: 1.75rem; } }
@@ -247,7 +257,7 @@ Global Styles
       font-size: 2rem; } }
 
 /* ---------------------------------------------------
-Context: smaller stage
+Context: text-picture
 --------------------------------------------------- */
 .c-hero--text-picture {
   align-items: center; }

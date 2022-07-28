@@ -121,6 +121,7 @@
                   <li><code>Filter</code></li>
                   <li><code>Tag</code></li>
                 </ul>
+                <p>Wenn ein Chip geklickt wird, sollte die Klasse <code>is-active</code> auf diesem Element gesetzt werden, wodurch sich der Zustand in einen aktiven ändert. Wenn sich der Zustand wieder ändert, sollte die Klasse <code>is-active</code> entfernt werden.</p>
 
               </div>
             </div>
@@ -150,184 +151,180 @@
 
         <div class="g-container">
           <div class="g-row">
-            <div class="g-col-12">
-              <div class="c-text">
-                <h2>
-                  <strong>Variationen</strong>
-                </h2>
+            <div class="g-col-12 mb-1">
+              <div class="c-code-block__intro">
+                <div class="c-text">
+                  <h3>Assist</h3>
+
+                </div>
               </div>
-            </div>
-            <div class="g-col-12 g-col-tp-6 mb-1">
-              <div class="c-text">
-                <h5>
-                  <b>Assist</b>
-                </h5>
-              </div>
+              <div class="c-code-block">
+                <div class="c-code-block__preview">
 
-              <div class="c-chips">
+                  <div class="c-chips">
 
-                <button class="c-chips__item">
+                    <button class="c-chips__item">
 
-                  <i class="c-chips__icon-left ic ic__subway-solid"></i>
+                      <i class="c-chips__icon-left ic ic__calendar-week-solid"></i>
 
-                  <div class="c-chips__text">Lorem Ipsum</div>
+                      <div class="c-chips__text">Lorem Ipsum</div>
 
-                </button>
-                <button class="c-chips__item">
+                    </button>
+                    <button class="c-chips__item is-active">
 
-                  <i class="c-chips__icon-left ic ic__car-solid"></i>
+                      <i class="c-chips__icon-left ic ic__calendar-week-solid"></i>
 
-                  <div class="c-chips__text">Lorem Ipsum</div>
+                      <div class="c-chips__text">Lorem Ipsum</div>
 
-                </button>
-                <button class="c-chips__item">
+                    </button>
+                    <button class="c-chips__item">
 
-                  <i class="c-chips__icon-left ic ic__bus-solid"></i>
+                      <i class="c-chips__icon-left ic ic__calendar-week-solid"></i>
 
-                  <div class="c-chips__text">Lorem Ipsum</div>
+                      <div class="c-chips__text">Lorem Ipsum</div>
 
-                </button>
-              </div>
+                    </button>
+                  </div>
+                </div>
 
-              <p class="headline-lined">Source</p>
-              <pre><code class="hljs html">
+                <div class="c-code-block__source-wrapper">
+                  <div class="c-code-block__source">
+                    <pre><code class="hljs html">
     <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-chips&quot;</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-chips__item&quot;</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-chips__icon-left ic ic__subway-solid&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-chips__icon-left ic ic__calendar-week-solid&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-chips__text&quot;</span>&gt;</span>Lorem Ipsum<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-chips__item is-active&quot;</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-chips__icon-left ic ic__calendar-week-solid&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span>
             <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-chips__text&quot;</span>&gt;</span>Lorem Ipsum<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
         <span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-chips__item&quot;</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-chips__icon-left ic ic__car-solid&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-chips__text&quot;</span>&gt;</span>Lorem Ipsum<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-        <span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-chips__item&quot;</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-chips__icon-left ic ic__bus-solid&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-chips__icon-left ic ic__calendar-week-solid&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span>
             <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-chips__text&quot;</span>&gt;</span>Lorem Ipsum<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
         <span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
     <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
     </code></pre>
+                  </div>
+                  <button class="c-code-block__copy-code-button">
+                    <span class="label">Copy</span>
+                    <span class="error">Failed to copy</span>
+                    <span class="success">Copied</span>
+                  </button>
+                </div>
+
+                <div class="c-code-block__buttons">
+                  <button type="button" class="c-code-block__button c-code-block__toggle">Source
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <polyline points="6 9 12 15 18 9"></polyline>
+                    </svg>
+                  </button>
+                </div>
+              </div>
             </div>
-            <div class="g-col-12 g-col-tp-6 mb-1">
-              <div class="c-text">
-                <h5>
-                  <b>Input</b>
-                </h5>
+            <div class="g-col-12 mb-1">
+              <div class="c-code-block__intro">
+                <div class="c-text">
+                  <h3>Input</h3>
+
+                </div>
               </div>
+              <div class="c-code-block">
+                <div class="c-code-block__preview">
 
-              <div class="c-chips">
+                  <div class="c-chips">
 
-                <button class="c-chips__item">
+                    <button class="c-chips__item">
 
-                  <i class="c-chips__icon-left ic ic__times-solid"></i>
+                      <div class="c-chips__text">Lorem Ipsum</div>
 
-                  <div class="c-chips__text">Lorem Ipsum</div>
+                      <i class="c-chips__icon-right ic ic__times-solid"></i>
+                    </button>
+                    <button class="c-chips__item">
 
-                </button>
-                <button class="c-chips__item">
+                      <div class="c-chips__text">Lorem Ipsum</div>
 
-                  <i class="c-chips__icon-left ic ic__times-solid"></i>
+                      <i class="c-chips__icon-right ic ic__times-solid"></i>
+                    </button>
+                    <button class="c-chips__item is-active">
 
-                  <div class="c-chips__text">Lorem Ipsum</div>
+                      <div class="c-chips__text">Lorem Ipsum</div>
 
-                </button>
-                <button class="c-chips__item">
+                      <i class="c-chips__icon-right ic ic__times-solid"></i>
+                    </button>
+                  </div>
+                </div>
 
-                  <i class="c-chips__icon-left ic ic__times-solid"></i>
-
-                  <div class="c-chips__text">Lorem Ipsum</div>
-
-                </button>
-              </div>
-
-              <p class="headline-lined">Source</p>
-              <pre><code class="hljs html">
+                <div class="c-code-block__source-wrapper">
+                  <div class="c-code-block__source">
+                    <pre><code class="hljs html">
     <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-chips&quot;</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-chips__item&quot;</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-chips__icon-left ic ic__times-solid&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span>
             <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-chips__text&quot;</span>&gt;</span>Lorem Ipsum<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-chips__icon-right ic ic__times-solid&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span>
         <span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-chips__item&quot;</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-chips__icon-left ic ic__times-solid&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span>
             <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-chips__text&quot;</span>&gt;</span>Lorem Ipsum<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-chips__icon-right ic ic__times-solid&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span>
         <span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-chips__item&quot;</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-chips__icon-left ic ic__times-solid&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-chips__item is-active&quot;</span>&gt;</span>
             <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-chips__text&quot;</span>&gt;</span>Lorem Ipsum<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-chips__icon-right ic ic__times-solid&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span>
         <span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
     <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
     </code></pre>
+                  </div>
+                  <button class="c-code-block__copy-code-button">
+                    <span class="label">Copy</span>
+                    <span class="error">Failed to copy</span>
+                    <span class="success">Copied</span>
+                  </button>
+                </div>
+
+                <div class="c-code-block__buttons">
+                  <button type="button" class="c-code-block__button c-code-block__toggle">Source
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <polyline points="6 9 12 15 18 9"></polyline>
+                    </svg>
+                  </button>
+                </div>
+              </div>
             </div>
-            <div class="g-col-12 g-col-tp-6 mb-1">
-              <div class="c-text">
-                <h5>
-                  <b>Suggestion</b>
-                </h5>
+            <div class="g-col-12 mb-1">
+              <div class="c-code-block__intro">
+                <div class="c-text">
+                  <h3>Suggestion</h3>
+
+                </div>
               </div>
+              <div class="c-code-block">
+                <div class="c-code-block__preview">
 
-              <div class="c-chips">
+                  <div class="c-chips">
 
-                <button class="c-chips__item">
+                    <button class="c-chips__item is-active">
 
-                  <div class="c-chips__text">Lorem Ipsum</div>
+                      <div class="c-chips__text">Lorem Ipsum</div>
 
-                </button>
-                <button class="c-chips__item">
+                    </button>
+                    <button class="c-chips__item">
 
-                  <div class="c-chips__text">Lorem Ipsum</div>
+                      <div class="c-chips__text">Lorem Ipsum</div>
 
-                </button>
-                <button class="c-chips__item">
+                    </button>
+                    <button class="c-chips__item">
 
-                  <div class="c-chips__text">Lorem Ipsum</div>
+                      <div class="c-chips__text">Lorem Ipsum</div>
 
-                </button>
-              </div>
+                    </button>
+                  </div>
+                </div>
 
-              <p class="headline-lined">Source</p>
-              <pre><code class="hljs html">
+                <div class="c-code-block__source-wrapper">
+                  <div class="c-code-block__source">
+                    <pre><code class="hljs html">
     <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-chips&quot;</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-chips__item&quot;</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-chips__text&quot;</span>&gt;</span>Lorem Ipsum<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-        <span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-chips__item&quot;</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-chips__text&quot;</span>&gt;</span>Lorem Ipsum<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-        <span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-chips__item&quot;</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-chips__text&quot;</span>&gt;</span>Lorem Ipsum<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-        <span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
-    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-    </code></pre>
-            </div>
-            <div class="g-col-12 g-col-tp-6 mb-1">
-              <div class="c-text">
-                <h5>
-                  <b>Filter</b>
-                </h5>
-              </div>
-
-              <div class="c-chips">
-
-                <button class="c-chips__item">
-
-                  <div class="c-chips__text">Lorem Ipsum</div>
-
-                </button>
-                <button class="c-chips__item">
-
-                  <div class="c-chips__text">Lorem Ipsum</div>
-
-                </button>
-                <button class="c-chips__item">
-
-                  <div class="c-chips__text">Lorem Ipsum</div>
-
-                </button>
-              </div>
-
-              <p class="headline-lined">Source</p>
-              <pre><code class="hljs html">
-    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-chips&quot;</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-chips__item&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-chips__item is-active&quot;</span>&gt;</span>
             <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-chips__text&quot;</span>&gt;</span>Lorem Ipsum<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
         <span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-chips__item&quot;</span>&gt;</span>
@@ -338,6 +335,155 @@
         <span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
     <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
     </code></pre>
+                  </div>
+                  <button class="c-code-block__copy-code-button">
+                    <span class="label">Copy</span>
+                    <span class="error">Failed to copy</span>
+                    <span class="success">Copied</span>
+                  </button>
+                </div>
+
+                <div class="c-code-block__buttons">
+                  <button type="button" class="c-code-block__button c-code-block__toggle">Source
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <polyline points="6 9 12 15 18 9"></polyline>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="g-col-12 mb-1">
+              <div class="c-code-block__intro">
+                <div class="c-text">
+                  <h3>Filter</h3>
+
+                </div>
+              </div>
+              <div class="c-code-block">
+                <div class="c-code-block__preview">
+
+                  <div class="c-chips c-chips--filter">
+
+                    <button class="c-chips__item">
+
+                      <i class="c-chips__icon-left ic ic__check-solid"></i>
+
+                      <div class="c-chips__text">Lorem Ipsum</div>
+
+                    </button>
+                    <button class="c-chips__item">
+
+                      <i class="c-chips__icon-left ic ic__check-solid"></i>
+
+                      <div class="c-chips__text">Lorem Ipsum</div>
+
+                    </button>
+                    <button class="c-chips__item is-active">
+
+                      <i class="c-chips__icon-left ic ic__check-solid"></i>
+
+                      <div class="c-chips__text">Lorem Ipsum</div>
+
+                    </button>
+                  </div>
+                </div>
+
+                <div class="c-code-block__source-wrapper">
+                  <div class="c-code-block__source">
+                    <pre><code class="hljs html">
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-chips c-chips--filter&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-chips__item&quot;</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-chips__icon-left ic ic__check-solid&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-chips__text&quot;</span>&gt;</span>Lorem Ipsum<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-chips__item&quot;</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-chips__icon-left ic ic__check-solid&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-chips__text&quot;</span>&gt;</span>Lorem Ipsum<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-chips__item is-active&quot;</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-chips__icon-left ic ic__check-solid&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-chips__text&quot;</span>&gt;</span>Lorem Ipsum<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    </code></pre>
+                  </div>
+                  <button class="c-code-block__copy-code-button">
+                    <span class="label">Copy</span>
+                    <span class="error">Failed to copy</span>
+                    <span class="success">Copied</span>
+                  </button>
+                </div>
+
+                <div class="c-code-block__buttons">
+                  <button type="button" class="c-code-block__button c-code-block__toggle">Source
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <polyline points="6 9 12 15 18 9"></polyline>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="g-col-12 mb-1">
+              <div class="c-code-block__intro">
+                <div class="c-text">
+                  <h3>Tags</h3>
+
+                </div>
+              </div>
+              <div class="c-code-block">
+                <div class="c-code-block__preview">
+
+                  <div class="c-chips c-chips--tags">
+
+                    <button class="c-chips__item">
+
+                      <div class="c-chips__text">Lorem Ipsum</div>
+
+                    </button>
+                    <button class="c-chips__item">
+
+                      <div class="c-chips__text">Lorem Ipsum</div>
+
+                    </button>
+                    <button class="c-chips__item">
+
+                      <div class="c-chips__text">Lorem Ipsum</div>
+
+                    </button>
+                  </div>
+                </div>
+
+                <div class="c-code-block__source-wrapper">
+                  <div class="c-code-block__source">
+                    <pre><code class="hljs html">
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-chips c-chips--tags&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-chips__item&quot;</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-chips__text&quot;</span>&gt;</span>Lorem Ipsum<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-chips__item&quot;</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-chips__text&quot;</span>&gt;</span>Lorem Ipsum<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-chips__item&quot;</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;c-chips__text&quot;</span>&gt;</span>Lorem Ipsum<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    </code></pre>
+                  </div>
+                  <button class="c-code-block__copy-code-button">
+                    <span class="label">Copy</span>
+                    <span class="error">Failed to copy</span>
+                    <span class="success">Copied</span>
+                  </button>
+                </div>
+
+                <div class="c-code-block__buttons">
+                  <button type="button" class="c-code-block__button c-code-block__toggle">Source
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <polyline points="6 9 12 15 18 9"></polyline>
+                    </svg>
+                  </button>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -345,8 +491,8 @@
 
       <aside class="sidebar">
         <nav class="c-side-nav">
-          <button class="c-side-nav__nav-toggle" id="c-side-nav__toggle" onclick="document.body.classList.toggle('is-nav-close');">
-            <i class="ic ic__arrow-left"></i>
+          <button class="c-side-nav__nav-toggle" id="c-side-nav__toggle">
+            <span class="c-side-nav__toggle-icon"></span>
           </button>
           <div class="c-side-nav__picture-wrapper">
             <a class="c-side-nav__picture-link" href="/">
@@ -390,14 +536,14 @@
 
                   </li>
                   <li>
-                    <a class="" href="theming.html" title="Theming">
-                      Theming
+                    <a class="" href="principles.html" title="Principles">
+                      Principles
                     </a>
 
                   </li>
                   <li>
-                    <a class="" href="mobile-first.html" title="Mobile First">
-                      Mobile First
+                    <a class="" href="theming.html" title="Theming">
+                      Theming
                     </a>
 
                   </li>
@@ -708,13 +854,33 @@
           </div>
         </nav>
       </aside>
-
     </main>
     <footer>
 
+      <div class="c-footer p-1">
+        <div class="g-container">
+          <div class="g-row">
+            <div class="g-col-12">
+              <div class="c-footer__nav-wrapper">
+                <nav class="c-footer__nav">
+                  <ul class="c-footer__nav-list">
+                    <li class="c-footer__nav-list-item">
+                      <a href="impressum.html" title="Impressum">Impressum</a>
+                    </li>
+                    <li class="c-footer__nav-list-item">
+                      <a href="datenschutz.html" title="Datenschutz">Datenschutz</a>
+                    </li>
+                  </ul>
+                </nav>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </footer>
     <script src="assets/js/app.js"></script>
     <script src="assets/js/side-nav.js"></script>
+    <script src="assets/js/code-block.js"></script>
 
   </body>
 

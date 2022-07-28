@@ -81,8 +81,45 @@
             <div class="g-col-12 g-col-tp-8">
               <div class="c-text c-markdown">
                 <h1>Spacing</h1>
-                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
-                </p>
+                <p>Das Spacing beschreibt die Innen- oder Außenabstände zwischen den Modulen. Diese Abstände sind immer relativ zu den Breakpoints, wodurch die Abstände variieren.</p>
+                <h3>p-1 oder m-1</h3>
+                <ul>
+                  <li><code>8px</code> - Mobil</li>
+                  <li><code>16px</code> - Tablet</li>
+                  <li><code>32px</code> - Desktop</li>
+                </ul>
+                <h3>p-2 oder m-2</h3>
+                <ul>
+                  <li><code>16px</code> - Mobil</li>
+                  <li><code>48px</code> - Tablet</li>
+                  <li><code>64px</code> - Desktop</li>
+                </ul>
+                <h3>p-3 oder m-3</h3>
+                <ul>
+                  <li><code>24px</code> - Mobil</li>
+                  <li><code>72px</code> - Tablet</li>
+                  <li><code>96px</code> - Desktop</li>
+                </ul>
+                <h3>p-4 oder m-4</h3>
+                <ul>
+                  <li><code>32px</code> - Mobil</li>
+                  <li><code>96px</code> - Tablet</li>
+                  <li><code>128px</code> - Desktop</li>
+                  <li></li>
+                </ul>
+                <h3>p-5 oder m-5</h3>
+                <ul>
+                  <li><code>40px</code> - Mobil</li>
+                  <li><code>120px</code> - Tablet</li>
+                  <li><code>160px</code> - Desktop</li>
+                </ul>
+                <p>Zudem ist es möglich, den Abstand nur oben oder Unten zusetzten.</p>
+                <ul>
+                  <li><code>pt-1 pt-2 pt-3 pt-4 pt-5</code> - Innerer Abstand Oben</li>
+                  <li><code>pb-1 pb-2 pb-3 pb-4 pb-5</code> - Innerer Abstand Unten</li>
+                  <li><code>mt-1 mt-2 mt-3 mt-4 mt-5</code> - Äußerer Abstand Oben</li>
+                  <li><code>mb-1 mb-2 mb-3 mb-4 mb-5</code> - Äußerer Abstand Unten</li>
+                </ul>
 
               </div>
             </div>
@@ -108,39 +145,26 @@
         </div>
       </div>
 
-      <div class="c-section bg-primary-soft">
+      <div class="c-section p-1 bg-shade">
 
         <div class="g-container">
           <div class="g-row">
             <div class="g-col-12">
               <div class="c-text">
-                <p>Kein Abstand</p>
+                <p>1er Innenabstand</p>
               </div>
             </div>
           </div>
         </div>
       </div>
 
-      <div class="c-section m-1 bg-primary cs-light">
+      <div class="c-section p-2">
 
         <div class="g-container">
           <div class="g-row">
             <div class="g-col-12">
               <div class="c-text">
-                <p>Kleiner Außenabstand</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="c-section p-2 bg-secondary-soft">
-
-        <div class="g-container">
-          <div class="g-row">
-            <div class="g-col-12">
-              <div class="c-text">
-                <p>Mittlerer Innenabstand</p>
+                <p>2er Innenabstand</p>
               </div>
             </div>
           </div>
@@ -153,14 +177,40 @@
           <div class="g-row">
             <div class="g-col-12">
               <div class="c-text">
-                <p>Großer Innenabstand</p>
+                <p>3er Innenabstand</p>
               </div>
             </div>
           </div>
         </div>
       </div>
 
-      <div class="c-section pt-1">
+      <div class="c-section p-4">
+
+        <div class="g-container">
+          <div class="g-row">
+            <div class="g-col-12">
+              <div class="c-text">
+                <p>4er Innenabstand</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="c-section p-5 bg-shade">
+
+        <div class="g-container">
+          <div class="g-row">
+            <div class="g-col-12">
+              <div class="c-text">
+                <p>5er Innenabstand</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="c-section pt-2">
 
         <div class="g-container">
           <div class="g-row">
@@ -173,7 +223,7 @@
         </div>
       </div>
 
-      <div class="c-section pb-1 bg-primary-soft">
+      <div class="c-section pb-2 bg-secondary cs-light">
 
         <div class="g-container">
           <div class="g-row">
@@ -188,8 +238,8 @@
 
       <aside class="sidebar">
         <nav class="c-side-nav">
-          <button class="c-side-nav__nav-toggle" id="c-side-nav__toggle" onclick="document.body.classList.toggle('is-nav-close');">
-            <i class="ic ic__arrow-left"></i>
+          <button class="c-side-nav__nav-toggle" id="c-side-nav__toggle">
+            <span class="c-side-nav__toggle-icon"></span>
           </button>
           <div class="c-side-nav__picture-wrapper">
             <a class="c-side-nav__picture-link" href="/">
@@ -233,14 +283,14 @@
 
                   </li>
                   <li>
-                    <a class="" href="theming.html" title="Theming">
-                      Theming
+                    <a class="" href="principles.html" title="Principles">
+                      Principles
                     </a>
 
                   </li>
                   <li>
-                    <a class="" href="mobile-first.html" title="Mobile First">
-                      Mobile First
+                    <a class="" href="theming.html" title="Theming">
+                      Theming
                     </a>
 
                   </li>
@@ -551,13 +601,33 @@
           </div>
         </nav>
       </aside>
-
     </main>
     <footer>
 
+      <div class="c-footer p-1">
+        <div class="g-container">
+          <div class="g-row">
+            <div class="g-col-12">
+              <div class="c-footer__nav-wrapper">
+                <nav class="c-footer__nav">
+                  <ul class="c-footer__nav-list">
+                    <li class="c-footer__nav-list-item">
+                      <a href="impressum.html" title="Impressum">Impressum</a>
+                    </li>
+                    <li class="c-footer__nav-list-item">
+                      <a href="datenschutz.html" title="Datenschutz">Datenschutz</a>
+                    </li>
+                  </ul>
+                </nav>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </footer>
     <script src="assets/js/app.js"></script>
     <script src="assets/js/side-nav.js"></script>
+    <script src="assets/js/code-block.js"></script>
 
   </body>
 

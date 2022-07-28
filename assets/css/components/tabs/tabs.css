@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* ===================================================
 CAROUSEL IMPORTS
 =================================================== */
@@ -7,6 +8,11 @@ COMPONENT BASICS
 /* ===================================================
 REM-CALC
 =================================================== */
+/******************************************************
+
+    MAIN THEME
+
+******************************************************/
 /* ===================================================
 COLOR DEFINITIONS
 =================================================== */
@@ -64,19 +70,16 @@ COMPONENT HEADER
 COMPONENT NAV
 =================================================== */
 /* ===================================================
-COMPONENT COPY
-=================================================== */
-/* ===================================================
-COMPONENT UPLOAD
-=================================================== */
-/* ===================================================
-COMPONENT MESSAGE
-=================================================== */
-/* ===================================================
 COMPONENT HERO
 =================================================== */
 /* ===================================================
 COMPONENT QUOTE
+=================================================== */
+/* ===================================================
+COMPONENT CARD
+=================================================== */
+/* ===================================================
+COMPONENT CHIPS
 =================================================== */
 /* ================================================ */
 /* ===================================================
@@ -137,17 +140,16 @@ Global Styles
   position: relative;
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   margin: -4px;
-  padding: 0; }
-  @media only screen and (max-width: 575.98px) {
-    .c-tabs__cta-list {
-      flex-direction: column; } }
+  padding: 0;
+  overflow-y: scroll; }
   .c-tabs__cta-list .c-tabs__cta-wrapper {
     margin: 4px 4px; }
 
 .c-tabs__cta-wrapper {
-  display: inline-block; }
+  display: inline-block;
+  flex-shrink: 0; }
 
 .c-tabs__cta {
   position: relative;
@@ -219,6 +221,48 @@ Context: stack
 --------------------------------------------------- */
 .c-tabs--cta-stack .c-tabs__cta-list {
   flex-direction: column; }
+
+/* ---------------------------------------------------
+Context: arrows
+--------------------------------------------------- */
+.c-tabs--arrows .c-tabs__cta-list-wrapper {
+  padding: 0 40px; }
+
+.c-tabs--arrows:before {
+  font-family: "iconfont";
+  display: inline-block;
+  line-height: 1;
+  font-weight: normal;
+  font-style: normal;
+  speak: never;
+  text-decoration: inherit;
+  text-transform: none;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  content: "";
+  font-size: 1.5rem;
+  position: absolute;
+  left: 0;
+  top: 16px; }
+
+.c-tabs--arrows:after {
+  font-family: "iconfont";
+  display: inline-block;
+  line-height: 1;
+  font-weight: normal;
+  font-style: normal;
+  speak: never;
+  text-decoration: inherit;
+  text-transform: none;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  content: "";
+  font-size: 1.5rem;
+  position: absolute;
+  right: 0;
+  top: 16px; }
 
 /* ---------------------------------------------------
 Context: color schemes

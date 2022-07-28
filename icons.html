@@ -81,7 +81,8 @@
             <div class="g-col-12 g-col-tp-8">
               <div class="c-text c-markdown">
                 <h1>Icons</h1>
-                <p>Die folgenden Icons sind eine definierte Auswahl aus dem Icon-8 Icon-Pack.</p>
+                <p>Die folgenden Icons sind eine definierte Auswahl aus dem
+                  <a href="https://icons8.de/line-awesome" target="_blank">Line Awesome Pack</a> von Icon-8.</p>
                 <p>
                   <a class="c-cta" aria-label="Download Iconfont" href="/assets/download/icons.zip">
                     <i class="ic ic__download-solid"></i>
@@ -121,7 +122,7 @@
               <label class="c-label">
                 <b>Suche</b>
               </label>
-              <input type="text" id="icon-filter" class="c-form__input" onkeyup="search()" placeholder="Search Icons...">
+              <input type="text" id="icon-filter" class="c-input" onkeyup="search()" placeholder="Search Icons...">
             </div>
           </div>
           <div class="g-row">
@@ -4418,8 +4419,8 @@
 
       <aside class="sidebar">
         <nav class="c-side-nav">
-          <button class="c-side-nav__nav-toggle" id="c-side-nav__toggle" onclick="document.body.classList.toggle('is-nav-close');">
-            <i class="ic ic__arrow-left"></i>
+          <button class="c-side-nav__nav-toggle" id="c-side-nav__toggle">
+            <span class="c-side-nav__toggle-icon"></span>
           </button>
           <div class="c-side-nav__picture-wrapper">
             <a class="c-side-nav__picture-link" href="/">
@@ -4463,14 +4464,14 @@
 
                   </li>
                   <li>
-                    <a class="" href="theming.html" title="Theming">
-                      Theming
+                    <a class="" href="principles.html" title="Principles">
+                      Principles
                     </a>
 
                   </li>
                   <li>
-                    <a class="" href="mobile-first.html" title="Mobile First">
-                      Mobile First
+                    <a class="" href="theming.html" title="Theming">
+                      Theming
                     </a>
 
                   </li>
@@ -4781,13 +4782,33 @@
           </div>
         </nav>
       </aside>
-
     </main>
     <footer>
 
+      <div class="c-footer p-1">
+        <div class="g-container">
+          <div class="g-row">
+            <div class="g-col-12">
+              <div class="c-footer__nav-wrapper">
+                <nav class="c-footer__nav">
+                  <ul class="c-footer__nav-list">
+                    <li class="c-footer__nav-list-item">
+                      <a href="impressum.html" title="Impressum">Impressum</a>
+                    </li>
+                    <li class="c-footer__nav-list-item">
+                      <a href="datenschutz.html" title="Datenschutz">Datenschutz</a>
+                    </li>
+                  </ul>
+                </nav>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </footer>
     <script src="assets/js/app.js"></script>
     <script src="assets/js/side-nav.js"></script>
+    <script src="assets/js/code-block.js"></script>
 
   </body>
 

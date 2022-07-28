@@ -7,6 +7,11 @@ COMPONENT BASICS
 /* ===================================================
 REM-CALC
 =================================================== */
+/******************************************************
+
+    DYNAMIC THEME
+
+******************************************************/
 /* ===================================================
 COLOR DEFINITIONS
 =================================================== */
@@ -64,19 +69,16 @@ COMPONENT HEADER
 COMPONENT NAV
 =================================================== */
 /* ===================================================
-COMPONENT COPY
-=================================================== */
-/* ===================================================
-COMPONENT UPLOAD
-=================================================== */
-/* ===================================================
-COMPONENT MESSAGE
-=================================================== */
-/* ===================================================
 COMPONENT HERO
 =================================================== */
 /* ===================================================
 COMPONENT QUOTE
+=================================================== */
+/* ===================================================
+COMPONENT CARD
+=================================================== */
+/* ===================================================
+COMPONENT CHIPS
 =================================================== */
 /* ================================================ */
 /* ===================================================
@@ -173,6 +175,12 @@ Global Styles
 .c-cta__text-mobile {
   display: none; }
 
+.c-cta__icon-left {
+  margin-right: 6px; }
+
+.c-cta__icon-right {
+  margin-left: 6px; }
+
 @media only screen and (max-width: 575.98px) {
   .c-cta__text-mobile {
     display: inline; }
@@ -201,26 +209,29 @@ Context: secondary
   background-color: transparent;
   box-shadow: 0 0 3px 1px rgba(18, 18, 18, 0.25); }
   .c-cta--secondary:hover {
-    color: #fff; }
+    color: #121212; }
   .c-cta--secondary:focus {
-    color: #fff; }
+    color: #121212; }
   .c-cta--secondary:before {
     background-color: #00B4F0; }
   .c-cta--secondary:focus:after {
     background-color: #00A6DD; }
+  .c-cta--secondary.c-cta--invert {
+    color: #121212;
+    text-decoration: none;
+    font-weight: 600; }
+    .c-cta--secondary.c-cta--invert:hover {
+      color: #fff; }
+    .c-cta--secondary.c-cta--invert:focus {
+      color: #fff; }
+    .c-cta--secondary.c-cta--invert:before {
+      background-color: #121212; }
+    .c-cta--secondary.c-cta--invert:focus:after {
+      background-color: #121212; }
 
 /* ---------------------------------------------------
 Context: hero
 --------------------------------------------------- */
-.c-cta--hero {
-  color: #121212;
-  text-decoration: none;
-  font-weight: 600; }
-  .c-cta--hero:hover {
-    color: #121212; }
-  .c-cta--hero:focus {
-    color: #121212; }
-
 /* ---------------------------------------------------
 Context: hero
 --------------------------------------------------- */
@@ -231,16 +242,41 @@ Context: hero
   border-radius: 0;
   background: none;
   padding: 0;
+  text-align: left;
+  color: #00693C;
   text-decoration: none;
   font-weight: 900; }
   .c-cta--link:hover .ic {
-    margin-left: 12px; }
+    margin-left: 6px; }
   .c-cta--link:before {
     content: none; }
+  .c-cta--link:hover {
+    color: #00693C; }
+  .c-cta--link:focus {
+    color: #00693C; }
   .c-cta--link .ic {
     font-size: 1.5rem;
     margin-left: 3px;
     transition: all .2s linear;
+    font-weight: 900; }
+  .c-cta--link.c-cta--invert {
+    color: #121212;
+    text-decoration: none;
+    font-weight: 600; }
+    .c-cta--link.c-cta--invert:hover {
+      color: #121212; }
+    .c-cta--link.c-cta--invert:focus {
+      color: #121212; }
+
+/* ---------------------------------------------------
+Context: hero
+--------------------------------------------------- */
+.c-cta--card {
+  background: none;
+  border: 0; }
+  .c-cta--card .ic {
+    font-size: 2rem;
+    margin: 0;
     font-weight: 900; }
 
 /* ---------------------------------------------------

@@ -7,6 +7,11 @@ COMPONENT BASICS
 /* ===================================================
 REM-CALC
 =================================================== */
+/******************************************************
+
+    MAIN THEME
+
+******************************************************/
 /* ===================================================
 COLOR DEFINITIONS
 =================================================== */
@@ -64,19 +69,16 @@ COMPONENT HEADER
 COMPONENT NAV
 =================================================== */
 /* ===================================================
-COMPONENT COPY
-=================================================== */
-/* ===================================================
-COMPONENT UPLOAD
-=================================================== */
-/* ===================================================
-COMPONENT MESSAGE
-=================================================== */
-/* ===================================================
 COMPONENT HERO
 =================================================== */
 /* ===================================================
 COMPONENT QUOTE
+=================================================== */
+/* ===================================================
+COMPONENT CARD
+=================================================== */
+/* ===================================================
+COMPONENT CHIPS
 =================================================== */
 /* ================================================ */
 /* ===================================================
@@ -115,34 +117,51 @@ Global Styles
   .c-tooltip:hover .c-tooltip__hint {
     visibility: visible;
     opacity: 1;
-    margin-top: -6px; }
+    bottom: -24px; }
   .c-tooltip .c-tooltip__opener-wrapper {
     cursor: pointer; }
     .c-tooltip .c-tooltip__opener-wrapper:hover {
-      color: #00B4F0; }
+      color: #00693C; }
 
 .c-tooltip__hint {
   position: absolute;
   display: block;
-  text-align: center;
-  width: 200px;
-  background-color: #00B4F0;
-  color: #fff;
-  padding: 1rem;
   z-index: 999;
+  bottom: -12px;
+  left: 50%;
   opacity: 0;
   visibility: hidden;
-  transform: translate(-50%, -100%);
+  transform: translate(-50%, 100%);
   transition: all .2s linear; }
-  .c-tooltip__hint:after {
-    content: '';
+
+.c-tooltip__hint-text {
+  position: relative;
+  display: block;
+  text-align: center;
+  width: 260px;
+  background-color: #fff;
+  color: #121212;
+  padding: 1rem;
+  box-shadow: 0 0 4px rgba(18, 18, 18, 0.25);
+  box-sizing: border-box; }
+  .c-tooltip__hint-text::after, .c-tooltip__hint-text::before {
+    content: "";
     position: absolute;
-    bottom: -6px;
+    width: 0;
+    height: 0;
+    top: 0px;
     left: 50%;
-    margin-left: 3px;
-    border-right: 6px solid transparent;
-    border-top: 6px solid #00B4F0;
-    border-left: 6px solid transparent; }
+    box-sizing: border-box;
+    border: 8px solid;
+    border-color: transparent transparent #fff #fff;
+    transform-origin: 0 0;
+    transform: rotate(-45deg) translate(-50%, -50%);
+    background: #fff; }
+  .c-tooltip__hint-text::after {
+    z-index: -1;
+    box-shadow: 0 0 4px 0 rgba(18, 18, 18, 0.25); }
+  .c-tooltip__hint-text::before {
+    z-index: 10; }
 
 /* ---------------------------------------------------
 Context: (Modifier)
@@ -152,13 +171,10 @@ Context: color schemes
 --------------------------------------------------- */
 .cs-light .c-tooltip .c-tooltip__opener-icon,
 .cs-light .c-tooltip .c-tooltip__opener-text {
-  color: #006A3A;
-  border-bottom-color: #006A3A; }
+  color: #fff; }
   .cs-light .c-tooltip .c-tooltip__opener-icon:hover,
   .cs-light .c-tooltip .c-tooltip__opener-text:hover {
-    color: #001e10;
-    border-bottom-color: #001e10; }
+    color: #fff; }
   .cs-light .c-tooltip .c-tooltip__opener-icon:focus,
   .cs-light .c-tooltip .c-tooltip__opener-text:focus {
-    color: #006A3A;
-    border-bottom-color: #006A3A; }
+    color: #fff; }
