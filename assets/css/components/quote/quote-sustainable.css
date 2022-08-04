@@ -9,7 +9,7 @@ REM-CALC
 =================================================== */
 /******************************************************
 
-    PROFESSIONAL THEME
+    SUSTAINABLE THEME
 
 ******************************************************/
 /* ===================================================
@@ -106,122 +106,178 @@ TYPOGRAPHY SIZE
 /* ================================================ */
 /* ================================================ */
 /* ===================================================
-ACCORDION COMPONENT
+QUOTE COMPONENT
 =================================================== */
-/* ---------------------------------------------------
-Global Variables
---------------------------------------------------- */
+/* ===================================================
+GRID
+=================================================== */
+/* ================================================ */
 /* ---------------------------------------------------
 Global Styles
 --------------------------------------------------- */
-.c-accordion {
-  position: relative; }
-
-.c-accordion__toggle {
+.c-quote {
   position: relative;
+  background-color: #CCD9D2;
+  text-align: center;
+  padding: 130px 0 48px;
+  margin-top: 85px; }
+
+.c-quote__avatar-wrapper {
+  position: absolute;
+  max-width: 170px;
+  margin-left: 50%;
+  top: 0;
+  transform: translate(-50%, -50%); }
+
+.c-quote__image img {
+  border-radius: 50%;
   width: 100%;
-  display: flex;
-  justify-content: left;
-  flex-direction: row;
-  border: none;
-  cursor: pointer;
-  text-align: left;
-  transition: background-color .2s linear;
+  height: auto; }
+
+.c-quote__content {
+  display: block;
+  margin: 0 auto;
+  max-width: 600px;
+  width: 100%;
+  padding: 0 16px; }
+  .c-quote__content p {
+    color: #121212;
+    font-family: "Roboto", Arial, sans-serif;
+    font-weight: 300;
+    hyphens: none;
+    margin-bottom: 0.5rem;
+    font-size: 1.5rem;
+    line-height: 1.5; }
+    .c-quote__content p:last-child {
+      margin-bottom: 0; }
+    @media only screen and (min-width: 480px) {
+      .c-quote__content p {
+        font-size: 1.75rem; } }
+    @media only screen and (min-width: 576px) {
+      .c-quote__content p {
+        font-size: 2rem; } }
+    @media only screen and (min-width: 768px) {
+      .c-quote__content p {
+        font-size: 2.375rem; } }
+    @media only screen and (min-width: 1200px) {
+      .c-quote__content p {
+        font-size: 2.5rem; } }
+  .c-quote__content + .c-quote__author {
+    margin-top: 1rem; }
+    @media only screen and (min-width: 768px) {
+      .c-quote__content + .c-quote__author {
+        margin-top: 2rem; } }
+
+.c-quote__author p {
   color: #121212;
-  text-decoration: none;
-  font-weight: 400;
-  background-color: #fff;
-  padding: 0.8rem 1rem 0.8rem 1rem; }
-  .c-accordion__toggle:hover {
-    color: #121212; }
-  .c-accordion__toggle:focus {
-    color: #121212; }
-  .c-accordion__toggle:focus {
-    outline: 0; }
-  .c-accordion__toggle.is-active {
-    color: #00693C; }
-    .c-accordion__toggle.is-active .c-accordion__icon:before {
-      transform: rotate(90deg); }
-    .c-accordion__toggle.is-active .c-accordion__icon:before, .c-accordion__toggle.is-active .c-accordion__icon:after {
-      background-color: #00693C; }
-  @media only screen and (min-width: 657px) {
-    .c-accordion__toggle {
-      flex-direction: row;
-      justify-content: space-between;
-      align-items: center; } }
-
-.c-accordion__icon {
-  width: 30px;
-  height: 30px;
-  display: flex;
-  align-items: center;
-  justify-content: center; }
-  .c-accordion__icon:before, .c-accordion__icon:after {
-    content: "";
-    position: absolute;
-    border-radius: 50px;
-    background-color: #121212;
-    transition: all .3s ease; }
-  .c-accordion__icon:before {
-    width: 2px;
-    height: 20px; }
-  .c-accordion__icon:after {
-    width: 20px;
-    height: 2px; }
-
-.c-accordion__title {
+  font-family: "Roboto", Arial, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  margin-top: 0.5rem;
+  margin-bottom: 0;
   font-size: 1.375rem;
-  line-height: 1.3;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  font-weight: 700; }
+  line-height: 1.2; }
   @media only screen and (min-width: 480px) {
-    .c-accordion__title {
+    .c-quote__author p {
       font-size: 1.375rem; } }
   @media only screen and (min-width: 576px) {
-    .c-accordion__title {
+    .c-quote__author p {
       font-size: 1.5rem;
+      line-height: 1.3; } }
+
+/* ---------------------------------------------------
+Context: smaller
+--------------------------------------------------- */
+.c-quote--smaller .c-quote__content p {
+  font-size: 1.25rem;
+  line-height: 1.3; }
+  @media only screen and (min-width: 480px) {
+    .c-quote--smaller .c-quote__content p {
+      font-size: 1.375rem; } }
+  @media only screen and (min-width: 576px) {
+    .c-quote--smaller .c-quote__content p {
+      font-size: 1.5625rem;
       line-height: 1.4; } }
+  @media only screen and (min-width: 768px) {
+    .c-quote--smaller .c-quote__content p {
+      font-size: 2rem; } }
 
-.c-accordion__content {
-  position: relative;
-  overflow: hidden;
-  height: 0;
-  transition: height 300ms cubic-bezier(0.34, 1.56, 0.64, 1); }
-  .c-accordion__content.is-open {
-    height: auto; }
-  .c-accordion__content.is-calculating {
-    position: absolute !important;
-    visibility: hidden !important;
-    display: block !important;
-    height: auto !important; }
+.c-quote--smaller .c-quote__image img {
+  max-width: 150px; }
 
-.c-accordion__content-inner {
-  padding: 2rem 1rem; }
-
-.c-accordion__item {
-  border-bottom: 1px solid #121212; }
-  .c-accordion__item:first-of-type {
-    border-top: 1px solid #121212; }
+/* ---------------------------------------------------
+Context: two column
+--------------------------------------------------- */
+.c-quote--two-column {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: left;
+  padding: 64px 0;
+  margin: 0; }
+  .c-quote--two-column .c-quote__content-wrapper {
+    flex: 0 0 100%;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    order: 1; }
+    @media only screen and (min-width: 0) {
+      .c-quote--two-column .c-quote__content-wrapper {
+        padding-right: 8px;
+        padding-left: 8px; } }
+    @media only screen and (min-width: 768px) {
+      .c-quote--two-column .c-quote__content-wrapper {
+        padding-right: 12px;
+        padding-left: 12px; } }
+    @media only screen and (min-width: 1200px) {
+      .c-quote--two-column .c-quote__content-wrapper {
+        padding-right: 16px;
+        padding-left: 16px; } }
+    @media only screen and (min-width: 992px) {
+      .c-quote--two-column .c-quote__content-wrapper {
+        flex: 0 0 50%;
+        max-width: 50%;
+        order: 0; } }
+  .c-quote--two-column .c-quote__avatar-wrapper {
+    position: relative;
+    margin-left: 0;
+    transform: none;
+    flex: 0 0 100%;
+    max-width: 100%;
+    order: 0;
+    margin-bottom: 1rem; }
+    @media only screen and (min-width: 0) {
+      .c-quote--two-column .c-quote__avatar-wrapper {
+        padding-right: 8px;
+        padding-left: 8px; } }
+    @media only screen and (min-width: 768px) {
+      .c-quote--two-column .c-quote__avatar-wrapper {
+        padding-right: 12px;
+        padding-left: 12px; } }
+    @media only screen and (min-width: 1200px) {
+      .c-quote--two-column .c-quote__avatar-wrapper {
+        padding-right: 16px;
+        padding-left: 16px; } }
+    @media only screen and (min-width: 992px) {
+      .c-quote--two-column .c-quote__avatar-wrapper {
+        flex: 0 0 50%;
+        max-width: 50%;
+        order: 1;
+        margin-bottom: 0; } }
+  .c-quote--two-column .c-quote__content {
+    margin: 0;
+    max-width: 100%;
+    padding: 0; }
+  .c-quote--two-column .c-quote__image img {
+    border-radius: 0;
+    max-width: 100%; }
 
 /* ---------------------------------------------------
 Context: color schemes
 --------------------------------------------------- */
-.cs-light-wrapper .c-accordion__toggle {
-  color: #121212;
-  background-color: #fff; }
-  .cs-light-wrapper .c-accordion__toggle:hover {
-    color: #121212; }
-  .cs-light-wrapper .c-accordion__toggle:focus {
-    color: #121212; }
-  .cs-light-wrapper .c-accordion__toggle::before {
-    color: #00693C; }
-    .cs-light-wrapper .c-accordion__toggle::before:hover {
-      color: #00693C; }
-    .cs-light-wrapper .c-accordion__toggle::before:focus {
-      color: #00693C; }
-  .cs-light-wrapper .c-accordion__toggle.is-active {
-    color: #00693C; }
-    .cs-light-wrapper .c-accordion__toggle.is-active::before {
-      color: #00693C; }
+.cs-light .c-quote__content p {
+  color: #fff; }
+
+.cs-light .c-quote__author p {
+  color: #fff; }
