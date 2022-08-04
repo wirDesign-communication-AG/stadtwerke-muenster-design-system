@@ -1,4 +1,4 @@
-![Intro Banner](assets/picts/stage-DDS.png)
+![Intro Banner](assets/picts/SWMS-Cover-DDS-Stage.png)
 
 # Das Design System der Stadtwerke Münster
 
