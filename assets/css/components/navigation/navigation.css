@@ -1,0 +1,309 @@
+/* ===================================================
+CAROUSEL IMPORTS
+=================================================== */
+/* ===================================================
+COMPONENT BASICS
+=================================================== */
+/* ===================================================
+REM-CALC
+=================================================== */
+/******************************************************
+
+    MAIN THEME
+
+******************************************************/
+/* ===================================================
+COLOR DEFINITIONS
+=================================================== */
+/* ===================================================
+FONT SETTINGS
+=================================================== */
+/* define font cuts: sans-serif */
+/* define font cuts: sans-serif */
+/* ===================================================
+BASIC SETTINGS
+=================================================== */
+/* ===================================================
+TYPE SETTINGS
+=================================================== */
+/* ===================================================
+LINK SETTINGS
+=================================================== */
+/* ===================================================
+CTA SETTINGS
+=================================================== */
+/* ------------------------------------------------- */
+/* ------------------------------------------------- */
+/* ------------------------------------------------- */
+/* ------------------------------------------------- */
+/* ===================================================
+BACKGROUND
+=================================================== */
+/* ===================================================
+COLOR SETTINGS
+=================================================== */
+/* ================================================ */
+/* ================================================ */
+/* ================================================ */
+/* ================================================ */
+/* ================================================ */
+/* ================================================ */
+/* ================================================ */
+/* ================================================ */
+/* ================================================ */
+/* ================================================ */
+/* ================================================ */
+/* ================================================ */
+/* ================================================ */
+/* ================================================ */
+/* ===================================================
+COMPONENT ACCORDION
+=================================================== */
+/* ===================================================
+COMPONENT BURGER
+=================================================== */
+/* ===================================================
+COMPONENT HEADER
+=================================================== */
+/* ===================================================
+COMPONENT NAV
+=================================================== */
+/* ===================================================
+COMPONENT HERO
+=================================================== */
+/* ===================================================
+COMPONENT QUOTE
+=================================================== */
+/* ===================================================
+COMPONENT CARD
+=================================================== */
+/* ===================================================
+COMPONENT CHIPS
+=================================================== */
+/* ================================================ */
+/* ===================================================
+BREAKPOINTS
+=================================================== */
+/* ================================================ */
+/* ===================================================
+SPACING
+=================================================== */
+/* ================================================ */
+/* ================================================ */
+/* ================================================ */
+/* ================================================ */
+/* ================================================ */
+/* ================================================ */
+/* ================================================ */
+/* ================================================ */
+/* ===================================================
+LINKS
+=================================================== */
+/* ================================================ */
+/* ===================================================
+TYPOGRAPHY SIZE
+=================================================== */
+/* ================================================ */
+/* ================================================ */
+/* ===================================================
+ACCORDION COMPONENT
+=================================================== */
+/* ---------------------------------------------------
+Global Variables
+--------------------------------------------------- */
+/* ---------------------------------------------------
+Global Styles
+--------------------------------------------------- */
+.c-navigation {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  overflow: hidden; }
+  .c-navigation .icons__item {
+    margin: 0; }
+    .c-navigation .icons__item i {
+      width: 46px;
+      font-size: 40px; }
+  .c-navigation a {
+    text-align: center;
+    color: #121212;
+    padding: 0 0 0 1rem;
+    text-decoration: none;
+    transition: 0.4s; }
+    .c-navigation a:hover {
+      color: green; }
+    .c-navigation a.c-navigation--active {
+      font-weight: 500;
+      color: green; }
+    .c-navigation a i {
+      font-size: 35px; }
+  .c-navigation .submenu {
+    min-height: 353px;
+    width: 100vw;
+    opacity: 0.9;
+    background: #f7f6f4;
+    border-bottom: 1px solid #d9d9d9;
+    display: flex;
+    position: absolute;
+    z-index: 99;
+    line-height: 42px;
+    opacity: 0;
+    padding: 1rem;
+    background: #f7f6f4;
+    transition: 0.4s; }
+    .c-navigation .submenu.c-navigation--visible {
+      opacity: 1;
+      transform: translateY(0%); }
+    .c-navigation .submenu .logo img {
+      height: 100px; }
+    .c-navigation .submenu a {
+      font-style: normal;
+      font-weight: 900;
+      font-size: 24px;
+      line-height: 32px;
+      padding: 1rem; }
+      .c-navigation .submenu a i {
+        font-size: 40px; }
+    .c-navigation .submenu .links {
+      flex: auto; }
+      .c-navigation .submenu .links span {
+        line-height: 32px;
+        vertical-align: middle; }
+      .c-navigation .submenu .links a {
+        text-align: left;
+        display: block;
+        font-style: normal;
+        font-weight: 900;
+        font-size: 24px;
+        line-height: 32px;
+        padding: 1rem; }
+        .c-navigation .submenu .links a:not(:last-child) {
+          border-bottom: 1px solid #121212; }
+        .c-navigation .submenu .links a .icons__item {
+          right: 1.4rem;
+          position: absolute; }
+    .c-navigation .submenu .sublevel {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      width: 100%;
+      position: relative;
+      border-right: 1px solid #d8d8d8; }
+      .c-navigation .submenu .sublevel .menu-level {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        opacity: 0;
+        position: absolute;
+        left: 0;
+        top: 0;
+        transition: 0.4s; }
+        .c-navigation .submenu .sublevel .menu-level.c-navigation--visible {
+          opacity: 1; }
+        .c-navigation .submenu .sublevel .menu-level.menu-level-1 a {
+          display: flex;
+          justify-content: space-between;
+          text-align: left;
+          font-style: normal;
+          font-weight: 900;
+          font-size: 24px;
+          line-height: 32px;
+          padding: 1rem; }
+  .c-navigation .meta-menu {
+    display: flex;
+    background: #f7f6f4;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    height: 86px;
+    background: #f7f6f4; }
+    .c-navigation .meta-menu a {
+      padding: 0 1rem; }
+      .c-navigation .meta-menu a i {
+        font-size: 26px; }
+  .c-navigation .meta-menu-mobile {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; }
+    .c-navigation .meta-menu-mobile a {
+      padding: 0.5rem 1rem; }
+      .c-navigation .meta-menu-mobile a i {
+        font-size: 26px; }
+  @media (max-width: 1200px) {
+    .c-navigation .meta-menu {
+      display: none; } }
+  .c-navigation .main-navigation {
+    z-index: 99;
+    display: flex;
+    align-items: center;
+    height: 135px;
+    justify-content: space-between;
+    padding: 1rem;
+    background: #ffffff; }
+    .c-navigation .main-navigation.mobile {
+      border: 1px solid rgba(18, 18, 18, 0.05);
+      box-shadow: 0px 1.5px 4px rgba(0, 0, 0, 0.25);
+      z-index: 9;
+      position: relative; }
+    .c-navigation .main-navigation .logo img {
+      height: 83px; }
+    .c-navigation .main-navigation .logo .badge {
+      left: 43%;
+      top: -1rem;
+      position: relative; }
+    .c-navigation .main-navigation .links {
+      flex: auto; }
+      .c-navigation .main-navigation .links a {
+        font-style: normal;
+        font-weight: 900;
+        font-size: 24px;
+        line-height: 32px;
+        margin: 1rem; }
+        .c-navigation .main-navigation .links a i {
+          font-size: 40px; }
+    @media (max-width: 1200px) {
+      .c-navigation .main-navigation .links {
+        display: none; } }
+    .c-navigation .main-navigation .button-container {
+      display: flex; }
+  .c-navigation .main-navigation-mobile {
+    z-index: 99;
+    position: absolute;
+    min-width: 60vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1rem;
+    background: #f7f6f4;
+    transform: translateX(-100%);
+    transition: 0.4s; }
+    .c-navigation .main-navigation-mobile.c-navigation--visible {
+      transform: translateX(0%); }
+    .c-navigation .main-navigation-mobile .logo img {
+      height: 100px; }
+    .c-navigation .main-navigation-mobile .links {
+      flex: auto; }
+      .c-navigation .main-navigation-mobile .links span {
+        line-height: 32px;
+        vertical-align: middle; }
+      .c-navigation .main-navigation-mobile .links a {
+        text-align: left;
+        display: block;
+        font-style: normal;
+        font-weight: 900;
+        font-size: 24px;
+        line-height: 32px;
+        padding: 1rem; }
+        .c-navigation .main-navigation-mobile .links a:not(:last-child) {
+          border-bottom: 1px solid #121212; }
+        .c-navigation .main-navigation-mobile .links a .icons__item {
+          right: 1.4rem;
+          position: absolute; }
+    .c-navigation .main-navigation-mobile .button-container {
+      display: flex; }
+  .c-navigation .c-navigation--hidden {
+    display: none; }
+
+/*# sourceMappingURL=navigation.css.map */

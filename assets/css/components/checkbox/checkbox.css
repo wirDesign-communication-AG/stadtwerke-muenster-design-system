@@ -272,3 +272,5 @@ Context: color schemes
 
 .cs-light .c-checkbox.c-checkbox--toggle-slider .c-checkbox__native:checked + .c-checkbox__background, .cs-light.c-checkbox.c-checkbox--toggle-slider .c-checkbox__native:checked + .c-checkbox__background {
   border: 0; }
+
+/*# sourceMappingURL=checkbox.css.map */

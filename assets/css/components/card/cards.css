@@ -1,5 +1,5 @@
 /* ===================================================
-CAROUSEL IMPORTS
+CARDS IMPORTS
 =================================================== */
 /* ===================================================
 COMPONENT BASICS
@@ -9,7 +9,7 @@ REM-CALC
 =================================================== */
 /******************************************************
 
-    DYNAMIC THEME
+    MAIN THEME
 
 ******************************************************/
 /* ===================================================
@@ -106,152 +106,57 @@ TYPOGRAPHY SIZE
 /* ================================================ */
 /* ================================================ */
 /* ===================================================
-CHIP COMPONENT
+GRID
 =================================================== */
-/* ------------------------------------------------- */
+/* ================================================ */
+/* ===================================================
+CARDS COMPONENT
+=================================================== */
 /* ---------------------------------------------------
 Global Styles
 --------------------------------------------------- */
-.c-chips {
+.c-cards {
+  position: relative; }
+
+.c-cards__row {
   display: flex;
-  flex-direction: row;
-  align-items: center;
-  flex-wrap: wrap; }
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px; }
 
-.c-chips__item {
-  position: relative;
-  display: inline-flex;
-  align-items: center;
-  cursor: pointer;
-  border: 2px solid;
-  border-radius: 20px;
-  transition: all 0.4s ease 0s;
-  text-shadow: none;
-  text-align: center;
-  padding: 0 12px;
-  font-size: 1rem;
-  line-height: 1;
-  color: #121212;
-  text-decoration: none;
-  font-weight: 700;
-  background-color: #F2F2F2;
-  border-color: #F2F2F2;
-  margin-right: 4px;
-  margin-bottom: 4px; }
-  .c-chips__item:hover {
-    color: #121212; }
-  .c-chips__item:focus {
-    color: #121212; }
-  .c-chips__item:hover {
-    background-color: #E1E1E1; }
-  .c-chips__item:focus {
-    background-color: #00B4F0; }
-  .c-chips__item:hover {
-    border-color: #E1E1E1; }
-  .c-chips__item:focus {
-    border-color: #00B4F0; }
-  @media only screen and (min-width: 480px) {
-    .c-chips__item {
-      margin-right: 8px; } }
-  @media only screen and (min-width: 576px) {
-    .c-chips__item {
-      margin-right: 8px; } }
+.c-cards__col {
+  flex: 0 0 100%;
+  max-width: 100%; }
+  @media only screen and (min-width: 0) {
+    .c-cards__col {
+      padding-right: 8px;
+      padding-left: 8px; } }
   @media only screen and (min-width: 768px) {
-    .c-chips__item {
-      margin-right: 12px; } }
+    .c-cards__col {
+      padding-right: 12px;
+      padding-left: 12px; } }
+  @media only screen and (min-width: 1200px) {
+    .c-cards__col {
+      padding-right: 16px;
+      padding-left: 16px; } }
+  @media only screen and (min-width: 657px) {
+    .c-cards__col {
+      flex: 0 0 50%;
+      max-width: 50%; } }
   @media only screen and (min-width: 992px) {
-    .c-chips__item {
-      margin-right: 16px; } }
-  @media only screen and (min-width: 480px) {
-    .c-chips__item {
-      margin-bottom: 8px; } }
-  @media only screen and (min-width: 576px) {
-    .c-chips__item {
-      margin-bottom: 8px; } }
-  @media only screen and (min-width: 768px) {
-    .c-chips__item {
-      margin-bottom: 12px; } }
+    .c-cards__col {
+      flex: 0 0 33.3333333333%;
+      max-width: 33.3333333333%; } }
+  .c-cards__col:last-child .c-cards__card-container {
+    margin-bottom: 0; }
+
+.c-cards__card-container {
+  margin-bottom: 32px; }
+  @media only screen and (min-width: 657px) {
+    .c-cards__card-container {
+      margin-bottom: 24px; } }
   @media only screen and (min-width: 992px) {
-    .c-chips__item {
-      margin-bottom: 16px; } }
-  .c-chips__item:focus {
-    outline: 0; }
-  .c-chips__item.is-active {
-    background-color: #00B4F0;
-    color: #121212;
-    border-color: #00B4F0; }
+    .c-cards__card-container {
+      margin-bottom: 0; } }
 
-.c-chips__text {
-  padding: 10px 0; }
-
-.c-chips__image {
-  width: 30px;
-  height: 30px;
-  margin-left: -12px;
-  margin-right: 8px; }
-
-.c-chips__icon-left {
-  margin-right: 6px;
-  font-size: 24px; }
-
-.c-chips__icon-right {
-  margin-left: 6px;
-  font-size: 24px; }
-
-/* ---------------------------------------------------
-Context: filter
---------------------------------------------------- */
-.c-chips--filter .c-chips__icon-right,
-.c-chips--filter .c-chips__icon-left {
-  display: none; }
-
-.c-chips--filter .c-chips__item.is-active .c-chips__icon-left {
-  display: block; }
-
-/* ---------------------------------------------------
-Context: tags
---------------------------------------------------- */
-.c-chips--tags .c-chips__text {
-  padding: 8px 0; }
-
-.c-chips--tags .c-chips__item {
-  border-width: 1px;
-  color: #121212;
-  text-decoration: none;
-  font-weight: 700;
-  background-color: rgba(255, 255, 255, 0.5);
-  border-color: #121212; }
-  .c-chips--tags .c-chips__item:hover {
-    color: #121212; }
-  .c-chips--tags .c-chips__item:focus {
-    color: #121212; }
-  .c-chips--tags .c-chips__item:hover {
-    background-color: white; }
-  .c-chips--tags .c-chips__item:focus {
-    background-color: white; }
-  .c-chips--tags .c-chips__item:hover {
-    border-color: #121212; }
-  .c-chips--tags .c-chips__item:focus {
-    border-color: #121212; }
-
-/* ---------------------------------------------------
-Context: color schemes
---------------------------------------------------- */
-.cs-light .c-chips .c-chips__item, .cs-light.c-chips .c-chips__item {
-  color: #fff;
-  background-color: #545e67;
-  border-color: #545e67; }
-  .cs-light .c-chips .c-chips__item:hover, .cs-light.c-chips .c-chips__item:hover {
-    color: #fff; }
-  .cs-light .c-chips .c-chips__item:focus, .cs-light.c-chips .c-chips__item:focus {
-    color: #fff; }
-  .cs-light .c-chips .c-chips__item:hover, .cs-light.c-chips .c-chips__item:hover {
-    background-color: #E60050; }
-  .cs-light .c-chips .c-chips__item:focus, .cs-light.c-chips .c-chips__item:focus {
-    background-color: #E60050; }
-  .cs-light .c-chips .c-chips__item:hover, .cs-light.c-chips .c-chips__item:hover {
-    border-color: #E60050; }
-  .cs-light .c-chips .c-chips__item:focus, .cs-light.c-chips .c-chips__item:focus {
-    border-color: #E60050; }
-
-/*# sourceMappingURL=chips-dynamic.css.map */
+/*# sourceMappingURL=cards.css.map */
