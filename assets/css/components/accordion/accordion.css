@@ -131,8 +131,7 @@ Global Styles
   text-decoration: none;
   font-weight: 400;
   background-color: #fff;
-  padding: 0.8rem 1rem 0.8rem 1rem;
-  flex-direction: row; }
+  padding: 0.8rem 1rem 0.8rem 1rem; }
   .c-accordion__toggle:hover {
     color: #121212; }
   .c-accordion__toggle:focus {
@@ -145,6 +144,11 @@ Global Styles
       transform: rotate(90deg); }
     .c-accordion__toggle.is-active .c-accordion__icon:before, .c-accordion__toggle.is-active .c-accordion__icon:after {
       background-color: #00693C; }
+  @media only screen and (min-width: 657px) {
+    .c-accordion__toggle {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center; } }
 
 .c-accordion__icon {
   width: 30px;
