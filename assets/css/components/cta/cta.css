@@ -243,7 +243,7 @@ Context: hero
   .c-cta--link:focus {
     color: #00693C; }
   .c-cta--link .ic {
-    font-size: 1.5rem;
+    font-size: 1.3333333333rem;
     margin-left: 3px;
     transition: all .2s linear;
     font-weight: 900; }
@@ -255,7 +255,7 @@ Context: hero
   background: none;
   border: 0; }
   .c-cta--card .ic {
-    font-size: 2rem;
+    font-size: 1.7777777778rem;
     margin: 0;
     font-weight: 900; }
 

@@ -234,27 +234,27 @@ Global Styles
     color: #fff; }
 
 .c-hero__headline {
-  font-size: 2.5rem;
+  font-size: 2.2222222222rem;
   line-height: 1.2;
   color: #fff; }
   @media only screen and (min-width: 480px) {
     .c-hero__headline {
-      font-size: 3rem; } }
+      font-size: 2.6666666667rem; } }
   @media only screen and (min-width: 576px) {
     .c-hero__headline {
-      font-size: 3.5rem; } }
+      font-size: 3.1111111111rem; } }
 
 .c-hero__subheadline {
-  font-size: 1.5rem;
+  font-size: 1.3333333333rem;
   line-height: 1.2;
   font-weight: 400;
   color: #fff; }
   @media only screen and (min-width: 480px) {
     .c-hero__subheadline {
-      font-size: 1.75rem; } }
+      font-size: 1.5555555556rem; } }
   @media only screen and (min-width: 576px) {
     .c-hero__subheadline {
-      font-size: 2rem; } }
+      font-size: 1.7777777778rem; } }
 
 /* ---------------------------------------------------
 Context: text-picture

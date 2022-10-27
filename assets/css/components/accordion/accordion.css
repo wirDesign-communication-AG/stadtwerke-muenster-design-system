@@ -170,7 +170,7 @@ Global Styles
     height: 2px; }
 
 .c-accordion__title {
-  font-size: 1.375rem;
+  font-size: 1.2222222222rem;
   line-height: 1.3;
   width: 100%;
   display: flex;
@@ -178,10 +178,10 @@ Global Styles
   font-weight: 700; }
   @media only screen and (min-width: 480px) {
     .c-accordion__title {
-      font-size: 1.375rem; } }
+      font-size: 1.2222222222rem; } }
   @media only screen and (min-width: 576px) {
     .c-accordion__title {
-      font-size: 1.5rem;
+      font-size: 1.3333333333rem;
       line-height: 1.4; } }
 
 .c-accordion__content {

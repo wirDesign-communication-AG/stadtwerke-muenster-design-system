@@ -155,7 +155,7 @@ Global Styles
   align-items: center;
   cursor: pointer; }
   .c-file-upload__label .ic {
-    font-size: 1.5rem;
+    font-size: 1.3333333333rem;
     margin-right: 1rem; }
 
 .c-file-upload__hint {
@@ -166,13 +166,13 @@ Global Styles
   display: none;
   justify-content: space-between;
   align-items: center;
-  font-size: 0.875rem;
+  font-size: 0.7777777778rem;
   padding: .5rem;
   margin-top: 1rem;
   border-bottom: 1px solid rgba(225, 225, 225, 0.7); }
 
 .c-file-upload__delete-filename {
-  font-size: 1.5rem;
+  font-size: 1.3333333333rem;
   color: #00693C;
   cursor: pointer; }
 

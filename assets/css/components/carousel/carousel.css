@@ -179,14 +179,14 @@ Global Styles
   color: #121212;
   border: 0;
   border-radius: 0;
-  font-size: 2rem;
+  font-size: 1.7777777778rem;
   opacity: 1;
   cursor: pointer;
   transition: opacity 150ms ease, border 300ms ease-in-out;
   line-height: 1; }
   @media only screen and (min-width: 768px) {
     .c-carousel__arrow {
-      font-size: 2.625rem; } }
+      font-size: 2.3333333333rem; } }
   .c-carousel__arrow:focus {
     outline: none; }
   .c-carousel__arrow:hover {

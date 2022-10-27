@@ -129,7 +129,7 @@ Global Styles
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     content: "";
-    font-size: 1.625rem;
+    font-size: 1.4444444444rem;
     color: #121212;
     background: none;
     display: block;
@@ -137,7 +137,7 @@ Global Styles
     position: absolute; }
 
 .c-date-picker__icon {
-  font-size: 1.625rem; }
+  font-size: 1.4444444444rem; }
 
 .c-date-picker__native {
   width: 100%;

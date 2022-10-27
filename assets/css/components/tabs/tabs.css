@@ -241,7 +241,7 @@ Context: arrows
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   content: "";
-  font-size: 1.5rem;
+  font-size: 1.3333333333rem;
   position: absolute;
   left: 0;
   top: 16px; }
@@ -259,7 +259,7 @@ Context: arrows
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   content: "";
-  font-size: 1.5rem;
+  font-size: 1.3333333333rem;
   position: absolute;
   right: 0;
   top: 16px; }
