@@ -191,30 +191,30 @@ Global Styles
     padding: 24px 0 0; }
 
 .c-card__price {
-  font-size: 1.5rem;
+  font-size: 1.3333333333rem;
   line-height: 1.3;
   margin-left: 4px;
   font-weight: 900; }
   @media only screen and (min-width: 480px) {
     .c-card__price {
-      font-size: 1.5rem; } }
+      font-size: 1.3333333333rem; } }
   @media only screen and (min-width: 576px) {
     .c-card__price {
-      font-size: 1.625rem;
+      font-size: 1.4444444444rem;
       line-height: 1.4; } }
   @media only screen and (min-width: 768px) {
     .c-card__price {
-      font-size: 1.75rem; } }
+      font-size: 1.5555555556rem; } }
   @media only screen and (min-width: 1200px) {
     .c-card__price {
-      font-size: 2rem; } }
+      font-size: 1.7777777778rem; } }
 
 .c-card__price-hint {
-  font-size: 1.125rem;
+  font-size: 1rem;
   line-height: 1.3; }
   @media only screen and (min-width: 576px) {
     .c-card__price-hint {
-      font-size: 1.25rem;
+      font-size: 1.1111111111rem;
       line-height: 1.4; } }
 
 .c-card__action-wrapper {
@@ -223,7 +223,7 @@ Global Styles
   right: 24px; }
 
 .c-card__action {
-  font-size: 1.75rem;
+  font-size: 1.5555555556rem;
   color: #121212;
   text-decoration: none;
   z-index: 1; }
@@ -326,7 +326,7 @@ Context: pictogram
   text-rendering: auto;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-size: 2.375rem;
+  font-size: 2.1111111111rem;
   content: "";
   position: absolute;
   bottom: 24px;
