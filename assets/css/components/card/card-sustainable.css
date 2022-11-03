@@ -270,21 +270,19 @@ Context: highlight
   background: #00411E; }
   .c-card--highlight .c-text {
     color: #fff; }
-    .c-card--highlight .c-text h1, .c-card--highlight .c-text .h1 {
-      color: #fff; }
-    .c-card--highlight .c-text h2, .c-card--highlight .c-text .h2 {
-      color: #fff; }
-    .c-card--highlight .c-text h3, .c-card--highlight .c-text .h3 {
-      color: #fff; }
-    .c-card--highlight .c-text h4, .c-card--highlight .c-text .h4 {
-      color: #fff; }
-    .c-card--highlight .c-text h5, .c-card--highlight .c-text .h5 {
-      color: #fff; }
-    .c-card--highlight .c-text .hero {
-      color: #fff; }
-    .c-card--highlight .c-text .intro {
-      color: #fff; }
-    .c-card--highlight .c-text ul li::before {
+    .c-card--highlight .c-text h1,
+    .c-card--highlight .c-text .h1,
+    .c-card--highlight .c-text h2,
+    .c-card--highlight .c-text .h2,
+    .c-card--highlight .c-text h3,
+    .c-card--highlight .c-text .h3,
+    .c-card--highlight .c-text h4,
+    .c-card--highlight .c-text .h4,
+    .c-card--highlight .c-text h5,
+    .c-card--highlight .c-text .h5,
+    .c-card--highlight .c-text .hero,
+    .c-card--highlight .c-text .intro,
+    .c-card--highlight .c-text ul {
       color: #fff; }
     .c-card--highlight .c-text a {
       color: #fff; }
